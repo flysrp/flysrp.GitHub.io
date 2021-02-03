@@ -21,15 +21,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="各种数据都在表明世界经济正在复苏，其中美国的经济走势尤其好。失业率回到上次金融危机以来最低点。">
+  <meta name="description" content="各种数据都在表明世界经济正在复苏，其中美国的经济走势尤其好。失业率回到上次金融危机以来最低点。 但数字也会撒谎。  尽管失业率低于6%，但工作人口比例也是近34年以来最低的。这意味着寻找工作的人减少，而失业率仅仅算入那些正在积极寻找工作的人，所以其计算是有猫腻的。 工作的质量极其一般。这点从平均工资的下滑可看出。 1&#x2F;3的工作只是兼职工作，相对于历史同期高的惊人。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="美国经济复苏？">
 <meta property="og:url" content="http://example.com/2015/06/15/USEconomyRecovery">
 <meta property="og:site_name" content="世界陆沉">
-<meta property="og:description" content="各种数据都在表明世界经济正在复苏，其中美国的经济走势尤其好。失业率回到上次金融危机以来最低点。">
+<meta property="og:description" content="各种数据都在表明世界经济正在复苏，其中美国的经济走势尤其好。失业率回到上次金融危机以来最低点。 但数字也会撒谎。  尽管失业率低于6%，但工作人口比例也是近34年以来最低的。这意味着寻找工作的人减少，而失业率仅仅算入那些正在积极寻找工作的人，所以其计算是有猫腻的。 工作的质量极其一般。这点从平均工资的下滑可看出。 1&#x2F;3的工作只是兼职工作，相对于历史同期高的惊人。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2015-06-15T04:00:00.000Z">
-<meta property="article:modified_time" content="2021-01-12T21:58:55.361Z">
+<meta property="article:modified_time" content="2021-02-03T01:22:16.914Z">
 <meta property="article:author" content="Ulysses">
 <meta property="article:tag" content="文字">
 <meta property="article:tag" content="The Economist">
@@ -180,8 +180,6 @@
 
       
         <p>各种数据都在表明世界经济正在复苏，其中美国的经济走势尤其好。失业率回到上次金融危机以来最低点。</p>
-<a id="more"></a>
-
 <p>但<a target="_blank" rel="noopener" href="https://flysrp.github.io/2014/11/23/OnStatistics/">数字也会撒谎</a>。</p>
 <ol>
 <li>尽管失业率低于6%，但工作人口比例也是近34年以来最低的。这意味着寻找工作的人减少，而失业率仅仅算入那些正在积极寻找工作的人，所以其计算是有猫腻的。</li>
