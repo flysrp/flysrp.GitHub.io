@@ -145,7 +145,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/06/TDS/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/07/SoftwareRouter/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -159,7 +159,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/05/06/TDS/" class="post-title-link" itemprop="url">关于水质</a>
+            <a href="/2021/05/07/SoftwareRouter/" class="post-title-link" itemprop="url">软路由搭建</a>
         </h2>
 
         <div class="post-meta">
@@ -169,7 +169,71 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-05-06 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-06T00:00:00+08:00">2021-05-06</time>
+              <time title="Created: 2021-05-07 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-07T00:00:00+08:00">2021-05-07</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>折腾了两小时终于设置好了家庭软路由。</p>
+<p>回国之前本来准备买一个性能强一点的路由器，通过在第三方路由器装插件完成路由翻墙。后来查了一下发现这种方法最大的局限是路由器的性能，就算是几百刀的路由器芯片性能也极其有限，而且大部分路由器都不是为了翻墙而设计的，处理各类复杂规则起来都比较吃力。除此之外发烧友尝试魔改路由器，安装更高性能的模块。最后发现了目前最佳的家庭设备翻墙方案，MAC+SURGE。</p>
+<p>这也就是提到的软路由，就算是最普通的电脑其芯片算力也远超路由器，处理器翻墙规则更加轻松。硬件层面需要一台Mac，一根网线，一个网线转接口，11年买的MBA重新上岗再就业。软件层面是Surge，为此专门买了Surge 4。</p>
+<p>参考的设置教程是<a target="_blank" rel="noopener" href="https://blog.qust.me/posts/macsurgerouter/">这一篇</a>，讲的非常详细。</p>
+<p>设置的过程中出现了各种问题，主要就是不了解DHCP到底是啥，一直处于知其然不知其所以然的状态。查了一下，DHCP全称是Dynamic Host Configuration Protocol，动态IP分配协议。一般路由器都会默认开启DHCP，给新入网的设备分配一个新的IP地址。Mac插入从路由器接出的网线后关闭路由器的DHCP，并在网络设置里手动分配一个基于路由器IP的变形（比如路由器IP是192.168.0.1，那么就手动设置Mac IP为192.168.0.2）。然后再开启Surge的DHCP设置，按照提示就能够顺利让Surge接管局域网内设备的IP分配。</p>
+<p>重启路由器，之后进入Surge设备界面，就能看见各种新接入的设备，选择需要翻墙的设备，接着断开该设备网络再重连Surge就接管该设备的上网规则和代理了。</p>
+<p>设置了之后Switch和PS5以及客厅电视都能够无隙翻墙，不用再购买主机加速服务下载NS软件，以及可以直接在电视上收看Netflix 4K。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/05/TDS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/05/TDS/" class="post-title-link" itemprop="url">关于水质</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-05-05 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-05T00:00:00+08:00">2021-05-05</time>
             </span>
 
           
@@ -334,7 +398,7 @@
           <p>我的密码管理做的真的很烂，大量早年间使用的弱密码充斥于着各大服务平台，随便一个交叉比对就可能破解。如果就这么放任不管，很可能成为一个（带着预见性的）黑天鹅事件。</p>
 <p>但是如果把几十上百个简单密码全部换掉工作量太大。应该做的是找出最核心的服务，比如微博推特支付宝微信谷歌苹果微软索尼亚马逊豆瓣网银账户等等，全部更新一遍。一直不想用苹果自带的强密码生成器是因为依赖性太强了。到底是找一个全平台的密码服务，还是想一个master password出来。但是每个服务依然只用一个密码总还是有风险的。</p>
 <p>最后的解决方案是订阅了1Password，想出了一个独立的主密码，但不得不说1Password也许优势只是全平台，在苹果生态中还是原生的keychain最方便。所以另一方面也开始逐步更换服务密码，根据一首喜欢的唐诗结合拼音英语大小写和标点符号创造了一个X位数的基准密码然后根据服务名称添加独立的后缀。不过这个更换过程是缓慢的，希望能够一步一步完成。</p>
-<p>其实创造一个全新密码也是一件有趣的事情，我记得我从前最常用的密码来源是H的密码组合，我破解了他密码的含义，仿造出一个类似的存在。这次创造的新Master密码则从我最钟爱的小说典故中寻找灵感。而独立密码，像之前说的一样，是结合喜欢的诗歌。此类密码一般的暴力推演估计很难破解，只能靠交叉撞库和社工手段。之所以不选择随机生成的密码是对技术依然存有抗拒。最后，也许对普通人来说最保险的记忆方式就是把密码记在书桌上的小本本上。</p>
+<p>其实创造一个全新密码也是一件有趣的事情，我记得从前最常用的密码来源是H的密码组合，后来破译了他密码的含义，仿造出一个类似的存在。这次创造的新Master密码则从我最钟爱的小说典故中寻找灵感。而独立密码，像之前说的一样，是结合喜欢的诗歌。此类密码一般的暴力推演估计很难破解，只能靠交叉撞库和社工手段。之所以不选择随机生成的密码是对技术依然存有抗拒。最后，也许对普通人来说最保险的记忆方式就是把密码记在书桌上的小本本上。</p>
 
       
     </div>
@@ -1385,71 +1449,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/09/iPodTouch/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/09/iPodTouch/" class="post-title-link" itemprop="url">苹果产品回忆录 - iPod Touch</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-03-09 00:00:00" itemprop="dateCreated datePublished" datetime="2021-03-09T00:00:00+08:00">2021-03-09</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>重装iPad，看见从App Store里下载的第一个app：cude，一个第一人称射击游戏，满满的年代感。系统支持止步于iOS2.0 </p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/03/09/iPodTouch/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1518,7 +1517,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">168</span>
+          <span class="site-state-item-count">169</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -1527,7 +1526,7 @@
         <span class="site-state-item-name">categories</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">73</span>
+        <span class="site-state-item-count">74</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
