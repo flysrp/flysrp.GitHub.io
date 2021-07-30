@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|Courier New:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="前几天了解到一个社工库bot的存在，在telegram上直接搜索就能得到反馈。一开始看见很震惊，首先查找个人信息，手机号输出后会给出当年注册的QQ号和微博，微博早已抛弃，但是继续查询QQ能直接找到qq群里的各种关系，通过小学初中高中加的学校群的备注查到个人真名。这还是好的，如果知道我早年的邮箱地址，基本上所有的早期网络冲浪信息都暴露，包括用户名，最常用密码，甚至还有真实世界的地理信息，虽然不准确，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="对社工库bot的使用和思考">
+<meta property="og:url" content="http://example.com/DataLeak/index.html">
+<meta property="og:site_name" content="世界陆沉">
+<meta property="og:description" content="前几天了解到一个社工库bot的存在，在telegram上直接搜索就能得到反馈。一开始看见很震惊，首先查找个人信息，手机号输出后会给出当年注册的QQ号和微博，微博早已抛弃，但是继续查询QQ能直接找到qq群里的各种关系，通过小学初中高中加的学校群的备注查到个人真名。这还是好的，如果知道我早年的邮箱地址，基本上所有的早期网络冲浪信息都暴露，包括用户名，最常用密码，甚至还有真实世界的地理信息，虽然不准确，">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/qwewae.jpg">
+<meta property="article:published_time" content="2021-07-19T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-07-28T04:06:03.051Z">
+<meta property="article:author" content="Orange">
+<meta property="article:tag" content="文字">
+<meta property="article:tag" content="Privacy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/qwewae.jpg">
+
+<link rel="canonical" href="http://example.com/DataLeak/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>对社工库bot的使用和思考 | 世界陆沉</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">世界陆沉</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">夜色温柔</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-anchor fa-fw"></i>Home</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/DataLeak/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          对社工库bot的使用和思考
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-07-20 00:00:00" itemprop="dateCreated datePublished" datetime="2021-07-20T00:00:00+08:00">2021-07-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>前几天了解到一个社工库bot的存在，在telegram上直接搜索就能得到反馈。一开始看见很震惊，首先查找个人信息，手机号输出后会给出当年注册的QQ号和微博，微博早已抛弃，但是继续查询QQ能直接找到qq群里的各种关系，通过小学初中高中加的学校群的备注查到个人真名。这还是好的，如果知道我早年的邮箱地址，基本上所有的早期网络冲浪信息都暴露，包括用户名，最常用密码，甚至还有真实世界的地理信息，虽然不准确，但大致区域已经得到定位，最后甚至连当年在美国的地理ip都被记录。查完一圈之后毛骨悚然，虽然说获取这些信息还是有一定门槛，但是被有心人查询还是能够通过各种蛛丝马迹联系许多出来。比较绝望的一点是这里面大部分的信息都已经是永久录入，现在做出任何改变，也无法改变这个信息库本身的内容。而且如果一次性输出过多相关性内容，还有可能被系统反录入，进一步对你的个人信息进行更新。这一点我还是长了个心眼，用了毫无关联的小号查询。细想一下，这种返乡录入的可能性真就像尼采说的那样：</p>
+<blockquote>
+<p> 看向深渊的时候，深渊也在看着你。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>了解到这个社工库里录入的信息主要包括个人身份证信息，早年QQ号泄露信息，微博信息，贴吧信息，外卖信息和各种早年论坛的数据泄露。。如果一个人在06-14年之间网路活动特别频繁，很可能各种信息都被泄露的干干净净。</p>
+<p>面对这样的一个窥探隐私的bot，实在无法忍住好奇心。说不得又查了很多奇奇怪怪的信息。汤君指出了这个bot的真正用途：查现任和前任！…</p>
+<p>查询的路径有几种，一般信息的起点是微博或者手机号。微博当年泄露的是用户ID和绑定手机号，16年之前注册的用户，到其主页搜索uid，很大概率会得到绑定手机号，绑定手机号连接着各类信息，包括QQ号，贴吧号，邮箱和外卖信息。QQ号连接着各种群关系，包括学校信息和真名备注，邮箱连通着网络各种论坛的注册信息，包括注册密码，甚至还有注册ip的地理信息。其中最敏感的是外卖信息，因为往往要求送上门，所以个人地址会写的非常详细。这其中各种信息之间的社会工程学分析基本上可以把人底裤扒的干干净净。另外有网友说甚至他11年的开房记录都被扒出来。</p>
+<p>除此之外，还有一种以姓名为基础的精确身份证搜索，输出姓名后可以进一步筛选性别省份和城市，如果有被收录，那么个人身份证信息也会被泄露。随便输入一个名字，比如“马冬梅”，进一步缩小范围，确定性别，省份，城市和年龄，最终返回出多条带有身份证的信息。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/qwewae.jpg" alt="qwewae">这个社工bot目前处于免费状态，但每条查询之间有时间间隔。我不知道这个bot会存在多久，也许明天就会消失。</p>
+<p>反思今年来的上网习惯，比早年好很多，避免使用国内的邮箱账号，尽量填写虚拟手机号，密码进行差异化复杂化处理，等等。但早年留下的痕迹已经永远无法消除，只能寄希望自己只是无名小卒，也没人会在意。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%96%87%E5%AD%97/" rel="tag"># 文字</a>
+              <a href="/tags/Privacy/" rel="tag"># Privacy</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/062221/" rel="prev" title="近期碎碎念">
+      <i class="fa fa-chevron-left"></i> 近期碎碎念
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/DataLeak2/" rel="next" title="信用卡盗刷">
+      信用卡盗刷 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Orange</p>
+  <div class="site-description" itemprop="description">après moi, le déluge</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">178</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">75</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:hi@orange42.cc" title="E-Mail → mailto:hi@orange42.cc" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fas fa-moon"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Orange</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
