@@ -1,12 +1,283 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh-Hans">
 
-block container
-    include mixins/post
-    +postList()
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-block pagination
-    include mixins/paginator
-    +home()
+    <!--Description-->
+    
+        <meta name="description" content="après moi, le déluge">
+    
 
-block copyright
-    include partial/copyright
+    <!--Author-->
+    
+        <meta name="author" content="Orange">
+    
+
+    <!-- Title -->
+    
+    <title>文字 | 世界陆沉</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery -->
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <!-- Content -->
+    
+
+<!-- Back Home -->
+<a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>文字</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            
+                <div class="post-preview archive">
+    <a href="/TheRemainsOftheDay/">
+        <h1 class="post-title archive">
+            《长日将尽》
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/202109/">
+        <h1 class="post-title archive">
+            9月碎碎念
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/MiddleSchool/">
+        <h1 class="post-title archive">
+            几则初中回忆
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/Tsushima/">
+        <h1 class="post-title archive">
+            对马岛上的两处场景
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/072821/">
+        <h1 class="post-title archive">
+            7月碎碎念
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/Delta/">
+        <h1 class="post-title archive">
+            新冠Delta变种
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/DataLeak2/">
+        <h1 class="post-title archive">
+            信用卡盗刷
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/DataLeak/">
+        <h1 class="post-title archive">
+            对社工库bot的使用和思考
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/062221/">
+        <h1 class="post-title archive">
+            近期碎碎念
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/PS4/">
+        <h1 class="post-title archive">
+            PS4维修
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/WEIBO/">
+        <h1 class="post-title archive">
+            微博炸号风波
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/Creator/">
+        <h1 class="post-title archive">
+            创造者经济
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/SoftwareRouter/">
+        <h1 class="post-title archive">
+            网关路由搭建
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/Bilibili/">
+        <h1 class="post-title archive">
+            B站缺点
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/TDS/">
+        <h1 class="post-title archive">
+            关于水质
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/RAW/">
+        <h1 class="post-title archive">
+            摄影后期的魔力
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/Password/">
+        <h1 class="post-title archive">
+            密码管理
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/Wonderland/">
+        <h1 class="post-title archive">
+            世界末日与冷酷异境
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/Light/">
+        <h1 class="post-title archive">
+            智慧生物的进化最终猜想
+        </h1>
+    </a>
+</div>
+ 
+            
+                <div class="post-preview archive">
+    <a href="/Mask/">
+        <h1 class="post-title archive">
+            从蝙蝠侠引出的中西面具差异思考
+        </h1>
+    </a>
+</div>
+ 
+            
+            <div class="archive-before-pagination"></div>
+            <ul class="pagiantion">
+    
+    
+        <li class="next"><a href="/categories/文字/page/2/">Newer Posts</a></li>
+    
+</ul>
+        </div>
+    </div>
+</div>
+
+    <!-- Scripts -->
+    <script type="text/javascript">
+    console.log("© zchen9 🙋 2015-" + new Date().getFullYear());
+</script>
+  
+    <!-- Google Analytics -->
+    
+
+    <!-- Service Worker -->
+    <!-- if using service worker -->
+
+    
+</body>
+
+</html>

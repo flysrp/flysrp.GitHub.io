@@ -1,20 +1,161 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh-Hans">
 
-block site_title
-    != page.title + " · " + config.title
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+    <!--Description-->
+    
+        <meta name="description" content="après moi, le déluge">
+    
 
-block container
-    include mixins/post
-    +post(page)
+    <!--Author-->
+    
+        <meta name="author" content="Orange">
+    
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+    <!-- Title -->
+    
+    <title>英国疫苗注射情况 | 世界陆沉</title>
 
-block copyright
-    include partial/copyright
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery -->
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+    <!-- Back Home -->
+    <a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+        <!-- Page Header -->
+        <header class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="post-heading">
+                            <h1>
+                                英国疫苗注射情况
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content -->
+        <article>
+            <div class="container">
+                <div class="row">
+                    <!-- Post Main Content -->
+                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p>今天的Daily介绍了英国昨天宣布开始注射疫苗后的各界人士反应。</p>
+<p>首先是街头民众的采访，因为都是样本展示，无法判断人群总体意愿。一半受访者表示很激动，会接种疫苗。剩下一半受访者表示不信任政府不信任如此快的技术，除非其他人都打，自己不太愿意接种，并疑问为什么第一个非要是英国，德国，法国，甚至是欧洲疫情中心意大利都没有宣布。</p>
+<p>接下来是对首批接受疫苗人群的采访，第一批人群主要是前线人群（医务人员），老年看护所，和有其他疾病史（如三高）的中年患者。医务人员首当其冲，在伦敦郊区一个临时改造的接种场所，受访医生首先阅读情况说明书，签字后，护士准备注射前会再确认一遍，获得口头允许，然后正常接种。接种过程就是很普通的手上臂注射。大部分首批接种者反映淡然，也有一部分人因为经历了前几个月的护理重症患者的悲痛产生了心理应激，但是希望已经来了。</p>
+<p>大部分人都不认为会马上回归正常，如果新冠没有成为周期性流感类疾病，那么至少得等到2022年才能一切恢复。最后提到的英国第一位接种疫苗的高龄老太太，接种完后记者问有什么想说的，老太太的回答被评价为very frank，她说，just go for it, it’s the best we have for now. 确实挺frank的，感觉也是一个媒体黑话，frank就代表着unconvincing，没啥说服力。</p>
+<p>个人对新冠疫苗注射也存疑，主要对未知和不确定性的难以预估。得多看点科学研究报告，同时对概率有所了解。之前flu疫苗就是如此，去医院的时候医生都和我说:between you and me, I wouldn’t take the shot. </p>
+<p>总的来说还是好消息。</p>
+
+
+                            <!-- Meta -->
+                            <div class="post-meta">
+                                <hr>
+                                <br>
+                                <div class="post-tags">
+                                    
+                                        
+
+<a href="/tags/文字/">#文字</a> <a href="/tags/New-York-Times/">#New York Times</a> <a href="/tags/COVID-19/">#COVID-19</a>
+
+
+                                            
+                                </div>
+                                <div class="post-date">
+                                    2020-12-09
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <!-- Disqus Comments -->
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+</section>
+
+<!-- Image viewer-->
+
+    <!-- Custom picture view-->
+    <link href="/css/viewer.min.css" rel="stylesheet" />
+    <script
+      src="/js/viewer.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    
+    <script type="text/javascript">
+      // set image viewer
+      Viewer.setDefaults({
+        zoomRatio: [0.5],
+        navbar: false,
+        toolbar: false,
+        button: false,
+        title: [2, (image, imageData) => `${image.alt}`],
+        show: function() {
+          this.viewer.zoomTo(0.5);
+        }
+      });
+      var imageList = document.getElementsByTagName("img");
+      Array.prototype.forEach.call(imageList, element => {
+        var viewer = new Viewer(element);
+      });
+    </script>
+
+    
+    <!-- Scripts -->
+    <script type="text/javascript">
+    console.log("© zchen9 🙋 2015-" + new Date().getFullYear());
+</script>
+  
+    <!-- Google Analytics -->
+    
+
+    <!-- Service Worker -->
+    <!-- if using service worker -->
+
+    
+</body>
+
+</html>

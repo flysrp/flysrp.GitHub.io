@@ -1,20 +1,161 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh-Hans">
 
-block site_title
-    != page.title + " · " + config.title
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+    <!--Description-->
+    
+        <meta name="description" content="après moi, le déluge">
+    
 
-block container
-    include mixins/post
-    +post(page)
+    <!--Author-->
+    
+        <meta name="author" content="Orange">
+    
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+    <!-- Title -->
+    
+    <title>MET | 世界陆沉</title>
 
-block copyright
-    include partial/copyright
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery -->
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+    <!-- Back Home -->
+    <a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+        <!-- Page Header -->
+        <header class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="post-heading">
+                            <h1>
+                                MET
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content -->
+        <article>
+            <div class="container">
+                <div class="row">
+                    <!-- Post Main Content -->
+                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p>回首又见她。</p>
+<a id="more"></a>
+
+
+
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1884.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1882.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1881.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1858.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1861.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1888.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1889.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1908.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1914.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1912.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1929.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1917.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1926.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1923.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1925.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1930.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1937.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1935.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1936.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1933.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1934.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1943.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1945.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1946.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1938.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1944.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1951.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1950.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1952.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1947.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1949.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1965.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1955.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1953.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1956.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1954.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1969.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1967.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1970.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1971.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1968.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1973.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1979.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1978.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1977.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1976.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1987.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1985.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1988.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1990.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1986.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1995.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1994.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1993.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_1992.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/IMG_2003.JPG"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/0069FIuOly1g1a0ukm46zj30u01414qq.jpg" alt="B叔！赫拉克拉斯！海格力斯！Hercules! ​​​​"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/97675C48-82F3-416E-8ACE-076D6221CFC5_1_105_c.jpeg"></p>
+
+
+                            <!-- Meta -->
+                            <div class="post-meta">
+                                <hr>
+                                <br>
+                                <div class="post-tags">
+                                    
+                                        
+
+<a href="/tags/影像/">#影像</a> <a href="/tags/Meseum/">#Meseum</a>
+
+
+                                            
+                                </div>
+                                <div class="post-date">
+                                    2019-03-21
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <!-- Disqus Comments -->
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+</section>
+
+<!-- Image viewer-->
+
+    <!-- Custom picture view-->
+    <link href="/css/viewer.min.css" rel="stylesheet" />
+    <script
+      src="/js/viewer.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    
+    <script type="text/javascript">
+      // set image viewer
+      Viewer.setDefaults({
+        zoomRatio: [0.5],
+        navbar: false,
+        toolbar: false,
+        button: false,
+        title: [2, (image, imageData) => `${image.alt}`],
+        show: function() {
+          this.viewer.zoomTo(0.5);
+        }
+      });
+      var imageList = document.getElementsByTagName("img");
+      Array.prototype.forEach.call(imageList, element => {
+        var viewer = new Viewer(element);
+      });
+    </script>
+
+    
+    <!-- Scripts -->
+    <script type="text/javascript">
+    console.log("© zchen9 🙋 2015-" + new Date().getFullYear());
+</script>
+  
+    <!-- Google Analytics -->
+    
+
+    <!-- Service Worker -->
+    <!-- if using service worker -->
+
+    
+</body>
+
+</html>

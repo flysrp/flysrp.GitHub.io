@@ -1,20 +1,159 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh-Hans">
 
-block site_title
-    != page.title + " · " + config.title
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+    <!--Description-->
+    
+        <meta name="description" content="après moi, le déluge">
+    
 
-block container
-    include mixins/post
-    +post(page)
+    <!--Author-->
+    
+        <meta name="author" content="Orange">
+    
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+    <!-- Title -->
+    
+    <title>Dramatic Touch of Girls | 世界陆沉</title>
 
-block copyright
-    include partial/copyright
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery -->
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+    <!-- Back Home -->
+    <a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+        <!-- Page Header -->
+        <header class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="post-heading">
+                            <h1>
+                                Dramatic Touch of Girls
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content -->
+        <article>
+            <div class="container">
+                <div class="row">
+                    <!-- Post Main Content -->
+                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p>想起来大一时那个喜欢我的女生，在我们还是好朋友的时候经常说到自己身体不好，一次夜里她告诉我她觉得自己快不行了，并告诉了我她微信的账号密码，对我说，如果她有什么事就登陆进去告诉她前男友她一切都好。这些都是过眼云烟，她至今也活的很好，刚想起来，觉得她当时脑洞开得有点大… </p>
+<a id="more"></a>
+
+<p>又想起来高中遇见的一菇凉，没分班前关系很好，第一次见到她是军训的时候她一个人在教室里，我当时在通讯社混了一份工作也没有去军训，看她在教室坐着，于是问她干吗。她说：我说我结婚了你信吗？当时竟随口回答信啊。后来才知道原来当时她说的时我说我睫毛疼你信吗… 但即便是这句话，放在当时，也算是非常有个性的文字表述了。同时她很美。身高大概176。慢慢就聊起来了，一开始先是两个人一起调戏那时的外教，因为其他人都在军训，所以开始一直都是我们俩。后来我在通讯社选稿子，另一女生挑到一篇问我这是你们班的吗，他写的好棒，能不能介绍他认识我。当时就惊了，拿过来看了看。以那个时候我的鉴赏能力来说只能觉得写的很怪，通篇都是奇特的长长地比喻。而且字写的歪歪扭扭很难看出美感。现在想想那应该就是所谓的想象力诡谲的比喻和后来语文老师看见了后大加赞赏的剑走龙蛇一样的书法。后来两人关系逐步加深，平时聊聊天晚上发发短信什么的。她得英语很好，两人撇开大部队独自参加英语竞赛决赛，那天早晨见面后发现自己忘带准考证，回家去拿，她亦跟着去我家。后来去和回得路上她和我讲了很多事，包括父母离异的身世，一个人去新疆，敦煌，内蒙古无人区旅游，在敦煌小摊上受惊吓大病一场哭着把爸爸喊过来带她回家。以及她有遗传病，在二十几岁就会死，现在已经开始有吐血的症状。那些在当时的我看来都是很难以置信的，记得我对她说她真的像一个小说里头的角色。第一条的确很符合，非常漂亮，再加上父母离异母亲又有小宝宝这种极其适合撕逼的设定，现在想想也是如梦如幻。我明确知道的一点是她的确非常早熟，但又明白作为一个聪明的女子该如何收敛自己。后来分班了，也没再过多联系。年少的我多少下意识里有点抵触这样的魅力，她倒是总一副没事人的样子，长歌当哭，击节鸣鼓。后来我想起来那次英语竞赛一起回来后下车时某人在后面看见了我俩。怎么说，莫名的惆怅。分班后她告诉我她在写小说，我说好啊我要看。第二天课间众目睽睽之下她径直走过来拿着一个大大的正方形本子放在我桌上对我说看完要提意见喔。不得不说在其他人的注意下还是有点小虚荣的。故事写的什么忘掉了，只记得主人公的名字叫做折远。晚上我问她折远，是取自世界之大，我却不知，其折或远吗。她回复，诶，你知道的真多。现在想想，女孩子普遍比男孩子早熟，她又是特别早熟的一只，也不知她看见眼前少男们的各种心思伎俩是不是会轻笑一下，留下无尽暧昧和神伤。</p>
+
+
+                            <!-- Meta -->
+                            <div class="post-meta">
+                                <hr>
+                                <br>
+                                <div class="post-tags">
+                                    
+                                        
+
+<a href="/tags/文字/">#文字</a> <a href="/tags/回忆/">#回忆</a>
+
+
+                                            
+                                </div>
+                                <div class="post-date">
+                                    2014-09-13
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <!-- Disqus Comments -->
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+</section>
+
+<!-- Image viewer-->
+
+    <!-- Custom picture view-->
+    <link href="/css/viewer.min.css" rel="stylesheet" />
+    <script
+      src="/js/viewer.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    
+    <script type="text/javascript">
+      // set image viewer
+      Viewer.setDefaults({
+        zoomRatio: [0.5],
+        navbar: false,
+        toolbar: false,
+        button: false,
+        title: [2, (image, imageData) => `${image.alt}`],
+        show: function() {
+          this.viewer.zoomTo(0.5);
+        }
+      });
+      var imageList = document.getElementsByTagName("img");
+      Array.prototype.forEach.call(imageList, element => {
+        var viewer = new Viewer(element);
+      });
+    </script>
+
+    
+    <!-- Scripts -->
+    <script type="text/javascript">
+    console.log("© zchen9 🙋 2015-" + new Date().getFullYear());
+</script>
+  
+    <!-- Google Analytics -->
+    
+
+    <!-- Service Worker -->
+    <!-- if using service worker -->
+
+    
+</body>
+
+</html>

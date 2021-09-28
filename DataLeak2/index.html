@@ -1,20 +1,173 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh-Hans">
 
-block site_title
-    != page.title + " · " + config.title
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+    <!--Description-->
+    
+        <meta name="description" content="après moi, le déluge">
+    
 
-block container
-    include mixins/post
-    +post(page)
+    <!--Author-->
+    
+        <meta name="author" content="Orange">
+    
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+    <!-- Title -->
+    
+    <title>信用卡盗刷 | 世界陆沉</title>
 
-block copyright
-    include partial/copyright
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery -->
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+    <!-- Back Home -->
+    <a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+        <!-- Page Header -->
+        <header class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="post-heading">
+                            <h1>
+                                信用卡盗刷
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content -->
+        <article>
+            <div class="container">
+                <div class="row">
+                    <!-- Post Main Content -->
+                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p>早上跟客服打了一个小时电话，一开始以为是单纯的误扣款，最后才发现自19年以来一直有一个Amazon账号用我的信用卡信息买了十几个月的prime会员，每月重复扣款，其他什么都没买。瞬间脑补了一系列黑产链，万万没想到自己也成了肉鸡。prime会员能干嘛呢？首先是prime video和其他各种云服务，然后是twitch订阅，估计所有价值都被薅了一遍。</p>
+<a id="more"></a>
+
+
+
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/IMG_7745.jpeg" alt="IMG_7745"></p>
+<p>盗用者细水长流，知道用户大多经常网购，偷偷摸一个订阅进去不仔细查账单还真不一定能看见。</p>
+<p>盗用者获取了我的邮箱，信用卡完整信息，以及几年前的地址。用相同邮箱前缀注册了一个xxxx@ edu.com（哪有这种格式的邮箱啊…）Amazon账号，潜伏了几个月，然后开始固定购买会员。</p>
+<p>客服见怪不怪了，帮我全部退款，并取消了订阅，但无法删除或终止该账号，只能我自己更新信用卡信息。</p>
+<p>得去查一查这几年还有没有其他盗用了。</p>
+<p>之前自诩近几年上网习惯好一些，没想到19年信息依然会泄露，而且这次泄露的更严重，直接是信用卡信息，邮箱和地址，直接造成了经济上的损失。汤君说还好是美国的卡，可以退，国内的根本退不了。</p>
+<p>有点后怕，立刻挂失，更新了信用卡信息。</p>
+<p>事后汤君分析其实信用卡盗刷的情况美国可能更常见，因为普及率高，随便一个店里的阿猫阿狗都能获取正反面信息，然后如果再结合信用卡上姓名搜索交叉对比其他资料，就很可能查到邮编，地址和邮箱。分分钟盗刷。好在银行方面的赔付措施也很到位。</p>
+<p>进一步联想现在各种低价游戏货币，其实就是信用卡盗刷这个黑产的一个终端，起点是手工收集用户信用卡信息的服务业金融业人员，中间卖给供应商，筛选有效信用卡，App Store以及其他各种游戏商城盗刷，靠着平台时间差和低价诱惑潜在用户。最终被盗刷者报告银行，银行告知游戏开发商，游戏开发商开始封号。这样一个过程往往几周到几个月不等，最后玩家账号和钱两空，盗刷产业链赚的盆满钵满。</p>
+<hr>
+<p>7.30 Update</p>
+<p>Amazon也很实诚，不仅退了盗刷的钱，还把此前我自己买的prime会员费都退了..</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/IMG_7786.jpeg" alt="IMG_7786"></p>
+
+
+                            <!-- Meta -->
+                            <div class="post-meta">
+                                <hr>
+                                <br>
+                                <div class="post-tags">
+                                    
+                                        
+
+<a href="/tags/文字/">#文字</a> <a href="/tags/Privacy/">#Privacy</a>
+
+
+                                            
+                                </div>
+                                <div class="post-date">
+                                    2021-07-27
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <!-- Disqus Comments -->
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+</section>
+
+<!-- Image viewer-->
+
+    <!-- Custom picture view-->
+    <link href="/css/viewer.min.css" rel="stylesheet" />
+    <script
+      src="/js/viewer.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    
+    <script type="text/javascript">
+      // set image viewer
+      Viewer.setDefaults({
+        zoomRatio: [0.5],
+        navbar: false,
+        toolbar: false,
+        button: false,
+        title: [2, (image, imageData) => `${image.alt}`],
+        show: function() {
+          this.viewer.zoomTo(0.5);
+        }
+      });
+      var imageList = document.getElementsByTagName("img");
+      Array.prototype.forEach.call(imageList, element => {
+        var viewer = new Viewer(element);
+      });
+    </script>
+
+    
+    <!-- Scripts -->
+    <script type="text/javascript">
+    console.log("© zchen9 🙋 2015-" + new Date().getFullYear());
+</script>
+  
+    <!-- Google Analytics -->
+    
+
+    <!-- Service Worker -->
+    <!-- if using service worker -->
+
+    
+</body>
+
+</html>

@@ -1,20 +1,194 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh-Hans">
 
-block site_title
-    != page.title + " · " + config.title
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+    <!--Description-->
+    
+        <meta name="description" content="après moi, le déluge">
+    
 
-block container
-    include mixins/post
-    +post(page)
+    <!--Author-->
+    
+        <meta name="author" content="Orange">
+    
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+    <!-- Title -->
+    
+    <title>个人知识管理工作流 2021 | 世界陆沉</title>
 
-block copyright
-    include partial/copyright
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery -->
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+    <!-- Back Home -->
+    <a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+        <!-- Page Header -->
+        <header class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="post-heading">
+                            <h1>
+                                个人知识管理工作流 2021
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content -->
+        <article>
+            <div class="container">
+                <div class="row">
+                    <!-- Post Main Content -->
+                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p>2011年我拥有了人生第一台电脑，MacBook Air 11。从此开始沉迷研究各种软件，并美名帮助我提高效率。是否真的成功提升效率在这里不做讨论，但是这么多年下来确实是研究了许多的软件。其中笔记类软件是一个大方向，也因此接触了各类笔记应用。2010年整个笔记应用市场还处于刚刚起步阶段，彼时上一代笔记应用以微软word文档为主，象征着笔记记录最原始的阶段，从个人电脑刚普及的上世纪九十年代开始就已经成为写作爱好者的原始工作台。然后Evernote横空出世，象征着新时代到来，其最大的特点就是极其方便的网页剪藏功能，看到的任何资料轻松一点就能以原格式直接被收入笔记本中。这也是我第一款重度使用的软件，最开始沉迷于如何给笔记分类，已经模模糊糊的有了tag的概念，但应用起来还是非常有难度，因为Evernote的核心使用模式是不鼓励写作的，原始的编辑界面对比极其便捷的收藏方式，Evernote下意识鼓励了使用者进行大量的笔记囤积，最后造成笔记过载，以为自己看到了什么，但最后都成了堆积在一起的杂音。我也是囤积笔记的受害者，到2016年我的Evernote笔记里记录了超过一万条笔记，其中90%都直接来自于网页剪藏，剩下的是一些零星的个人记录，其中真正自己写的少之又少。 </p>
+<p>这里提出一个核心思考：<strong>你所使用的笔记软件潜意识里会塑造你的写作习惯</strong>。 </p>
+<a id="more"></a>
+
+<p>Evernote的超便捷剪藏工具培养了第二代笔记爱好者大量囤积笔记的习惯，大量囤积笔记，只有输入，没有输出，本质上是无效的学习。我也深受其害。 </p>
+<p>17年开始因为Evernote，或者印象笔记的付费计划越来越离谱，开始使用过一段时间的OneNote，但本质上就是一个word高级版，和Evernote没差别，且同步稳定性，笔记本分类方式比Evernote更加差劲，当时的感想是免费服务真的用不得，还是得从付费服务中找。最终锁定到了DevnoThink，随着这几年的迭代基本上已经是mac上最成熟的笔记软件工具，且移动端的同步也已经成熟，19年我把过去十年的Evernote笔记全部成功移植到Devonthink里，彻底替代了Evernote的Inbox，收件箱功能。同时软件时一次性买断，所以感官上比订阅版本更加舒适。 </p>
+<p>切换至Devonthink之后开始了一次大型的分类尝试，建立了一个新的资料库，命名为42，在里面开始给过去所有的笔记，手动分类，就像是图书馆分类学一样，按国家，按科目，按种类分类。工作量太庞大，最后成为拖延的接口。现在重新看之前的这一次尝试，觉得也是蛮不容易的！</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/QgqBZW.png" alt="很庞大的工程啊"></p>
+<p>尽管换成了DevonThink，但本质依然是以收集笔记为主。直到2020年初接触到Obsidian，才真正意识到做笔记的意义：<strong>通过自己的总结和写作帮助思考和输出。</strong> 最终确定到RoamResearch，是我的笔记工具终端。至此总体的工作流如下：</p>
+<ul>
+<li>输入：<ul>
+<li>任何网页文章和资料首先丢进devonthink里，devonthink不做任何的分类处理，如果后期有搜索需求直接按照关键字查找即可。<ul>
+<li>如果认为放入devonthink中的摘抄非常有意义，则考虑选择部分放入RR的daily page里，根据实际情况进行总结或是发表见解</li>
+</ul>
+</li>
+<li>任何想法，也就是fleeting thought，应当放进draft里，然后每日尽可能清空一次draft，draft是一个中转站。</li>
+<li>RR记录当天自己各个方面的所思所想所学。包括阅读摘抄。常用的tag有reference，knowledge和insight</li>
+</ul>
+</li>
+<li>输出<ul>
+<li>insight积累的足够多，可能会产生wisdom或者project，最终写成一篇文字。如果是日常总结性写作，可以放进个人博客里。</li>
+<li>如果是精心准备的大作，可以考虑用craft排版并分享。</li>
+</ul>
+</li>
+</ul>
+<p>最后需要指出的一点是关于obsidian和rr的区别，我在之前的一篇文字里已经写到过：</p>
+<p>花了整整半个月时间整理完了过去两年的笔记，以及过去五六年的照片，建立好了个人博客，梳理了一下一路走来的历程。今天针对RR做进一步优化和思考，看了微信群里大家过去一个月的聊天记录。思考如下：</p>
+<p>RoamResearch和Obsidian是有区别的，RR走了最极端的去folder，全tag方式，各种秩序全靠用户自己创造。Obsidian相对保守，保留Folder结构，tag作为辅助。回想起来最开始我用了一个月的obsidian转换到rr后确实有些手足无措。但这只是技术层面的设定，完全可以通过进阶操作给rr制定秩序，自己建立几个大类，page，tag和folder本质上也没有差别，都是分类的metadata参数。</p>
+<p>两者最大的差别是RR本质上是一个大纲类笔记关联软件，默认的outliner格式从一开始就不鼓励严格意义上的写作，梳理思路和把idea相连才是rr最强的地方。而Obsidian事实上是一个支持了双向链的md编辑器，默认的基础单位是page而不是rr的block，这意味着在obsidian里写作的体验会比rr好很多。这看起来没有什么特别大的区别，但今天的一个感受是所使用的软件特性潜移默化的能够影响我们的思考和使用习惯。比如最早期的evernote，一个网页收集器，导致大家看到什么都往里面扔，创作的欲望就小很多。之后的notion主打协同操作和block。各类markdown写作软件(比如Ulysses和Bear)才是为写作而生的存在。rr对写作不友好，obsidian作为高级md对写作友好。</p>
+<p>但是没有folder导致在rr里建立任何一个block都想着要添加metadata，写作的思绪无法集中。这确实是个问题，但是可以通过主观认知到并解决。观察obsidian如果想要写一篇文字，首先是在找到合适的folder，在folder里找到相应的位置，然后创立新page开始写作，这一点和GTD的Inbox概念类似。相对应的，目前我在roam里设定了几个基本属性的tag，其实就可以当做万用的folder，日常任何摘抄都是reference，基于reference用自己的话语进行的总结就是knowledge，在自己总结的基础之上还有了其他的思考和想法(不管有多少)都算是insight。就算没有基于任何摘抄自己任何的思考和想法也都能当做insight。在insight的过程中可能会link其他之前记录的内容，如果link时认为这种相关性有普遍性可以就此建立一个project，专门关联类似的insight和reference note。如果某一个project关联到了一定程度那么就可以成为wisdom page 的开端，这也是目前最高级的笔记终点。以上knowledge，insight，project和wisdom任何一个层面的写作超过了一段话，或者是200字，那么就可以添加上writing，宣告这是一段比较严肃的写作。同时在写作的最开始可以提前想好，最好是把tag提前都列出来。如果觉得接下来要针对一个知识总结写很多，那么就应该在开头列出knowledge和writing。这样其实就相当于确定好了文件夹，接下来就可以心无旁骛的进行写作。</p>
+<p>多年以来被誉为经典的GTD法则最重要的takeaway就是介绍了inbox的概念，把所有需要处理的东西一股脑的先扔进来，之后再设立一套标准化流程处理inbox里的东西，想到什么随时扔进来。标准化处理inbox的方式不谈，这样做的最大优势是能够心无旁骛的处理当前的事情，不用分心去想其他没有做怕之后忘掉处理的事情。这样做有更大可能进入[[Flow]]状态。同时Inbox不局限于任务管理，smart note也借鉴了inbox，也就是fleeting note。当下很火的flomo，以及自己在用的draft，在我看来都是inbox概念的延伸。</p>
+<p>除此之外其他的一些区别包括obsidian本地储存，并且随时可以导出，双向链在任何其他支持的应用里都可以被识别，以md最通用的格式保存。而rr则不同，越是投入心力在其中，其迁移的成本就越大。以及我个人发现的某些处理bug，比如现在reference因为密集引用而无法打开。最后是价格，这个我个人可以接受，所以不在考虑范围内。</p>
+<p>其实我已经忘记了当初为什么从obsidian迁移至rr，可以仅仅是因为觉得酷炫，又或者是因为我意识到obsidian还是以page而不是以block为基础单位，所以很容易沉浸在一篇内容中无法自拔。然后我又重新打开了obsidian使用感受了一下，回想起当年更换的原因，我意识到obsidian的folder已经成为了，同一个folder主题下我甚至要专门建立一个页面来索引其他的次要内容，既然这样这一个索引界面已经可以完全取代folder。</p>
+<p>最后我还是想回到笔记类软件的核心意义上。这么多年来换了不少的笔记软件，从最初的evernote到onenote，再到革命性的notion，再到全面转换至devnothink，再到全面切换到obsidian，再到roamresearch，我的目的越来越明确。从最开始不知所以的看到什么囤积什么，当后期一点点意识到自己总结输出的重要性。最开始evernote里能够添加tag的时候我就很惊喜，意识到这个一则笔记多了一个维度的分类方式。但始终不够灵活，无法达到我期待的可能性，即将多个笔记以多种方式有机交互的连接起来，早在2017年我就在互联网上到处搜索这样类型的软件，然后终于在2020发现了obsidian，紧接着就是roam。然后开始大量接触记笔记的先进理念，到现在基本上确定最终的目标是将从各种渠道汇集而来的有用信息通过写作和总结内化为自己的知识和见解，用软件添加辅助关联，最终让这些知识和间接在大脑中形成独特相连的回路，在针对某一特定主题进行综合性的输出和创造。在这个过程中锻炼自己的思辨能力，并最终对相关主题有更深层次的理解和掌握。</p>
+<p>说一千道一万，我一直记得那句俏皮话：</p>
+<blockquote>
+<p>只要足够清醒，txt足够<br>只要心中有沙，哪里都是马尔代夫</p>
+</blockquote>
+<p>所以不管是什么软件，最终还是要主动去实践，这一点才是最难的。Don’t preach, practice!</p>
+
+
+                            <!-- Meta -->
+                            <div class="post-meta">
+                                <hr>
+                                <br>
+                                <div class="post-tags">
+                                    
+                                        
+
+<a href="/tags/文字/">#文字</a> <a href="/tags/PKM/">#PKM</a> <a href="/tags/Technology/">#Technology</a>
+
+
+                                            
+                                </div>
+                                <div class="post-date">
+                                    2021-02-19
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <!-- Disqus Comments -->
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+</section>
+
+<!-- Image viewer-->
+
+    <!-- Custom picture view-->
+    <link href="/css/viewer.min.css" rel="stylesheet" />
+    <script
+      src="/js/viewer.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    
+    <script type="text/javascript">
+      // set image viewer
+      Viewer.setDefaults({
+        zoomRatio: [0.5],
+        navbar: false,
+        toolbar: false,
+        button: false,
+        title: [2, (image, imageData) => `${image.alt}`],
+        show: function() {
+          this.viewer.zoomTo(0.5);
+        }
+      });
+      var imageList = document.getElementsByTagName("img");
+      Array.prototype.forEach.call(imageList, element => {
+        var viewer = new Viewer(element);
+      });
+    </script>
+
+    
+    <!-- Scripts -->
+    <script type="text/javascript">
+    console.log("© zchen9 🙋 2015-" + new Date().getFullYear());
+</script>
+  
+    <!-- Google Analytics -->
+    
+
+    <!-- Service Worker -->
+    <!-- if using service worker -->
+
+    
+</body>
+
+</html>

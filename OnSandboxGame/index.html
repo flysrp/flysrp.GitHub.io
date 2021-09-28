@@ -1,20 +1,157 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh-Hans">
 
-block site_title
-    != page.title + " · " + config.title
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+    <!--Description-->
+    
+        <meta name="description" content="après moi, le déluge">
+    
 
-block container
-    include mixins/post
-    +post(page)
+    <!--Author-->
+    
+        <meta name="author" content="Orange">
+    
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+    <!-- Title -->
+    
+    <title>沙盒类游戏的魅力 | 世界陆沉</title>
 
-block copyright
-    include partial/copyright
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery -->
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+    <!-- Back Home -->
+    <a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+        <!-- Page Header -->
+        <header class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="post-heading">
+                            <h1>
+                                沙盒类游戏的魅力
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content -->
+        <article>
+            <div class="container">
+                <div class="row">
+                    <!-- Post Main Content -->
+                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p>沙盒类游戏给人以极大的游戏自由度，基本可以理解为在游戏设定的世界里为所欲为。此类游戏一般以第一人称为视角，地图极大（有的甚至就无限地图）。<br>Minecraft是一款真正字面意义上的沙盒游戏因为它的地图是无限生成的。说不得个人在此游戏已经花费了数不清的时间了。Minecraft挑人，不喜欢的人就是不喜欢，喜欢的人进去就出不来。我还记得第一个生存模式下的夜晚没有床没有火，只听见临时堆起来的木屋外传来僵尸的低沉吼叫，吓得鸡皮疙瘩直起。也记得挖到第一颗钻石时的欣喜。令人抓狂的是在地底下挖了几个小时矿后于满载而归的路上被淹死，被怪打死，摔死，反正一往回走就立flag。最惨的是被岩浆烧死，其他的方式死了至少还有机会把物品捡回来，死在岩浆里那可真是连渣都不剩。一般出现这种情况我都立刻删游戏，几个星期几个月都不玩，后来某一天又突然来劲了，下回来重开一个世界，就是这么任性。前段时间第一次和朋友玩联机，才体验到另一种快乐，从前一个人的孤独世界终于有了小伙伴的加入，至此日常中最枯燥的看书烧煤盖房子都有了新的乐趣。两人一起下矿洞探险，一起去地牢刷怪，打开作弊模式还能瞬间移动。因为都是菜鸟嘛，偶尔作作弊也是可以怡情的。</p>
+<p>Minecraft以Java为运行平台，像素画风，虽然非常吃资源，但原版大小估计不到10M。另外两款则是更加主流意义上的沙盒游戏。GTA和刺客信条。这两款游戏各自发展大概都有5、6年了，画质和剧情基本上已经达到当前的巅峰水平。游戏里的场景还原越做越真实，其细节出对光影的掌控非常接近现实世界。在GTA里就算什么都不做，弄辆敞篷跑车沿着加州海岸线开往附近山地就已经赏心悦目，彼时夕阳西下，感觉被整个世界温柔乡相待。同样在刺客信条里中世纪的罗马、巴黎、佛罗伦萨，殖民时代的美国，所有的信息都尽可能的还原。听说下一代要把场景搬到19世纪维多利亚时代的伦敦，想想就老激动了。彼时一定要爬到圣保罗大教堂上俯瞰全城，偷偷溜进议会大楼看看议员们的日常，最重要的是找到我现在住的这一带看看一个多世纪以前会是怎样一幅光景。</p>
+
+
+                            <!-- Meta -->
+                            <div class="post-meta">
+                                <hr>
+                                <br>
+                                <div class="post-tags">
+                                    
+                                        
+
+<a href="/tags/文字/">#文字</a> <a href="/tags/Review/">#Review</a> <a href="/tags/游戏/">#游戏</a>
+
+
+                                            
+                                </div>
+                                <div class="post-date">
+                                    2014-12-20
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <!-- Disqus Comments -->
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+</section>
+
+<!-- Image viewer-->
+
+    <!-- Custom picture view-->
+    <link href="/css/viewer.min.css" rel="stylesheet" />
+    <script
+      src="/js/viewer.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    
+    <script type="text/javascript">
+      // set image viewer
+      Viewer.setDefaults({
+        zoomRatio: [0.5],
+        navbar: false,
+        toolbar: false,
+        button: false,
+        title: [2, (image, imageData) => `${image.alt}`],
+        show: function() {
+          this.viewer.zoomTo(0.5);
+        }
+      });
+      var imageList = document.getElementsByTagName("img");
+      Array.prototype.forEach.call(imageList, element => {
+        var viewer = new Viewer(element);
+      });
+    </script>
+
+    
+    <!-- Scripts -->
+    <script type="text/javascript">
+    console.log("© zchen9 🙋 2015-" + new Date().getFullYear());
+</script>
+  
+    <!-- Google Analytics -->
+    
+
+    <!-- Service Worker -->
+    <!-- if using service worker -->
+
+    
+</body>
+
+</html>

@@ -1,20 +1,164 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh-Hans">
 
-block site_title
-    != page.title + " · " + config.title
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+    <!--Description-->
+    
+        <meta name="description" content="après moi, le déluge">
+    
 
-block container
-    include mixins/post
-    +post(page)
+    <!--Author-->
+    
+        <meta name="author" content="Orange">
+    
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+    <!-- Title -->
+    
+    <title>PS4维修 | 世界陆沉</title>
 
-block copyright
-    include partial/copyright
+    <!-- Bootstrap Core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery -->
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<meta name="generator" content="Hexo 5.4.0"><script src="/assets/js/DPlayer.min.js"></script></head>
+
+<body>
+
+    <!-- Content -->
+    <section class="article-container">
+    <!-- Back Home -->
+    <a class="nav-back" href="/">
+    <i class="fa fa-puzzle-piece"></i>
+</a>
+
+        <!-- Page Header -->
+        <header class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="post-heading">
+                            <h1>
+                                PS4维修
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Post Content -->
+        <article>
+            <div class="container">
+                <div class="row">
+                    <!-- Post Main Content -->
+                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p>今天修ps4的过程也很快乐，感受到了心流。</p>
+<p>很早之前ps4光驱就无法正常吸光盘，只有开机时才能吸入。一直懒得修，平时也用的不多。直到最近准备挂闲鱼，于是又把机器打开，这次整个光驱都坏掉，光盘一放进去就开始疯狂怪叫。</p>
+<p>搜了一些教程，首先就是把机器拆开，本来没啥难度，但是我的机器款式比较新，主板部分采用了五六个无纹黑塑螺丝，看了一圈只能强制破坏，一开始用裁纸刀锯，太费劲，然后发现虎头钳直接夹碎就好，相对来说更容易。把主板拆开露出光驱和风扇，能看见基本上没有积灰，光驱各个部件也都正常，上下对比了一圈终于发现了问题，把光驱组件拆下来之后反面竟然有一个弹簧吸付在反面，这绝对不是它应该出现的位置，原来是因为某种原因从最上方的卡口弹出来，好在中间有磁铁被吸住。一番折腾安装复位，接通电源插入光盘，OK一切恢复正常！彼时感觉特别好，成就感油然而生。</p>
+<p>结果，一切复位之后有一颗螺丝死活安不回去，简直就是拆装机器的cliche了😂</p>
+<p>以及warning，拆装过程中千万注意断电，我就是安到一般插电调试，紧接着直接拆部件手指伸到主板里面，大拇指被电的酥麻酥麻的。</p>
+<p>最后修好之后反而有点舍不得卖了，当个家用netflix播放器也挺好…</p>
+<a id="more"></a>
+
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/005390B6-B279-4AA6-A3AE-E8D748569854-12978-00000B250768878A.jpg" alt="005390B6-B279-4AA6-A3AE-E8D748569854-12978-00000B250768878A"><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/1106F3EC-EECC-4EDB-AD7E-E14A6E3DACC6-12978-00000B251E747A89.jpg" alt="1106F3EC-EECC-4EDB-AD7E-E14A6E3DACC6-12978-00000B251E747A89"><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/E8E3DBEF-A51A-4280-B84F-424B2BDD2FCC-12978-00000B2537A4B0D1.jpg" alt="E8E3DBEF-A51A-4280-B84F-424B2BDD2FCC-12978-00000B2537A4B0D1"><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/8A88EBA0-3C8D-45E5-877F-E536163336B1-12978-00000B24E577E36D.jpg" alt="8A88EBA0-3C8D-45E5-877F-E536163336B1-12978-00000B24E577E36D"><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/A147123A-EA7C-4834-9D5B-3091EAE07F03-12978-00000B24C6FE2CD5.jpg" alt="A147123A-EA7C-4834-9D5B-3091EAE07F03-12978-00000B24C6FE2CD5"><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FE8DE5AD-A07E-40C6-BC0F-40F0B393D42E-12978-00000B2466E116C2.jpg" alt="FE8DE5AD-A07E-40C6-BC0F-40F0B393D42E-12978-00000B2466E116C2"></p>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FQiRj1C1VcM.mp4?alt=media&token=77e8cfa2-df04-44f9-acbb-829291a306b2","pic":"https://cdn.jsdelivr.net/gh/sprezzaa/image@main/27174B8F-ACFE-42CB-BDC1-64BAA1CC7FEB-12978-00000B24F4BCD4B2.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+                            <!-- Meta -->
+                            <div class="post-meta">
+                                <hr>
+                                <br>
+                                <div class="post-tags">
+                                    
+                                        
+
+<a href="/tags/文字/">#文字</a> <a href="/tags/Technology/">#Technology</a> <a href="/tags/Games/">#Games</a>
+
+
+                                            
+                                </div>
+                                <div class="post-date">
+                                    2021-05-31
+                                </div>
+                            </div>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <!-- Disqus Comments -->
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+</section>
+
+<!-- Image viewer-->
+
+    <!-- Custom picture view-->
+    <link href="/css/viewer.min.css" rel="stylesheet" />
+    <script
+      src="/js/viewer.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    
+    <script type="text/javascript">
+      // set image viewer
+      Viewer.setDefaults({
+        zoomRatio: [0.5],
+        navbar: false,
+        toolbar: false,
+        button: false,
+        title: [2, (image, imageData) => `${image.alt}`],
+        show: function() {
+          this.viewer.zoomTo(0.5);
+        }
+      });
+      var imageList = document.getElementsByTagName("img");
+      Array.prototype.forEach.call(imageList, element => {
+        var viewer = new Viewer(element);
+      });
+    </script>
+
+    
+    <!-- Scripts -->
+    <script type="text/javascript">
+    console.log("© zchen9 🙋 2015-" + new Date().getFullYear());
+</script>
+  
+    <!-- Google Analytics -->
+    
+
+    <!-- Service Worker -->
+    <!-- if using service worker -->
+
+    
+</body>
+
+</html>
