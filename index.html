@@ -1,1666 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/css/main.css">
+  <!-- Minima -->
+  <!-- Hexo theme created by @adisaktijrs -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL XiaoWei:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="après moi, le déluge">
-<meta property="og:type" content="website">
-<meta property="og:title" content="世界陆沉">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="世界陆沉">
-<meta property="og:description" content="après moi, le déluge">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Orange">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://example.com/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'en'
-  };
-</script>
-
+  
   <title>世界陆沉</title>
   
+  <link rel="canonical" href="http://example.com/">
+  
+  <meta name="description" content="après moi, le déluge">
+  
+  
+  <meta name="author" content="Orange">
+  
+  <meta property="og:image" content="http://example.com/images/thumbnail.jpg">
+  
+  <meta property="og:site_name" content="世界陆沉" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="世界陆沉" />
+  
+  <meta property="og:description" content="après moi, le déluge">
+  
+  <meta property="og:url" content="http://example.com/" />
 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="世界陆沉">
+  
+  <meta name="twitter:description" content="après moi, le déluge">
+  
+  
+  <meta name="twitter:image" content="http://example.com/images/thumbnail.jpg">
+  
+  <meta name="twitter:url" content="http://example.com/" />
 
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Preload fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preload" href="../fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+<link rel="stylesheet" href="/css/normalize.css">
 
+  
+<link rel="stylesheet" href="/css/skeleton.css">
 
-  <noscript>
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+<link rel="stylesheet" href="/css/prism-dark.css">
+
+  
+<link rel="stylesheet" href="/css/prism-line-numbers.css">
+
+  <!-- User css -->
+  
+  
+<link rel="stylesheet" href="/css/user.css">
+
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
+  a:not(.icon) {
+    text-decoration-color: #0FA0CE;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      #0FA0CE 50%
+    );
   }
+  blockquote {
+    border-left: 8px solid #0FA0CE;
+  }
+  .nanobar .bar {
+    background: #0FA0CE;
+  }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #0FA0CE;
+    border-color: #0FA0CE;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #0FA0CE;
+  }
+</style>
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
+  <!-- Google Analytics (With Privacy Settings On)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
 
-<script src="/assets/js/DPlayer.min.js"></script></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
+        <div class="row">
+  <div class="two columns" style="max-width: 50px">
+    <h1 class="mt-2 mode">
+      <div onclick=setDarkMode(true) id="darkBtn">🌑</div>
+      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</div>
+      <script >
+        if (localStorage.getItem('preferredTheme') == 'dark') {
+          setDarkMode(true)
+        }
+        function setDarkMode(isDark) {
+          var darkBtn = document.getElementById('darkBtn')
+          var lightBtn = document.getElementById('lightBtn')
+          if (isDark) {
+            lightBtn.style.display = "block"
+            darkBtn.style.display = "none"
+            localStorage.setItem('preferredTheme', 'dark');
+          } else {
+            lightBtn.style.display = "none"
+            darkBtn.style.display = "block"
+            localStorage.removeItem('preferredTheme');
+          }
+          document.body.classList.toggle("darkmode");
+        }
+      </script>
+    </h1>
   </div>
 
-  <div class="site-meta">
+  <div class="six columns ml-1">
+    <h1 class="mt-2">
+      Hi Folks.
+    </h1>
+  </div>
 
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">世界陆沉</h1>
-      <span class="logo-line-after"><i></i></span>
+  <div class="twelve columns">
+    <div class="row">
+      <div class="nine columns left">
+        <a href="/">Home</a>
+        
+          
+          <a href="/Works" class="ml">Works</a>
+          
+        
+          
+          <a href="/About" class="ml">About</a>
+          
+        
+        
+          
+            <a href="mailto:test@test.test" target="_blank" class="ml">Email</a>
+          
+        
+      </div>
+    </div>
+    <hr style="margin-bottom: 2.6rem">
+  </div>
+</div>
+
+        <div class="trans">
+          <div class="row">
+  <div class="column">
+    <!-- Main information, edit it on theme/_config.yml -->
+    <h2 class="mb-2">I am Adi Sakti Jrs</h2>
+    <p>A student and web developer from Indonesia 🇮🇩</p>
+    <p>This is Minima, an undoubtedly simple and lightweight dark/light mode theme for Hexo. I created this from scratch using Skeleton CSS boilerplate. It only uses CSS and Vanilla JS, without using unnecessary third-party &#39;render-blocking&#39; libraries! 😁</p>
+  </div>
+</div>
+
+<h3>Recent Posts</h3>
+
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">Sep 26, 2021</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/TheRemainsOftheDay/" class="">
+      
+        《长日将尽》
+      
     </a>
-      <p class="site-subtitle" itemprop="description">夜色温柔</p>
   </div>
+</div>
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">Sep 25, 2021</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/202109/" class="">
+      
+        9月碎碎念
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">Sep 21, 2021</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/MiddleSchool/" class="">
+      
+        几则初中回忆
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">Sep 2, 2021</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/Tsushima/" class="">
+      
+        对马岛上的两处场景
+      
+    </a>
   </div>
 </div>
 
 
+<h4> <a href="/archives">All Posts</a></h4>
 
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fas fa-anchor fa-fw"></i>Home</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-  <div class="reading-progress-bar"></div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/TheRemainsOftheDay/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/TheRemainsOftheDay/" class="post-title-link" itemprop="url">《长日将尽》</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-09-26 00:00:00" itemprop="dateCreated datePublished" datetime="2021-09-26T00:00:00+08:00">2021-09-26</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>本书有两种解读，一种是结合大背景，二战前夜，爵爷大宅中集结了可以改变历史的力量。<a target="_blank" rel="noopener" href="https://www.goodreads.com/review/show/3552828208?utm_content=reviews_full_review&utm_medium=email&utm_source=bookend&ref_=pe_7171740_474197500">历史人物和事件大串烧</a>，“达林顿勋爵，哈利法克斯勋爵，艾登首相，张伯伦，里宾特洛甫，反犹主义，绥靖派和丘吉尔。”日不落帝国的日落，沉浸于旧日荣光中的骄傲与叹息。</p>
-<p>另一种是个人层面的回忆和反思。这样一个长达数天的内省过程，是史蒂文斯自己最终尝试与自己和解。尽管在叙述的过程依然语言暧昧，依然试图辩护，或压抑着情感。作为男仆管家的职业一生他也许没有遗憾，并且最终获得的自认为的“尊严”。</p>
-<blockquote>
-<p>的确，我又何必要惺惺作态呢？那一晚诚然会有种种令人悲痛的联想，但每忆及此，我发现一种巨大的成就感总会油然而生。 (Location 1459)</p>
-</blockquote>
-<p>但除此之外的人生却是可有可无。放弃了亲情，放弃了和女管家的未来，这也是为什么即便书中已经多处暗示自己的勋爵在人生后期所作的事情并不光彩，但他依然无理由相信并为之辩护，因为这是他个人与职业尊严唯一的依凭了。把自己的人生建立在他人的评价和雇主的声誉上，也许并不明智。但也正是因为如此，史蒂文斯走上了这一趟自我反思，自我和解的旅途。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/TheRemainsOftheDay/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/202109/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/202109/" class="post-title-link" itemprop="url">9月碎碎念</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-09-25 00:00:00" itemprop="dateCreated datePublished" datetime="2021-09-25T00:00:00+08:00">2021-09-25</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="9-24"><a href="#9-24" class="headerlink" title="9.24"></a>9.24</h1><p>这篇文章讲的是关于人工智能武器。首先提到的是最近巴以冲突，以色列方面的铁幕苍穹防空导弹，这是目前最先进的人工智能识别导弹，但这种系统它的主要用途是用来防守，而未来很有可能会进一步演化出能够自主判断的AI进攻性武器系统。但是如果想制造出一套进攻性武器的系统是极为困难的。人工智能靠海量数据训练，而训练的数据都是最理想的环境，在战场上任何参数录入都有可能失灵，摄像头损坏，芯片进灰等等。敌方也会针对此进行各种伪装和混淆，这次哈马斯就尽可能和平民混在一起。但AI进攻型武器依然是各国发展的主力，中美俄不互信，就算签署不开发协约也无法保证对方不私下进行。</p>
-<p>假如有朝一日人工智能真的能够自主扣下扳机，是不是也就昭示着人类的黄昏到来</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/202109/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/MiddleSchool/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/MiddleSchool/" class="post-title-link" itemprop="url">几则初中回忆</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-09-21 00:00:00" itemprop="dateCreated datePublished" datetime="2021-09-21T00:00:00+08:00">2021-09-21</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>初中有段时间每天中午吃完饭都和朋友去网吧打星际争霸，有一次正玩到大后期互相换家，突然左手腕一凉，一个女孩正往我手上戴东西，我当时想完蛋了，肯定是被抓，尤其是上周五才在班会上作为团支书给大家传递了学校禁止去黑网吧的最新精神，结果一转眼就被抓个现行。大脑还在宕机中，只见女孩递过来一张塑封的卡片，接过一看才发觉并不是我想的那样。卡片大意是她们是聋哑人，戴在手上的镯子5元一个，希望我能支持。看完后我缓缓褪下手镯，还给女孩，表示没钱（真的没钱…，那个时候网吧5毛半小时）。女孩见状默默离开。</p>
-<p>之后初中再没去过网吧。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/MiddleSchool/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Tsushima/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Tsushima/" class="post-title-link" itemprop="url">对马岛上的两处场景</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-09-02 00:00:00" itemprop="dateCreated datePublished" datetime="2021-09-02T00:00:00+08:00">2021-09-02</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>重回对马岛，此前的存档丢失，从头开始。这次的PS5版本，非常不错。但其实画质和游戏加载速度，在PS4已经很不错。主要的提升还是来自截图和录像，变得更加清晰。手柄adaptive control在射箭的时候有更真实的反馈，但要是在真实战斗中连续射击时就有点拉胯，速射时震动单元无法跟上节奏，原因可能是硬件限制。</p>
-<p>因为刚刚打完只狼，多多少少还处于魂系操作中，动不动就想完美弹反，一对比只狼的弹反竟然比对马岛还简单，但到了后期，装配了合适的护身符之后，对马岛弹反就变得无比轻松。</p>
-<p>莫名其妙来到了新的扩展一歧岛上，不能说有多出彩，但是把主人公的过去重新梳理了一遍。然后就失去了动力，因为感觉漂亮的风景已经有点看腻。大概理解别人说的开放世界的重复与空洞。</p>
-<p>但对马岛画面真的很美，游玩过程中疯狂截图，化身游戏摄影师。其中有两处场景，给我带来奇妙的共鸣。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Tsushima/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/072821/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/072821/" class="post-title-link" itemprop="url">7月碎碎念</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-07-28 00:00:00" itemprop="dateCreated datePublished" datetime="2021-07-28T00:00:00+08:00">2021-07-28</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="7-28"><a href="#7-28" class="headerlink" title="7.28"></a>7.28</h1><p>这几年Minecraft就像一个无声的巨人一样长期占领各大游戏付费榜榜首，自己再也没玩过，可能是因为接触的太早了，大部分时间也是一个人在玩。最早和K在北京上AP的时候他给介绍，说有这样一个世界，工业文明魔法文明对爆，后来才知道这已经是更加进阶的Mode，但也由此入坑。Minecraft很神奇的一点是Java版本连MacbookAir都能运行，但把其他画质特效甚至是光追打开又需要高级显卡。</p>
-<p>开荒的过程很治愈，开局撸树，探索世界，建房子，下地挖矿，被creeper狂炸，挖到第一颗钻石，收集岩浆制造黑曜石，点燃地狱大门，在地狱被猪猪人虐，最终集齐材料，打开Ender之门，击杀末影龙，这些可能就算是主线任务，一周目下来非常有趣。Minecraft更有趣的可能是各种支线，无限的可能性等待探索。方块构造世界本质上是一种简化的零基础3D建模，给予足够的时间，任何人都可以建造一个心中的理想世界。后来和朋友联机玩了几次，更加乐趣无穷，连最日常的挖矿都充满无限乐趣，可惜这样的机会终究稀有，大家聚少离多，慢慢也就淡忘。</p>
-<p>游戏越来越多，估计以后也不会再碰，但回想起来都是开心的记忆。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/072821/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Delta/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Delta/" class="post-title-link" itemprop="url">新冠Delta变种</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-07-28 00:00:00" itemprop="dateCreated datePublished" datetime="2021-07-28T00:00:00+08:00">2021-07-28</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>最近两天Daily都在讲新冠变种Delta的状况。新变异病毒在人体内的总量更大，导致毒性更高，从而造成了breakout，此前打了疫苗的人群不仅会被感染，本身也会有症状，比如轻微的感冒和头疼，也有人难受到上班请假，而且会出现典型的味觉失灵。但远远没有严重到需要入院治疗的状态。</p>
-<p>此次delta病毒进化路径依旧遵循optimal virulence 最优毒性的理论，尽可能保证高传染性，低致命性，好在潜伏期不长，一般3-4天。现在最严重的问题是打了疫苗的人也会变成潜在的传染源，而且美国国内已经放松相关限制，CDC前段时间宣布接种疫苗者可以不用戴口罩。（7.27CDC发布临时公告，要求建议所有人依然带上口罩。）相关机构已经在考虑是否像易感人群推行第三针加强针，尤其是考虑到辉瑞的疫苗六个月之后效力下降明显。（我的PFE啊啊）</p>
-<p>另外一点是美国政府接下来是否会颁布强制性法令要求剩下的人接种疫苗，目前看来这是一个方案，但可能性很低。</p>
-<p>相比之下接下来几个月中国说不定真的开始强制了。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/DataLeak2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/DataLeak2/" class="post-title-link" itemprop="url">信用卡盗刷</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-07-27 00:00:00" itemprop="dateCreated datePublished" datetime="2021-07-27T00:00:00+08:00">2021-07-27</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>早上跟客服打了一个小时电话，一开始以为是单纯的误扣款，最后才发现自19年以来一直有一个Amazon账号用我的信用卡信息买了十几个月的prime会员，每月重复扣款，其他什么都没买。瞬间脑补了一系列黑产链，万万没想到自己也成了肉鸡。prime会员能干嘛呢？首先是prime video和其他各种云服务，然后是twitch订阅，估计所有价值都被薅了一遍。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/DataLeak2/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/DataLeak/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/DataLeak/" class="post-title-link" itemprop="url">对社工库bot的使用和思考</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-07-20 00:00:00" itemprop="dateCreated datePublished" datetime="2021-07-20T00:00:00+08:00">2021-07-20</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>前几天了解到一个社工库bot的存在，在telegram上直接搜索就能得到反馈。一开始看见很震惊，首先查找个人信息，手机号输出后会给出当年注册的QQ号和微博，微博早已抛弃，但是继续查询QQ能直接找到qq群里的各种关系，通过小学初中高中加的学校群的备注查到个人真名。这还是好的，如果知道我早年的邮箱地址，基本上所有的早期网络冲浪信息都暴露，包括用户名，最常用密码，甚至还有真实世界的地理信息，虽然不准确，但大致区域已经得到定位，最后甚至连当年在美国的地理ip都被记录。查完一圈之后毛骨悚然，虽然说获取这些信息还是有一定门槛，但是被有心人查询还是能够通过各种蛛丝马迹联系许多出来。比较绝望的一点是这里面大部分的信息都已经是永久录入，现在做出任何改变，也无法改变这个信息库本身的内容。而且如果一次性输出过多相关性内容，还有可能被系统反录入，进一步对你的个人信息进行更新。这一点我还是长了个心眼，用了毫无关联的小号查询。细想一下，这种返乡录入的可能性真就像尼采说的那样：</p>
-<blockquote>
-<p> 看向深渊的时候，深渊也在看着你。</p>
-</blockquote>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/DataLeak/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/062221/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/062221/" class="post-title-link" itemprop="url">近期碎碎念</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-06-22 00:00:00" itemprop="dateCreated datePublished" datetime="2021-06-22T00:00:00+08:00">2021-06-22</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="6-22"><a href="#6-22" class="headerlink" title="6.22"></a>6.22</h1><p>早上刚看的一段原子习惯，提到主动塑造环境以及一个地方分配一个特定任务能够进一步提高效率和专注度，减少分心的可能。电子空间也应如此，但是技术时代手机电脑的十项全能使得工作娱乐界限模糊。</p>
-<p>就突然想到Mac的好，因为基本上不能玩游戏，所以主要就是用来工作学习相关，游戏主机放在客厅专门用来娱乐。</p>
-<p>以及现在的各种新型电子书，不断的做加法，安卓系统，记笔记，画素描，甚至有人把能够安装微信当做卖点，而Kindle其他什么都干不了，只能拿来看书。</p>
-<p>又想到Windows笔记本因为适配游戏，所以当代一部分年轻人可能游戏工作学习都在一台电脑上完成，真正需要生产力时看见英雄联盟在桌面上点一下就能打开，想着先玩一盘而分心。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/062221/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/PS4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/PS4/" class="post-title-link" itemprop="url">PS4维修</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-31 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-31T00:00:00+08:00">2021-05-31</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>今天修ps4的过程也很快乐，感受到了心流。</p>
-<p>很早之前ps4光驱就无法正常吸光盘，只有开机时才能吸入。一直懒得修，平时也用的不多。直到最近准备挂闲鱼，于是又把机器打开，这次整个光驱都坏掉，光盘一放进去就开始疯狂怪叫。</p>
-<p>搜了一些教程，首先就是把机器拆开，本来没啥难度，但是我的机器款式比较新，主板部分采用了五六个无纹黑塑螺丝，看了一圈只能强制破坏，一开始用裁纸刀锯，太费劲，然后发现虎头钳直接夹碎就好，相对来说更容易。把主板拆开露出光驱和风扇，能看见基本上没有积灰，光驱各个部件也都正常，上下对比了一圈终于发现了问题，把光驱组件拆下来之后反面竟然有一个弹簧吸付在反面，这绝对不是它应该出现的位置，原来是因为某种原因从最上方的卡口弹出来，好在中间有磁铁被吸住。一番折腾安装复位，接通电源插入光盘，OK一切恢复正常！彼时感觉特别好，成就感油然而生。</p>
-<p>结果，一切复位之后有一颗螺丝死活安不回去，简直就是拆装机器的cliche了😂</p>
-<p>以及warning，拆装过程中千万注意断电，我就是安到一般插电调试，紧接着直接拆部件手指伸到主板里面，大拇指被电的酥麻酥麻的。</p>
-<p>最后修好之后反而有点舍不得卖了，当个家用netflix播放器也挺好…</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/PS4/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
+          <div class="row mt-2">
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/WEIBO/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/WEIBO/" class="post-title-link" itemprop="url">微博炸号风波</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-13 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-13T00:00:00+08:00">2021-05-13</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>这次微博炸号莫名其妙，恢复的也莫名其妙。看见网友介绍出现20179错误后基本上就是永封，如果能够找回也是通过第三方平台投诉，至少小半个月才找回。结果我的号从昨天中午无法登陆，到半夜就恢复正常，24小时都不到。刚刚去互联网服务投诉平台撤销申诉，人家甚至都还没开始受理这桩。</p>
-<p>推测是某些关键字或者操作触发了系统自动封号流程，误伤面比较大所以人工提前介入并且批量解封。</p>
-<p>这是我用微博这么多年来第一次体验“炸号”，虽然一切内容皆有备份，本质上也是一个小号，但是能够回来还是很高兴，至少省了些麻烦和可能产生的负面情绪。</p>
-<p>经此一役开始权衡微博对我个人的意义，最后得出结论这依然是一个利大于弊的平台。维持推特主号+微博碎碎念是最理想的组合，微博放宽字数和图片限制之后就成了一个小型博客和非隐私灵感记录器。这一点比推特强。另一方面，虽然没有任何一个公共平台能够做到完全言论自由，但是推特提供的相对自由远远大于微博，对我来说已经足够。</p>
-<p>最后，微博炸号很少会具体告知到底是哪一条内容触犯了哪一条规范，这种黑箱操作无形之间让之后依然想留下的用户开始进一步审查自己的表达，希望我不会。</p>
-<p>长歌当哭，击节鸣鼓。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Creator/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Creator/" class="post-title-link" itemprop="url">创造者经济</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-08 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-08T00:00:00+08:00">2021-05-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>TE这一期<a target="_blank" rel="noopener" href="https://www.economist.com/briefing/2021/05/08/the-new-rules-of-the-creator-economy">简报</a>关注创造者经济，随着越来越多社媒用户意识到自己创造内容的经济价值，各大社交平台也开始迎合需求推出各种付费会员服务，创造的形式包括写作，（视频）直播，图片等等。出现了类似substrack这样的专业写作订阅平台，FB和twitter也在积极探索付费内容（听说twitter这几天刚推出了打赏功能。）</p>
-<p>平台收取10到15%的手续费，而头部用户往往拥有更大的议价空间。目前的情况是各大平台抢着争取头部用户，形成一个卖方市场。</p>
-<p>但创造者经济依然是赢者通吃，大部分创造者只能勉强维持生计，只有头部创造者才能年入百万。文章提到了KK那句经典名言：只要每年有1000个订阅者愿意为你的内容花100刀订阅，你就可以以此谋生。</p>
-<p>小编也很懂，开头举的例子是拥有一双美腿的女孩，疫情期间失业开始在instagram上吸粉，然后转入onlyfans，每月50人付费10刀获取会员内容，此外还出售unwashed socks原味丝袜，起价10刀每多穿一天加10刀。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Creator/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/SoftwareRouter/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/SoftwareRouter/" class="post-title-link" itemprop="url">网关路由搭建</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-07 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-07T00:00:00+08:00">2021-05-07</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>折腾了两小时终于设置好了家庭网关路由。</p>
-<p>回国之前本来准备买一个性能强一点的路由器，通过在路由器中装第三方插件完成路由翻墙。后来查了一下发现这种方法最大的局限是路由器的性能，就算是几百刀的路由器芯片性能也极其有限，而且大部分路由器都不是为了翻墙而设计的，处理各类复杂规则起来都比较吃力。除此之外发烧友尝试魔改路由器，安装更高性能的模块。最后发现了目前最佳的家庭设备翻墙方案，是网关路由翻墙。</p>
-<p>就算是最普通的电脑，其芯片算力也远超路由器，处理起翻墙规则更加轻松。硬件层面需要一台Mac，一根网线，一个网线转接口，为此11年买的MBA重新上岗再就业。软件层面是Surge，专门买了Surge 4。</p>
-<p>参考的设置教程是<a target="_blank" rel="noopener" href="https://blog.qust.me/posts/macsurgerouter/">这一篇</a>，讲的非常详细。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/SoftwareRouter/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Bilibili/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Bilibili/" class="post-title-link" itemprop="url">B站缺点</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-07 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-07T00:00:00+08:00">2021-05-07</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>bilibili推出的”一键三连”是一个错误的交互示范，毁掉了收藏夹应有的作用。所有的up主都恳求或怂恿观众一键三连，投币点赞没问题，但大部分视频并没有收藏价值。最后导致默认收藏夹里全都是杂音，真去找某个想重新看的视频时反而要翻半天。</p>
-<p>前几天看一个电饭煲懒人饭视频，几十万的播放量，看起来成品也挺不错，差点就跟着做了，结果评论里全都是跟着做完跑回来骂的，因为这样把生米和肉菜放一起煮最后大概率会出现夹生饭。</p>
-<p>有点赞没有Downvote导致大家只能默认视频质量和其播放量成正比。</p>
-<p>对比之下看看YouTube 2018 Rewind，2亿点击量，然而被疯狂downvote😂</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Bilibili/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/TDS/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/TDS/" class="post-title-link" itemprop="url">关于水质</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-05 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-05T00:00:00+08:00">2021-05-05</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>之前花了大几千换了一套家庭净水设备，号称采用了啥反渗透膜技术，出水可以直接饮用，之后家庭洗菜蒸米烧水都用这个出水口接水。但一直没有什么直观的感受，尤其是没有对比。因为稍微不同的水质对于味觉迟钝的人来说可能真的不会有太大区别。</p>
-<p>直到昨天买了一只TDS水质检测笔。</p>
-<blockquote>
-<p>TDS是total dissolved solids的缩写，翻译成中文是：「溶解性总固体」，测量单位为毫克/升（mg/L）,它表明1升水中含有多少毫克溶解性固体，包括可溶解性盐类（钙离子、镁离子等）、离子型有机物（醋酸铵、硫酸钠等）、部分重金属离子（铬、锌、铅、铜等）。TDS数值反映的是水中溶解性物质含量多少，数值越低就代表水中溶解性物质含量越少。</p>
-</blockquote>
-<p>需要澄清的是TDS并不是衡量水质的唯一标准，除此之外氯气含量，细菌含量，都是可以参考的数据。但是TDS测量是目前民用最直观的体现。附一张数值参考图：</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/TDS/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/RAW/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/RAW/" class="post-title-link" itemprop="url">摄影后期的魔力</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-05-04 00:00:00" itemprop="dateCreated datePublished" datetime="2021-05-04T00:00:00+08:00">2021-05-04</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>最近开始更加主动的尝试RAW格式后期，感叹同一张照片不同的处理能够有如此大的区别。后期的过程可以非常流水线化，但是如果想要施加创意，时间可以也可以流逝的非常快。但这个过程是享受的，后期也是一种创造的过程。当然这种享受感来自业余爱好的清闲，如果作为职业估计也享受不起来了。</p>
-<p>同时也在思考，RAW添加各种预设，和手机滤镜其实也没啥区别，可能也就是能够保留更多细节，但本质上都是快捷方式，如果只用预设，那么很有可能会导致只知其然不知其所以然。</p>
-<p>目前还在很粗浅的应用Lightroom，后期打算去看一些教程。目前自己摸索的工作流程是：</p>
-<ol>
-<li>裁剪</li>
-<li>白平衡，相机预设，自动调光</li>
-</ol>
-<ul>
-<li>人像可以尝试创意模式，景色手动微调即可</li>
-<li>微距摄影，可以适度增加清晰度</li>
-<li>人像去背景嘈杂使用touchretouch最方便</li>
-</ul>
-<p>贴一些最近拍的照片：</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/RAW/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Password/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Password/" class="post-title-link" itemprop="url">密码管理</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-04-20 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-20T00:00:00+08:00">2021-04-20</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>我的密码管理做的真的很烂，大量早年间使用的弱密码充斥于着各大服务平台，随便一个交叉比对就可能破解。如果就这么放任不管，很可能成为一个（带着预见性的）黑天鹅事件。</p>
-<p>但是如果把几十上百个简单密码全部换掉工作量太大。应该做的是找出最核心的服务，比如微博推特支付宝微信谷歌苹果微软索尼亚马逊豆瓣网银账户等等，全部更新一遍。一直不想用苹果自带的强密码生成器是因为依赖性太强了。到底是找一个全平台的密码服务，还是想一个master password出来。但是每个服务依然只用一个密码总还是有风险的。</p>
-<p>最后的解决方案是订阅了1Password，想出了一个独立的主密码，但不得不说1Password也许优势只是全平台，在苹果生态中还是原生的keychain最方便。所以另一方面也开始逐步更换服务密码，根据一首喜欢的唐诗结合拼音英语大小写和标点符号创造了一个X位数的基准密码然后根据服务名称添加独立的后缀。不过这个更换过程是缓慢的，希望能够一步一步完成。</p>
-<p>其实创造一个全新密码也是一件有趣的事情，我记得从前最常用的密码来源是H的密码组合，后来破译了他密码的含义，仿造出一个类似的存在。这次创造的新Master密码则从我最钟爱的小说典故中寻找灵感。而独立密码，像之前说的一样，是结合喜欢的诗歌。此类密码一般的暴力推演估计很难破解，只能靠交叉撞库和社工手段。之所以不选择随机生成的密码是对技术依然存有抗拒。最后，也许对普通人来说最保险的记忆方式就是把密码记在书桌上的小本本上。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Wonderland/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Wonderland/" class="post-title-link" itemprop="url">世界末日与冷酷异境</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-04-16 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-16T00:00:00+08:00">2021-04-16</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h1><p>花了4天时间看完这一本，应该是村上春树所有作品中评价相当高的一部。这是他1985年，早期的作品。双线叙事，奇谲的想象力，精确的描写，巧妙的比喻，对个人内心的探索，都让我个人对这一部也有很高的评价。但心中最佳还是奇鸟行状录。</p>
-<p>我之前开玩笑的说每当缺歌听了就会找一部村上的书看，其实却是如此，村上对于音乐，尤其是爵士，古典和Bob Dylan爱的深沉。在奇鸟行状录中我很喜欢那首贼喜鹊，这一部中我还在探索，目前发掘到Duran Duran的几首歌不错。除了音乐之外，村上也在书中夹带了大量的文学名著讨论，这一部里提到的尤其多的红与黑和马拉卡卓夫兄弟，其中[[卡拉马佐夫兄弟]]这一本我真的有点想看，感觉也会像是百年孤独一样的大作，之前有人评论说这一本看完之后就再也不想看小说了。就像是五岳归来不看山一样。村上显然也知道如今阅读经典文学的人越来越少，也这书中提到了这一点。另外想起来村上在[[挪威的森林]]里反复提及的作品是[[了不起的盖茨比]]，这本书我也非常喜欢，但我不得不承认自己最开始实在电影院看的电影。没有像大多数美国孩子一样在高中课本中就学到它。内容不谈，这本书里的英文描写极其优美，文字之精确令人叹服。</p>
-<p>已经看了不少本村上的文字，有一种感觉是每一本书中的主角都是同一个人，也许就是村上本人的化身，只不过年龄段不同。因为这些主角有着非常明显的共性：离群索居，阅读了大量的书籍，听了大量的音乐，如果是成年则也享受喝酒，性经验丰富，有着规律的作息，人生事业基本没有获得普遍认可的成功，有自毁倾向，等等等等。他们都会遇见可爱的，迷人的女孩或女性。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Wonderland/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Light/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Light/" class="post-title-link" itemprop="url">智慧生物的进化最终猜想</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-04-14 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-14T00:00:00+08:00">2021-04-14</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>看Dayone回顾，发现一篇2014年写下的文字，当时我还没有看过2001太空冒险，竟然不知从何处得到的灵感，已经得出人类进化的最终发展趋势。现在再来梳理的话，首先是现在这样的有机生命体，征服银河系的过程中，需要外骨骼来适应异星环境，人类逐渐机械化，最终除了自我意识之外全部机械化，直接上传意识到机械中。又过几万年至几百万年，最终的演化方向是纯粹的能量，或许就是下文中提到的，光。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Light/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Mask/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Mask/" class="post-title-link" itemprop="url">从蝙蝠侠引出的中西面具差异思考</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-04-12 00:00:00" itemprop="dateCreated datePublished" datetime="2021-04-12T00:00:00+08:00">2021-04-12</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>起因是开始玩蝙蝠侠阿卡姆骑士，几年前的旧作，但是画质在我看来非常不错。开幕有一段蝙蝠侠升级装甲的动画：</p>
-<div id="dplayer16" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer16"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FH3ZwLMfphO.mp4?alt=media&token=44a167cc-909c-43a9-bfc5-ab496c957efc"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
-
-<p>看见升级后蝙蝠侠嘴巴还是露在外面吐槽之魂又燃起了，尽管装甲如此酷炫，但是嘴巴鼻子那么大一块暴露在外面，分分钟被爆头好嘛…</p>
-<p>第二天研究了一下发现</p>
-<p>中西方英雄侠客在大众传媒中面部遮挡对比，中国一般遮嘴巴露眼睛，西方一般遮眼睛露嘴巴。</p>
-<p>首先这两种都只是影视美化，根本起不到隐秘身份的作用，毕竟主角是要展示外形美的。真正的夜行衣，只露出眼睛，最大程度隐匿身份。</p>
-<p>其次西方遮眼睛的传统可能源自侠盗佐罗的面具设计，后者灵感来源是假面舞会，而舞会是需要吃东西的，面具主要的目的是增添情趣。</p>
-<p>另外一个可能是亚洲人更习惯戴口罩，欧美则是戴墨镜，所以从颜文字也能看出亚洲人喜欢用^_^眼睛传递信息而欧美颜文字则是:)用嘴巴。</p>
-<p>此外露嘴巴很重要的一点是：方便kiss。</p>
-<p>回到蝙蝠侠面具上，首先这是传统，一直以来形象就是如此，漫画中有特殊场合比如毒气和异星球老爷也都都戴上了全包裹面罩。其次蝙蝠侠主要以智力和侦探取胜，大部分时刻都处于掌控状态，蛮力用的少。以及脑补的：露出嘴巴，展现自己人性的一面，也是“不杀准则”的一部分体现。</p>
-<p>最后，这个问题其实Joker问过，老爷也回答了。</p>
-<blockquote>
-<p>Joker：你为啥露嘴巴？</p>
-<p>Batman：为了嘲笑你。</p>
-</blockquote>
-<p>真爱啊</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Orange</p>
-  <div class="site-description" itemprop="description">après moi, le déluge</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">183</span>
-          <span class="site-state-item-name">posts</span>
+    <div class="eight columns">
+      <p id="madewith">Made with ❤ and
+        <a class="footer-link icon" href="https://hexo.io" target="_blank" style="text-decoration: none;" rel="noreferrer" aria-label="Hexo.io">
+        <svg class="hexo svg-hov" width="14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
         </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">categories</span>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">76</span>
-        <span class="site-state-item-name">tags</span>
-      </div>
-  </nav>
+        
+        at <a href="https://en.wikipedia.org/wiki/Earth" target="_blank" rel="noreferrer">Earth</a>.</p>
+        
+    </div>
+
+    <!-- Sepcial thanks to https://simpleicons.org/ for the icons -->
+    <div class="four columns mb-3 posisi" >
+      
+      <a class="ml-0 footer-link icon" href="https://github.com/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="GitHub">
+        <svg class="github svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      
+
+      
+      <a class="ml-0 footer-link icon" href="https://linkedin.com/in/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="LinkedIn">
+        <svg class="linkedin svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      
+
+      
+      <a class="ml-0 footer-link icon" href="https://twitter.com/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="Twitter">
+        <svg class="twitter svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
+      </a>
+      
+
+      
+      <a class="ml-0 footer-link icon" href="https://instagram.com/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="Instagram">
+        <svg class="instagram svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+      </a>
+      
+
+    </div>
+  
 </div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="mailto:hi@orange42.cc" title="E-Mail → mailto:hi@orange42.cc" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-  </div>
 
-
-
+        </div>
       </div>
 
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
 
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fas fa-moon"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Orange</span>
-</div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
   </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/three-waves.min.js"></script>
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
+  <script src="/js/nanobar.min.js"></script>
+  <script>
+    var options = {
+      classname: 'nanobar',
+      id: 'myNanobar'
+    };
+    var nanobar = new Nanobar(options);
+    nanobar.go(30);
+    nanobar.go(76);
+    nanobar.go(100);
+  </script>
 
 </body>
+
 </html>

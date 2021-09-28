@@ -1,1606 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/css/main.css">
+  <!-- Minima -->
+  <!-- Hexo theme created by @adisaktijrs -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL XiaoWei:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="après moi, le déluge">
-<meta property="og:type" content="website">
-<meta property="og:title" content="世界陆沉">
-<meta property="og:url" content="http://example.com/page/8/index.html">
-<meta property="og:site_name" content="世界陆沉">
-<meta property="og:description" content="après moi, le déluge">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Orange">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://example.com/page/8/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'en'
-  };
-</script>
-
+  
   <title>世界陆沉</title>
   
+  <link rel="canonical" href="http://example.com/page/8/">
+  
+  <meta name="description" content="après moi, le déluge">
+  
+  
+  <meta name="author" content="Orange">
+  
+  <meta property="og:image" content="http://example.com/images/thumbnail.jpg">
+  
+  <meta property="og:site_name" content="世界陆沉" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="世界陆沉" />
+  
+  <meta property="og:description" content="après moi, le déluge">
+  
+  <meta property="og:url" content="http://example.com/page/8/" />
 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="世界陆沉">
+  
+  <meta name="twitter:description" content="après moi, le déluge">
+  
+  
+  <meta name="twitter:image" content="http://example.com/images/thumbnail.jpg">
+  
+  <meta name="twitter:url" content="http://example.com/page/8/" />
 
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Preload fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preload" href="../fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+<link rel="stylesheet" href="/css/normalize.css">
 
+  
+<link rel="stylesheet" href="/css/skeleton.css">
 
-  <noscript>
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+<link rel="stylesheet" href="/css/prism-dark.css">
+
+  
+<link rel="stylesheet" href="/css/prism-line-numbers.css">
+
+  <!-- User css -->
+  
+  
+<link rel="stylesheet" href="/css/user.css">
+
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
+  a:not(.icon) {
+    text-decoration-color: #0FA0CE;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      #0FA0CE 50%
+    );
   }
+  blockquote {
+    border-left: 8px solid #0FA0CE;
+  }
+  .nanobar .bar {
+    background: #0FA0CE;
+  }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #0FA0CE;
+    border-color: #0FA0CE;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #0FA0CE;
+  }
+</style>
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
+  <!-- Google Analytics (With Privacy Settings On)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
 
-</head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
+        <div class="row">
+  <div class="two columns" style="max-width: 50px">
+    <h1 class="mt-2 mode">
+      <div onclick=setDarkMode(true) id="darkBtn">🌑</div>
+      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</div>
+      <script >
+        if (localStorage.getItem('preferredTheme') == 'dark') {
+          setDarkMode(true)
+        }
+        function setDarkMode(isDark) {
+          var darkBtn = document.getElementById('darkBtn')
+          var lightBtn = document.getElementById('lightBtn')
+          if (isDark) {
+            lightBtn.style.display = "block"
+            darkBtn.style.display = "none"
+            localStorage.setItem('preferredTheme', 'dark');
+          } else {
+            lightBtn.style.display = "none"
+            darkBtn.style.display = "block"
+            localStorage.removeItem('preferredTheme');
+          }
+          document.body.classList.toggle("darkmode");
+        }
+      </script>
+    </h1>
   </div>
 
-  <div class="site-meta">
+  <div class="six columns ml-1">
+    <h1 class="mt-2">
+      Hi Folks.
+    </h1>
+  </div>
 
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">世界陆沉</h1>
-      <span class="logo-line-after"><i></i></span>
+  <div class="twelve columns">
+    <div class="row">
+      <div class="nine columns left">
+        <a href="/">Home</a>
+        
+          
+          <a href="/Works" class="ml">Works</a>
+          
+        
+          
+          <a href="/About" class="ml">About</a>
+          
+        
+        
+          
+            <a href="mailto:test@test.test" target="_blank" class="ml">Email</a>
+          
+        
+      </div>
+    </div>
+    <hr style="margin-bottom: 2.6rem">
+  </div>
+</div>
+
+        <div class="trans">
+          <div class="row">
+  <div class="column">
+    <!-- Main information, edit it on theme/_config.yml -->
+    <h2 class="mb-2">I am Adi Sakti Jrs</h2>
+    <p>A student and web developer from Indonesia 🇮🇩</p>
+    <p>This is Minima, an undoubtedly simple and lightweight dark/light mode theme for Hexo. I created this from scratch using Skeleton CSS boilerplate. It only uses CSS and Vanilla JS, without using unnecessary third-party &#39;render-blocking&#39; libraries! 😁</p>
+  </div>
+</div>
+
+<h3>Recent Posts</h3>
+
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">Sep 26, 2021</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/TheRemainsOftheDay/" class="">
+      
+        《长日将尽》
+      
     </a>
-      <p class="site-subtitle" itemprop="description">夜色温柔</p>
   </div>
+</div>
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">Sep 25, 2021</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/202109/" class="">
+      
+        9月碎碎念
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">Sep 21, 2021</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/MiddleSchool/" class="">
+      
+        几则初中回忆
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">Sep 2, 2021</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/Tsushima/" class="">
+      
+        对马岛上的两处场景
+      
+    </a>
   </div>
 </div>
 
 
+<h4> <a href="/archives">All Posts</a></h4>
 
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fas fa-anchor fa-fw"></i>Home</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-  <div class="reading-progress-bar"></div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/EUImmigrationPolicy/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/EUImmigrationPolicy/" class="post-title-link" itemprop="url">欧盟难民政策</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2015-03-22 00:00:00" itemprop="dateCreated datePublished" datetime="2015-03-22T00:00:00+08:00">2015-03-22</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>大量来自非洲和中亚的难民想尽各种方法偷渡入欧洲。主流媒体和政府的态度都以部分接纳为主。TE更指出老龄化的欧洲需要一些新鲜劳动力的注入。下图是难民偷渡方式的分析：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/423d.png"><br>地中海提供了无尽的希望，但也会无情的吞噬生命。最近一张溺亡后被冲到沙滩上幼童照片更是激起全世界的怜悯。无论国家政策如何，年轻的生命绝不该如此失去。其他类似的大批难民在偷渡过程中死亡的新闻不胜枚举。</p>
-<p>下图是全世界几个主要移民接收国对移民的处理方式：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/123234qwef.png"><br>不得不说瑞士德国这些国家还是秉持着日耳曼血统中最珍贵的存在。但开明的移民政策（尤其是申根国家内人员流通性大得特点）被越来越多的新移民当做漏洞一下利用。</p>
-<p>抛开怜悯心的话，从非洲和中亚逃来的难民简直一无是处。以下是节选自一篇愤慨的网友评论：</p>
-<blockquote>
-<p>Because the political class and magazines like this prefer to hide behind political correctness and ignore what’s going on. They disregard the street harassment women in Birmingham face walking down the street in a skirt. They ignore the massive increase of rapes this past decade among Swedish women in Stockholm. They bluster when shown that 70% of France’s prison population is Muslim. That half of all British muslim men and 75% of all muslim women are unemployed. That 80% of Sweden’s welfare budget goes to foreigners or foreign born. That as many as a quarter of all Muslims in the west support terrorism and suicide attacks in the name of Islam. They love to pretend that these immigrants are nothing more than job seeking labor-bots without their own cultures and compulsions, who won’t change the fabric of society, and will simply add to the economy.</p>
-</blockquote>
-<blockquote>
-<p>Sorry, the regular people around the West see exactly what is going on. They saw the Italian aid worker was gang-raped at a migrant center two weeks ago. They saw that a bunch of Muslims migrants attacking police and trying to kill a man in Germany after he tore pages out of the Quran last week. They know 800,000 migrants to Germany alone in one year is not sustainable or healthy. They aren’t stupid. They aren’t blind. And if you continue to lie to them, you will lose all legitimacy, and things will get way worse before they get better.<br>People have a right to know the truth about what is going on. People have a right to preserve their cultural heritage and community cohesion. And people have a right to not spend their money on migrants who far too often mooch off of the dole.</p>
-</blockquote>
-<p>这也侧面说明了为什么这几年在英国，瑞士，德国等发达欧洲国家采取反对移民甚至退出欧盟立场（特指英国，卡梅伦已经宣布2017年前举行全面公投决定是否退出欧盟）的政党支持率越来越高。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/NetNutrality/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/NetNutrality/" class="post-title-link" itemprop="url">A worry for the Internet</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2015-03-22 00:00:00" itemprop="dateCreated datePublished" datetime="2015-03-22T00:00:00+08:00">2015-03-22</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>The principle of blindly delivering packets of data, regardless of origin, destination or contents, is welded into the network’s technical foundations. This, more than anything else, explains why the internet has become such a fountain of innovation.</p>
-<p>Yet with the internet becoming more crowded and traffic-management tools improving, this principle—known today as “network neutrality”—is under threat.</p>
-<p>They fret that rent-seeking network operators would abuse their market power. Prices would shoot up for those using the fast lanes; everyone else would get much cheaper, but much crummier, service. </p>
-<p>The best way to do this is to encourage vigorous competition in all parts of the internet, particularly between broadband providers, so that none can become a bottleneck and exploit that position.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/PoliceandCrime/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/PoliceandCrime/" class="post-title-link" itemprop="url">黑人，警察，种族</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2015-01-09 00:00:00" itemprop="dateCreated datePublished" datetime="2015-01-09T00:00:00+08:00">2015-01-09</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>一名黑人在沃尔玛购买一只来复枪，拿在手上接了个电话。在他旁边的孩子和母亲没有任何威胁感。但此时窗外的警察看见此景，认为黑人在持枪威胁该对母子，并随之开枪杀死黑人。母亲也因惊吓过度死于突发心脏病。去年九月联邦法院决定不向该警察提起诉讼。</p>
-<p>美国法律执行系统存在诸多弊病。这些弊病随着之前的弗格森案再一次被推向镁光灯前。执法过程中的种族偏见是引爆点。美国警察越来越武力化的装备并不是关键点。数据显示13年至少458人死于美国警察抢下。不能忽视的是民间有三千万只枪在流通，警察在面对任何一起可能的犯罪时深刻的明白如果自己不扣下扳机有可能就退休无望了。同时数据显示13年有46名警察被持枪射杀，42%射杀者为黑人。禁枪的可能性在目前看来很渺茫，但依然有方法能缓解执法的压力重拾公民对警察的信任。（这其中有一种思维的转变很重要。在当今的主流传媒宣传下，警察视他们的工作非和平使者而是打击罪恶英雄。）</p>
-<p>第一个是执法的透明化。完成这一点可能需要借助技术性装备的帮助。纽约警方首先使用了头戴式摄像机。若有了弗格森案也不会如此疑点重重。同时警察也应该向联邦政府提交自己杀死的人数。</p>
-<p>第二点是增加警方的责任感。此点得从问责部门开刀，当前警察的问责机制通常担任判决的地方行政官平日里和警察都有同僚性质的关系。他们接下来的仕途需要这些本地警察的支持。所以可以想象的是这其中的可能存在的偏见。引进第三方的裁决者能有效加大警察的执法压力。</p>
-<p>第三点是警察的去军事化，通过立法减少他们持有重型武器的频率和规模。此点当前很难实现，五角大楼应作出相应决策。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/ChineseNuclearPlant/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/ChineseNuclearPlant/" class="post-title-link" itemprop="url">中国核电站</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2015-01-06 00:00:00" itemprop="dateCreated datePublished" datetime="2015-01-06T00:00:00+08:00">2015-01-06</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>中国空气污染严重，煤发电是重要因素。在当前经济高速发展时期，发电量永远供不应求，预计2030年发电量得一倍于当前水平。此种大环境下中国寻求更清洁更有效率的核能发电。可以预见未来有很多座新核电站将拔地而起。但其中不乏风险。其风险源于体制问题，建设的同时相关的标准和法律法规并未跟上，导致其潜在的风险不小。中国为了自主创新强制启用自己的标准和忽视欧美成熟的设施和体系也被视作潜在隐患。但长期发展下去对中国是有好处的。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/ONAPEC/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/ONAPEC/" class="post-title-link" itemprop="url">关于APEC</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2015-01-02 00:00:00" itemprop="dateCreated datePublished" datetime="2015-01-02T00:00:00+08:00">2015-01-02</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>APEC是习近平向世界展示中国实力的重要窗口，这是继08年奥运会后第二次有如此多国家首脑莅临中国。</p>
-<p>基于这一点，官方所做的一切限制措施，包括限行，延缓供暖，延缓快递等，都无可厚非。也创造了“APEC蓝”这一新奇现象。如今习近平已在国内政治格局里站稳脚跟，作为继邓小平之后最有存在感的国家主席，他已经开始着力于一步步试图在世界政坛中树立个人魅力。</p>
-<p>奥巴马和习近平的会面是焦点部分，中美在中国周边领土上有纠纷，但在经济上如胶似漆。此次交流重点除了经济之外还有环境保护和维护国际秩序，其中中国政府刚刚宣布播出一千两百万美元用于遏制埃博拉疫情的扩散。尽管两人交谈甚欢，但暗流从未停止涌动。年初中国牵头的亚洲发展银行，东海禁飞区都在暗示着些什么。某些推测或许为时尚早，但历史的变革点也许就始于此。</p>
-<p>除此之外，中国对日本的态度日渐冷淡，此次两人握手时的表情已经在社交网站上传的沸沸扬扬。其实说实话，习和安倍能握上手，在当前中日关系下，都能算是正面进展了。</p>
-<p>中国和俄罗斯是对好基友，尽管历史上撕逼不断，但当前利益重合处远多于不合处。13年5月习近平当权后第一次国事访问就去的是莫斯科，当即就签下了最大一单天然气进口合议。同时据说还签署一项关于共同促进网络安全的协议。在联合国里，中国依然支持俄罗斯的一切决议，包括援助叙利亚和克里米亚和乌克兰的地域冲突。</p>
-<p>有一点可以肯定是，世界舞台上，中国将会（或已经）成为中心，每一个国家都不得不考虑中国的利益所在。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/OnSandboxGame/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/OnSandboxGame/" class="post-title-link" itemprop="url">沙盒类游戏的魅力</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-12-20 00:00:00" itemprop="dateCreated datePublished" datetime="2014-12-20T00:00:00+08:00">2014-12-20</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>沙盒类游戏给人以极大的游戏自由度，基本可以理解为在游戏设定的世界里为所欲为。此类游戏一般以第一人称为视角，地图极大（有的甚至就无限地图）。<br>Minecraft是一款真正字面意义上的沙盒游戏因为它的地图是无限生成的。说不得个人在此游戏已经花费了数不清的时间了。Minecraft挑人，不喜欢的人就是不喜欢，喜欢的人进去就出不来。我还记得第一个生存模式下的夜晚没有床没有火，只听见临时堆起来的木屋外传来僵尸的低沉吼叫，吓得鸡皮疙瘩直起。也记得挖到第一颗钻石时的欣喜。令人抓狂的是在地底下挖了几个小时矿后于满载而归的路上被淹死，被怪打死，摔死，反正一往回走就立flag。最惨的是被岩浆烧死，其他的方式死了至少还有机会把物品捡回来，死在岩浆里那可真是连渣都不剩。一般出现这种情况我都立刻删游戏，几个星期几个月都不玩，后来某一天又突然来劲了，下回来重开一个世界，就是这么任性。前段时间第一次和朋友玩联机，才体验到另一种快乐，从前一个人的孤独世界终于有了小伙伴的加入，至此日常中最枯燥的看书烧煤盖房子都有了新的乐趣。两人一起下矿洞探险，一起去地牢刷怪，打开作弊模式还能瞬间移动。因为都是菜鸟嘛，偶尔作作弊也是可以怡情的。</p>
-<p>Minecraft以Java为运行平台，像素画风，虽然非常吃资源，但原版大小估计不到10M。另外两款则是更加主流意义上的沙盒游戏。GTA和刺客信条。这两款游戏各自发展大概都有5、6年了，画质和剧情基本上已经达到当前的巅峰水平。游戏里的场景还原越做越真实，其细节出对光影的掌控非常接近现实世界。在GTA里就算什么都不做，弄辆敞篷跑车沿着加州海岸线开往附近山地就已经赏心悦目，彼时夕阳西下，感觉被整个世界温柔乡相待。同样在刺客信条里中世纪的罗马、巴黎、佛罗伦萨，殖民时代的美国，所有的信息都尽可能的还原。听说下一代要把场景搬到19世纪维多利亚时代的伦敦，想想就老激动了。彼时一定要爬到圣保罗大教堂上俯瞰全城，偷偷溜进议会大楼看看议员们的日常，最重要的是找到我现在住的这一带看看一个多世纪以前会是怎样一幅光景。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/FrankfurtAirport/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/FrankfurtAirport/" class="post-title-link" itemprop="url">法兰克福机场琐记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-12-15 00:00:00" itemprop="dateCreated datePublished" datetime="2014-12-15T00:00:00+08:00">2014-12-15</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>在法兰克福飞往成都的候机室。学生很少，大部分是中老年人。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/FrankfurtAirport/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/British%20Museum/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/British%20Museum/" class="post-title-link" itemprop="url">大英博物馆</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-12-10 00:00:00" itemprop="dateCreated datePublished" datetime="2014-12-10T00:00:00+08:00">2014-12-10</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>每天都路过，可惜一共只去了三次。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/British%20Museum/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/OnPoeticLife/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/OnPoeticLife/" class="post-title-link" itemprop="url">关于文艺心的丧失</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-12-07 00:00:00" itemprop="dateCreated datePublished" datetime="2014-12-07T00:00:00+08:00">2014-12-07</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>很多次提到自己曾经是一个很文艺的人，至少有一颗外露的文艺心。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/OnPoeticLife/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Noteapps/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Noteapps/" class="post-title-link" itemprop="url">软体杂记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-12-05 00:00:00" itemprop="dateCreated datePublished" datetime="2014-12-05T00:00:00+08:00">2014-12-05</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>买了一只触控笔，无意中发现Bamboo的经典款打折打到7镑，原价30镑。喜气洋洋的买了。</p>
-<p>这段时间研究太多app，笔记类软件更加细化。平日网页摘抄依然用Evernote，写文章写Paper改用Ulysses，iOS平台配用云同步的Daedalus。同时在学习使用Markdown，可视化效果非常直观。</p>
-<p>Ulysses即尤利西斯，即奥德修斯，特洛伊战争中提出木马屠城的家伙。足智多谋，英雄了得。战争后在回家的海路上花了十年同各方神仙妖怪作战，战友们基本上都挂掉。他的妻子Penelope是大美人，在众人都以为奥德修斯也死了的情况下坚信丈夫会乘着七彩云朵归来。这学期正好学了关于Penelope的戏，是一个现代的游泳池场景，垂涎Penelope的美貌，四个肥硕的中年男人或半裸或穿着Speedo坐在游泳池里不断追求Penelope，但始终打法打动Penelope。整个过程非常超现实，最后几个小时里四个人知道如果自己还不成功就会被归来的奥德修斯杀死，因而绞尽脑汁使尽全身解术取悦Penelope，最终依然逃不了身死的下场。Daedalus是一位木匠，主持设计了那座能困住半兽人的迷宫。迷宫号称无人能走出去，Daedalus儿子曾经制作了翅膀成功的飞离了迷宫，可因飞的太高被太阳烤化了黏合翅膀所用的蜂蜜，坠入大海身亡。所以我在用古希腊英雄体进行严肃文学创作，满满的逼格啊。</p>
-<p>另外做笔记考虑Notability，因为其也出了Mac版，各方面都不错，等Stylus到了再尝试一下，小顾虑是不知国内iCloud同步稳定性如何。需要回顾的英文单词目前放在Evermemo里面，未来也可以尝试放进Notability，但稳定性还需考虑。</p>
-<p>除此之外还新买了很多app，不得不说买了种树的那app后效率提高很多，不忍看着一棵树的生命被摧残。</p>
-<p>还买了一个Tor浏览器，不知道回国后翻墙效果如何。还有不得不吐槽一下民航出的非常准app，只要输入身份证信息即使没通过认证之前也能获取此人近期的航班出行情况，简直是bug。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
+          <div class="row mt-2">
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/London/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/London/" class="post-title-link" itemprop="url">London</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-11-30 00:00:00" itemprop="dateCreated datePublished" datetime="2014-11-30T00:00:00+08:00">2014-11-30</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Mind The Gap</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/London/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Natural%20History%20Museum/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Natural%20History%20Museum/" class="post-title-link" itemprop="url">Natural History Museum</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-11-29 00:00:00" itemprop="dateCreated datePublished" datetime="2014-11-29T00:00:00+08:00">2014-11-29</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Visited twice</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Natural%20History%20Museum/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/OnMidElection/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/OnMidElection/" class="post-title-link" itemprop="url">中期选举</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-11-23 00:00:00" itemprop="dateCreated datePublished" datetime="2014-11-23T00:00:00+08:00">2014-11-23</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>美国2014中期选举，民主党败的灰头土脸，共和党从民主党手中抢下十个席位，Iowa作为Swing State又导向了共和党。</p>
-<p>尽管如此，共和党获胜的主要云因并非因为他们有多好的新政策，而是人们对执政党不满意（永远如此）。共和党抓住机会把宣传点侧重在抨击民主党政策上。简单并有效。</p>
-<p>奥巴马里外不是人。平心而论，美国经济已经开始复苏，出口和投资增加，GDP上升，失业率下降，这些参数在当前世界经济情势下算的上很不错了。但老百姓们并没感觉到，工资中位数并无显著变化。另一方面奥巴马虽有个人魅力但执政经验并不足。尤其是在国际方面，对中东，俄罗斯，中国的态度都不够强硬。民众是不乐意看见本国领导人以软炮形象出现在世界舞台上的。反观国内，不管是医疗改革，教育，还是枪支管控，奥巴马都未做出非常有效的决策。</p>
-<p>但想来做总统不易，非在其位而不得知。</p>
-<p>Here’s what you rejected by voting out the Democrats:</p>
-<ul>
-<li>68 straight months of economic growth</li>
-<li>A record 56 months of private sector job growth</li>
-<li>A current annual GDP growth rate of 5%</li>
-<li>Unemployment falling from 10.1% to 5.8%</li>
-<li>The Federal budget deficit reduced by two-thirds</li>
-<li>A record stock market</li>
-<li>Record corporate profits</li>
-<li>Fewer Americans in harm’s way in war zones</li>
-<li>Zero attacks by al Queda on US soil</li>
-<li>The death of Osama bin Laden  </li>
-</ul>
-<p>Here’s what the Republicans gave us last time they were in charge: </p>
-<ul>
-<li>Two economic recessions</li>
-<li>The worse financial collapse since 1920</li>
-<li>The two longest wars in U.S. history</li>
-<li>The worst record of job creation since Herbert Hoover</li>
-<li>A stock market collapse</li>
-<li>A budget surplus (inherited from the Clinton years) turned into a trillion dollar deficit  </li>
-</ul>
-<p>Well played America. Well played.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/OnStatistics/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/OnStatistics/" class="post-title-link" itemprop="url">关于统计数据</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-11-23 00:00:00" itemprop="dateCreated datePublished" datetime="2014-11-23T00:00:00+08:00">2014-11-23</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>从前挺喜欢各种统计图表的，觉得简单明了能说明事实，但慢慢发现原来各种统计数据表格其实很轻易就能具有相当大的欺骗性和误导性。</p>
-<p>特别时涉及经济和社会科学的文章，作者首先持有一个观点，为了支持ta的观点，ta完全可以通过各种手段让统计的数据倾向于ta。其手段包括但不限于选取有偏见的raw data，对于缺失的信息选用其他国家捏造，选取陈旧的数据，把不同调查机构的数据混合选取对自己有力的数据，还有If the numbers point in the wrong direction, find tame academics and business-folk to produce more convenient ones, and call their guesses “expert opinion”<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>.</p>
-<p>民心其实并不那么难操纵喔。</p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">https://www.economist.com/leaders/2014/11/08/how-to-lie-with-indices</span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Tate%20Modern/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Tate%20Modern/" class="post-title-link" itemprop="url">Tate Modern</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-11-22 00:00:00" itemprop="dateCreated datePublished" datetime="2014-11-22T00:00:00+08:00">2014-11-22</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Visited Only Once</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Tate%20Modern/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/China%20GDP/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/China%20GDP/" class="post-title-link" itemprop="url">中国GDP增长减速</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-11-12 00:00:00" itemprop="dateCreated datePublished" datetime="2014-11-12T00:00:00+08:00">2014-11-12</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>中国GDP增速减缓，之前十年一直保持10%左右的年增长，最近降低至7%。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/China%20GDP/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Crudeoilprice/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Crudeoilprice/" class="post-title-link" itemprop="url">原油价格下滑及影响</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-11-11 00:00:00" itemprop="dateCreated datePublished" datetime="2014-11-11T00:00:00+08:00">2014-11-11</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>世界原油价格持续下降，主要原因是产出和需要同时下滑。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Crudeoilprice/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/UKonimmigration/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/UKonimmigration/" class="post-title-link" itemprop="url">UK Immigration Policy</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-11-08 00:00:00" itemprop="dateCreated datePublished" datetime="2014-11-08T00:00:00+08:00">2014-11-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>英国政府在为移民政策发愁。卡梅伦两年前上台是就宣布后年年底会举行一次全民公投决定是否离开欧盟。</p>
-<p>不过这项法案在最近被联合执政党自己乌龙掉。但可以确认的是未来关于离开的欧盟的声音会越来越高。这也是为什么最近一个小到在下议院只有一个席位的UKIP会如此吸引众人目光。UKIP主打的就是脱离欧盟和限制移民牌。历史上英国对于移民的态度其实是两分的，一方面英国的繁荣得益于其开放的经济和外交政策，因为英国人本身种族歧视感很弱，移民潮一浪接一浪，为英国建立数不清的繁荣。另一方面由于是一个岛国，长期的偏安一隅使英国人时刻害怕被侵略。对于其他欧盟国家来说，英国想不脱离欧盟但限制移民基本上是毫无可能的。因为自由劳动力是当初欧盟建立时最基本的一条协议之一。马上就是明年五月大选，接下来就要看卡梅伦如何应付UKIP了。</p>
-<p>关于移民很重要的一条其实没有谈到，就是移民的组成到底有哪些，如果是受过高级教育拥有技术的移民来到英国能直接找到技术性工作反而会拉高GDP，英国人一定不会反对荷兰来的工程师，波兰来的管道工或是津巴布韦来的护士。但近年来的事实却是越来越多的来自罗马尼亚的吉普赛无业游民，来自巴基斯坦信仰圣战的穆斯林和来自俄罗斯的黑手党。其影响可见一斑。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/2.png"></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/Sheffield/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/Sheffield/" class="post-title-link" itemprop="url">Sheffield</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2014-11-03T00:00:00+08:00">2014-11-03</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>To the North!</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Sheffield/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/bath/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Orange">
-      <meta itemprop="description" content="après moi, le déluge">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="世界陆沉">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/bath/" class="post-title-link" itemprop="url">巴斯</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2014-10-24 00:00:00" itemprop="dateCreated datePublished" datetime="2014-10-24T00:00:00+08:00">2014-10-24</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>彼时还不知道这里的那所大学。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/bath/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Orange</p>
-  <div class="site-description" itemprop="description">après moi, le déluge</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">183</span>
-          <span class="site-state-item-name">posts</span>
+    <div class="eight columns">
+      <p id="madewith">Made with ❤ and
+        <a class="footer-link icon" href="https://hexo.io" target="_blank" style="text-decoration: none;" rel="noreferrer" aria-label="Hexo.io">
+        <svg class="hexo svg-hov" width="14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
         </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">categories</span>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">76</span>
-        <span class="site-state-item-name">tags</span>
-      </div>
-  </nav>
+        
+        at <a href="https://en.wikipedia.org/wiki/Earth" target="_blank" rel="noreferrer">Earth</a>.</p>
+        
+    </div>
+
+    <!-- Sepcial thanks to https://simpleicons.org/ for the icons -->
+    <div class="four columns mb-3 posisi" >
+      
+      <a class="ml-0 footer-link icon" href="https://github.com/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="GitHub">
+        <svg class="github svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      
+
+      
+      <a class="ml-0 footer-link icon" href="https://linkedin.com/in/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="LinkedIn">
+        <svg class="linkedin svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      
+
+      
+      <a class="ml-0 footer-link icon" href="https://twitter.com/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="Twitter">
+        <svg class="twitter svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
+      </a>
+      
+
+      
+      <a class="ml-0 footer-link icon" href="https://instagram.com/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="Instagram">
+        <svg class="instagram svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+      </a>
+      
+
+    </div>
+  
 </div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="mailto:hi@orange42.cc" title="E-Mail → mailto:hi@orange42.cc" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-  </div>
 
-
-
+        </div>
       </div>
 
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
 
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fas fa-moon"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Orange</span>
-</div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
   </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/three-waves.min.js"></script>
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
+  <script src="/js/nanobar.min.js"></script>
+  <script>
+    var options = {
+      classname: 'nanobar',
+      id: 'myNanobar'
+    };
+    var nanobar = new Nanobar(options);
+    nanobar.go(30);
+    nanobar.go(76);
+    nanobar.go(100);
+  </script>
 
 </body>
+
 </html>
