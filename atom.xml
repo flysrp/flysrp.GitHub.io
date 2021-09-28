@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>世界陆沉</title>
+  <icon>http://example.com/icon.png</icon>
+  <subtitle>夜色温柔</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-09-28T03:31:44.875Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Orange</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>长日将尽</title>
+    <link href="http://example.com/TheRemainsOftheDay/"/>
+    <id>http://example.com/TheRemainsOftheDay/</id>
+    <published>2021-09-25T16:00:00.000Z</published>
+    <updated>2021-09-28T03:31:44.875Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本书有两种解读，一种是结合大背景，二战前夜，爵爷大宅中集结了可以改变历史的力量。历史人物和事件大串烧&lt;sup&gt;1&lt;/sup&gt;，“达林顿勋爵，哈利法克斯勋爵，艾登首相，张伯伦，里宾特洛甫，反犹主义，绥靖派和丘吉尔。”日不落帝国的日落，沉浸于旧日荣光中的骄傲与叹息。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Review" scheme="http://example.com/tags/Review/"/>
+    
+    <category term="Book" scheme="http://example.com/tags/Book/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>9月碎碎念</title>
+    <link href="http://example.com/202109/"/>
+    <id>http://example.com/202109/</id>
+    <published>2021-09-24T16:00:00.000Z</published>
+    <updated>2021-09-28T04:30:29.688Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;9.24&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;美军无人机地狱火精确制导炸死平民和多名儿童。被指控的恐怖分子据点最后也被NYT证实是平民居所。美军承认误炸，但坚持行动的正当性。须知这是因为在首都才会有关注，此前偏远地区的无人机行动同样有误伤，只是没有独立调查。 距离远程无人机武器升级至AI自主判断按下扳机，已经时日无多。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Politics" scheme="http://example.com/tags/Politics/"/>
+    
+    <category term="琐事" scheme="http://example.com/tags/%E7%90%90%E4%BA%8B/"/>
+    
+    <category term="Games" scheme="http://example.com/tags/Games/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初中回忆</title>
+    <link href="http://example.com/MiddleSchool/"/>
+    <id>http://example.com/MiddleSchool/</id>
+    <published>2021-09-20T16:00:00.000Z</published>
+    <updated>2021-09-28T03:48:23.158Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;初中短跑天赋显现，连续三年打破运动会100米的校记录。还记得初二4*100米接力我跑最后一棒。队友把接力棍放在我手上的瞬间，肾上腺素疯狂分泌，周围噪音突然全部消失，内心变得无比宁静，因为我极其强烈的预感到，我们已经赢了。这种近乎打破因果律的笃定是我人生中不多的拥有完全掌控感的时刻。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="琐事" scheme="http://example.com/tags/%E7%90%90%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>重回对马岛</title>
+    <link href="http://example.com/Tsushima/"/>
+    <id>http://example.com/Tsushima/</id>
+    <published>2021-09-01T16:00:00.000Z</published>
+    <updated>2021-09-28T05:17:54.523Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;重回对马岛，此前的存档丢失，从头开始。这次的PS5版本，非常不错。但其实画质和游戏加载速度，在PS4已经很不错。主要的提升还是来自截图和录像，变得更加清晰。手柄adaptive control在射箭的时候有更真实的反馈，但要是在真实战斗中连续射击时就有点拉胯，速射时震动单元无法跟上节奏，原因可能是硬件限制。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Review" scheme="http://example.com/tags/Review/"/>
+    
+    <category term="Games" scheme="http://example.com/tags/Games/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新冠Delta</title>
+    <link href="http://example.com/Delta/"/>
+    <id>http://example.com/Delta/</id>
+    <published>2021-07-27T16:00:00.000Z</published>
+    <updated>2021-09-28T03:04:27.792Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近两天Daily都在讲新冠变种Delta的状况。新变异病毒在人体内的总量更大，导致毒性更高，从而造成了breakout，此前打了疫苗的人群不仅会被感染，本身也会有症状，比如轻微的感冒和头疼，也有人难受到上班请假，而且会出现典型的味觉失灵。但远远没有严重到需要入院治疗的状态。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Podcast" scheme="http://example.com/tags/Podcast/"/>
+    
+    <category term="COVID-19" scheme="http://example.com/tags/COVID-19/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>7月碎碎念</title>
+    <link href="http://example.com/202107/"/>
+    <id>http://example.com/202107/</id>
+    <published>2021-07-27T16:00:00.000Z</published>
+    <updated>2021-09-28T04:05:20.713Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;7.28&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这几年Minecraft就像一个无声的巨人一样长期占领各大游戏付费榜榜首，自己再也没玩过，可能是因为接触的太早了，大部分时间也是一个人在玩。最早和K在北京上AP的时候他给介绍，说有这样一个世界，工业文明魔法文明对爆，后来才知道这已经是更加进阶的Mode，但也由此入坑。Minecraft很神奇的一点是Java版本连MacbookAir都能运行，但把其他画质特效甚至是光追打开又需要高级显卡。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="琐事" scheme="http://example.com/tags/%E7%90%90%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信用卡盗刷</title>
+    <link href="http://example.com/DataLeak2/"/>
+    <id>http://example.com/DataLeak2/</id>
+    <published>2021-07-26T16:00:00.000Z</published>
+    <updated>2021-07-30T00:35:41.039Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;早上跟客服打了一个小时电话，一开始以为是单纯的误扣款，最后才发现自19年以来一直有一个Amazon账号用我的信用卡信息买了十几个月的prime会员，每月重复扣款，其他什么都没买。瞬间脑补了一系列黑产链，万万没想到自己也成了肉鸡。prime会员能干嘛呢？首先是prime video和其他各种云服务，然后是twitch订阅，估计所有价值都被薅了一遍。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Privacy" scheme="http://example.com/tags/Privacy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>社工库bot</title>
+    <link href="http://example.com/DataLeak/"/>
+    <id>http://example.com/DataLeak/</id>
+    <published>2021-07-19T16:00:00.000Z</published>
+    <updated>2021-09-28T03:32:05.756Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;前几天了解到一个社工库bot的存在，在telegram上直接搜索就能得到反馈。一开始看见很震惊，首先查找个人信息，手机号输出后会给出当年注册的QQ号和微博，微博早已抛弃，但是继续查询QQ能直接找到qq群里的各种关系，通过小学初中高中加的学校群的备注查到个人真名。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Privacy" scheme="http://example.com/tags/Privacy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>6月碎碎念</title>
+    <link href="http://example.com/202106/"/>
+    <id>http://example.com/202106/</id>
+    <published>2021-06-21T16:00:00.000Z</published>
+    <updated>2021-09-28T04:04:16.279Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;6.22&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;早上刚看的一段原子习惯，提到主动塑造环境以及一个地方分配一个特定任务能够进一步提高效率和专注度，减少分心的可能。电子空间也应如此，但是技术时代手机电脑的十项全能使得工作娱乐界限模糊。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="琐事" scheme="http://example.com/tags/%E7%90%90%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PS4维修</title>
+    <link href="http://example.com/PS4/"/>
+    <id>http://example.com/PS4/</id>
+    <published>2021-05-30T16:00:00.000Z</published>
+    <updated>2021-09-28T03:34:00.630Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天修ps4的过程也很快乐，感受到了心流。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Technology" scheme="http://example.com/tags/Technology/"/>
+    
+    <category term="Games" scheme="http://example.com/tags/Games/"/>
+    
+    <category term="Hardware" scheme="http://example.com/tags/Hardware/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微博炸号风波</title>
+    <link href="http://example.com/WEIBO/"/>
+    <id>http://example.com/WEIBO/</id>
+    <published>2021-05-12T16:00:00.000Z</published>
+    <updated>2021-09-28T02:06:23.281Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这次微博炸号莫名其妙，恢复的也莫名其妙。看见网友介绍出现20179错误后基本上就是永封，如果能够找回也是通过第三方平台投诉，至少小半个月才找回。结果我的号从昨天中午无法登陆，到半夜就恢复正常，24小时都不到。刚刚去互联网服务投诉平台撤销申诉，人家甚至都还没开始受理这桩。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Social Media" scheme="http://example.com/tags/Social-Media/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>创造者经济</title>
+    <link href="http://example.com/Creator/"/>
+    <id>http://example.com/Creator/</id>
+    <published>2021-05-07T16:00:00.000Z</published>
+    <updated>2021-09-28T02:06:23.280Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;TE这一期&lt;a href=&quot;https://www.economist.com/briefing/2021/05/08/the-new-rules-of-the-creator-economy&quot;&gt;简报&lt;/a&gt;关注创造者经济，随着越来越多社媒用户意识到自己创造内容的经济价值，各大社交平台也开始迎合需求推出各种付费会员服务，创造的形式包括写作，（视频）直播，图片等等。出现了类似substrack这样的专业写作订阅平台，FB和twitter也在积极探索付费内容（听说twitter这几天刚推出了打赏功能。）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="The Economist" scheme="http://example.com/tags/The-Economist/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网关路由搭建</title>
+    <link href="http://example.com/SoftwareRouter/"/>
+    <id>http://example.com/SoftwareRouter/</id>
+    <published>2021-05-06T16:00:00.000Z</published>
+    <updated>2021-09-28T03:34:16.484Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;折腾了两小时终于设置好了家庭网关路由。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Technology" scheme="http://example.com/tags/Technology/"/>
+    
+    <category term="GFW" scheme="http://example.com/tags/GFW/"/>
+    
+    <category term="Hardware" scheme="http://example.com/tags/Hardware/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>B站缺点</title>
+    <link href="http://example.com/Bilibili/"/>
+    <id>http://example.com/Bilibili/</id>
+    <published>2021-05-06T16:00:00.000Z</published>
+    <updated>2021-09-28T02:06:23.280Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;bilibili推出的”一键三连”是一个错误的交互示范，毁掉了收藏夹应有的作用。所有的up主都恳求或怂恿观众一键三连，投币点赞没问题，但大部分视频并没有收藏价值。最后导致默认收藏夹里全都是杂音，真去找某个想重新看的视频时反而要翻半天。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Review" scheme="http://example.com/tags/Review/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于水质</title>
+    <link href="http://example.com/TDS/"/>
+    <id>http://example.com/TDS/</id>
+    <published>2021-05-04T16:00:00.000Z</published>
+    <updated>2021-09-28T03:34:08.099Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;之前花了大几千换了一套家庭净水设备，号称采用了啥反渗透膜技术，出水可以直接饮用，之后家庭洗菜蒸米烧水都用这个出水口接水。但一直没有什么直观的感受，尤其是没有对比。因为稍微不同的水质对于味觉迟钝的人来说可能真的不会有太大区别。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Health" scheme="http://example.com/tags/Health/"/>
+    
+    <category term="Hardware" scheme="http://example.com/tags/Hardware/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>摄影后期</title>
+    <link href="http://example.com/RAW/"/>
+    <id>http://example.com/RAW/</id>
+    <published>2021-05-03T16:00:00.000Z</published>
+    <updated>2021-09-28T03:26:17.045Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近开始更加主动的尝试RAW格式后期，感叹同一张照片不同的处理能够有如此大的区别。后期的过程可以非常流水线化，但是如果想要施加创意，时间可以也可以流逝的非常快。但这个过程是享受的，后期也是一种创造的过程。当然这种享受感来自业余爱好的清闲，如果作为职业估计也享受不起来了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="影像" scheme="http://example.com/tags/%E5%BD%B1%E5%83%8F/"/>
+    
+    <category term="创造" scheme="http://example.com/tags/%E5%88%9B%E9%80%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>密码管理</title>
+    <link href="http://example.com/Password/"/>
+    <id>http://example.com/Password/</id>
+    <published>2021-04-19T16:00:00.000Z</published>
+    <updated>2021-09-28T05:16:01.800Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;我的密码管理做的真的很烂，大量早年间使用的弱密码充斥于着各大服务平台，随便一个交叉比对就可能破解。如果就这么放任不管，很可能成为一个（带着预见性的）黑天鹅事件。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Privacy" scheme="http://example.com/tags/Privacy/"/>
+    
+    <category term="Software" scheme="http://example.com/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>世界末日与冷酷异境</title>
+    <link href="http://example.com/Wonderland/"/>
+    <id>http://example.com/Wonderland/</id>
+    <published>2021-04-15T16:00:00.000Z</published>
+    <updated>2021-09-28T03:07:16.407Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;花了4天时间看完这一本，应该是村上春树所有作品中评价相当高的一部。这是他1985年，早期的作品。双线叙事，奇谲的想象力，精确的描写，巧妙的比喻，对个人内心的探索，都让我个人对这一部也有很高的评价。但心中最佳还是奇鸟行状录。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Review" scheme="http://example.com/tags/Review/"/>
+    
+    <category term="Book" scheme="http://example.com/tags/Book/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生物的最终进化</title>
+    <link href="http://example.com/Light/"/>
+    <id>http://example.com/Light/</id>
+    <published>2021-04-13T16:00:00.000Z</published>
+    <updated>2021-09-28T03:33:27.116Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;看Dayone回顾，发现一篇2014年写下的文字，当时我还没有看过2001太空冒险，竟然不知从何处得到的灵感，已经得出人类进化的最终发展趋势。现在再来梳理的话，首先是现在这样的有机生命体，征服银河系的过程中，需要外骨骼来适应异星环境，人类逐渐机械化，最终除了自我意识之外全部机械化，直接上传意识到机械中。又过几万年至几百万年，最终的演化方向是纯粹的能量，或许就是下文中提到的，光。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Future" scheme="http://example.com/tags/Future/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中西面具差异</title>
+    <link href="http://example.com/Mask/"/>
+    <id>http://example.com/Mask/</id>
+    <published>2021-04-11T16:00:00.000Z</published>
+    <updated>2021-09-28T03:08:27.297Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;起因是开始玩蝙蝠侠阿卡姆骑士，几年前的旧作，但是画质在我看来非常不错。开幕有一段蝙蝠侠升级装甲的动画：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Games" scheme="http://example.com/tags/Games/"/>
+    
+  </entry>
+  
+</feed>
