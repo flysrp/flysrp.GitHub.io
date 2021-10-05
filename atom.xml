@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-05T12:05:07.655Z</updated>
+  <updated>2021-10-05T12:16:45.835Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/Steve/"/>
     <id>http://example.com/Steve/</id>
     <published>2021-10-04T16:00:00.000Z</published>
-    <updated>2021-10-05T12:05:07.655Z</updated>
+    <updated>2021-10-05T12:16:45.835Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>乔布斯去世的新闻出来的时候我和H在公园骑自行车，知道消息后两人停下车，原地站了好一会。后来H回北京，专门买了一台红色iPod，带着花放在大悦城苹果店。</p><span id="more"></span><p>苹果产品在过去十年里影响甚至改变了我生活的方方面面，这些产品让我对生活有了一种更热切的追求。当时我一个人去香港考试，靠的是iPod Touch里Google Map提前预载好的地图在尖沙咀穿梭，考前一直在看苹果的广告，think different，每看一次都热泪盈眶。</p><iframe width="560" height="315" src="https://www.youtube.com/watch?v=GEPhLqwKo6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>Here’s to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes… the ones who see things differently — they’re not fond of rules… You can quote them, disagree with them, glorify or vilify them, but the only thing you can’t do is ignore them because they change things… they push the human race forward, and while some may see them as the crazy ones, we see genius, because the ones who are crazy enough to think that they can change the world, are the ones who do.</p><p>Thank you Steve</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>乔布斯去世的新闻出来的时候我和H在公园骑自行车，知道消息后两人停下车，原地站了好一会。后来H回北京，专门买了一台红色iPod，带着花放在大悦城苹果店。</p><span id="more"></span><p>苹果产品在过去十年里影响甚至改变了我生活的方方面面，这些产品让我对生活有了一种更热切的追求。当时我一个人去香港考试，靠的是iPod Touch里Google Map提前预载好的地图在尖沙咀穿梭，考前一直在看苹果的广告，think different，每看一次都热泪盈眶。</p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FPAzcPWiZPI.mp4?alt=media&token=d2de5873-0c60-4a37-8694-05c9ce4473c8","pic":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Apple_logo_Think_Different_vectorized.svg/1200px-Apple_logo_Think_Different_vectorized.svg.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p>Here’s to the crazy ones, the misfits, the rebels, the troublemakers, the round pegs in the square holes… the ones who see things differently — they’re not fond of rules… You can quote them, disagree with them, glorify or vilify them, but the only thing you can’t do is ignore them because they change things… they push the human race forward, and while some may see them as the crazy ones, we see genius, because the ones who are crazy enough to think that they can change the world, are the ones who do.</p><p>Thank you Steve</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;乔布斯去世的新闻出来的时候我和H在公园骑自行车，知道消息后两人停下车，原地站了好一会。后来H回北京，专门买了一台红色iPod，带着花放在大悦城苹果店。&lt;/p&gt;</summary>
