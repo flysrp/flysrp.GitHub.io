@@ -40,6 +40,31 @@
   </entry>
   
   <entry>
+    <title>茨威格短篇</title>
+    <link href="http://example.com/Zweig/"/>
+    <id>http://example.com/Zweig/</id>
+    <published>2021-10-03T16:00:00.000Z</published>
+    <updated>2021-10-06T01:20:13.183Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>昨天在路上看了茨威格的短篇。</p><span id="more"></span><p>一个陌生女人的来信看的我气都喘不过来，深海溺水，扑面而来的绝望，扭曲到极致的爱意，或者说更多裹挟着的是自卑和精神分裂。茨威格是咋回事，对opposite sex叙述之熟稔的就像是亲自变过性一样，又或者他对自己就是偏执狂。</p><p>象棋的故事，也是偏执狂的故事。一开始以为主角是小镇里出来的少年，没想到突然冒出来一个教授B。肖申克的救赎里Andy被关单人禁闭出来后状态依旧，他的回答是有Mozart陪着他。而象棋的故事里主人公则是紧闭场景的进阶版本。莫斯科绅士里the count也是被关进Metropol，但有好友有美食有爱情有亲情。教授B在房间里只有象棋，读的时候自然浮现女王棋局里的场景，靠纯想象织就的棋盘棋子，150盘棋谱烂熟后开始出现自己对局自己的癫狂。读到这里又联想到周伯通，被黄药师囚禁20年研究出双手互缚。精神空虚和肉体折磨一样可怕，但少数人在机缘巧合下能超越局限，触摸到一些罕见的神秘领域。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;昨天在路上看了茨威格的短篇。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Review" scheme="http://example.com/tags/Review/"/>
+    
+    <category term="Book" scheme="http://example.com/tags/Book/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Naval Ravikant</title>
     <link href="http://example.com/Naval/"/>
     <id>http://example.com/Naval/</id>
@@ -480,31 +505,6 @@
     <category term="影像" scheme="http://example.com/tags/%E5%BD%B1%E5%83%8F/"/>
     
     <category term="创造" scheme="http://example.com/tags/%E5%88%9B%E9%80%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>密码管理</title>
-    <link href="http://example.com/Password/"/>
-    <id>http://example.com/Password/</id>
-    <published>2021-04-19T16:00:00.000Z</published>
-    <updated>2021-09-28T05:16:01.800Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>我的密码管理做的真的很烂，大量早年间使用的弱密码充斥于着各大服务平台，随便一个交叉比对就可能破解。如果就这么放任不管，很可能成为一个（带着预见性的）黑天鹅事件。</p><span id="more"></span><p>但是如果把几十上百个简单密码全部换掉工作量太大。应该做的是找出最核心的服务，比如微博推特支付宝微信谷歌苹果微软索尼亚马逊豆瓣网银账户等等，全部更新一遍。一直不想用苹果自带的强密码生成器是因为依赖性太强了。到底是找一个全平台的密码服务，还是想一个master password出来。但是每个服务依然只用一个密码总还是有风险的。</p><p>最后的解决方案是订阅了1Password，想出了一个独立的主密码，但不得不说1Password也许优势只是全平台，在苹果生态中还是原生的keychain最方便。所以另一方面也开始逐步更换服务密码，根据一首喜欢的唐诗结合拼音英语大小写和标点符号创造了一个X位数的基准密码然后根据服务名称添加独立的后缀。不过这个更换过程是缓慢的，希望能够一步一步完成。</p><p>其实创造一个全新密码也是一件有趣的事情，我记得从前最常用的密码来源是H的密码组合，后来破译了他密码的含义，仿造出一个类似的存在。这次创造的新Master密码则从我最钟爱的小说典故中寻找灵感。而独立密码，像之前说的一样，是结合喜欢的诗歌。此类密码一般的暴力推演估计很难破解，只能靠交叉撞库和社工手段。之所以不选择随机生成的密码是对技术依然存有抗拒。最后，也许对普通人来说最保险的记忆方式就是把密码记在书桌上的小本本上。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;我的密码管理做的真的很烂，大量早年间使用的弱密码充斥于着各大服务平台，随便一个交叉比对就可能破解。如果就这么放任不管，很可能成为一个（带着预见性的）黑天鹅事件。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
-    
-    
-    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
-    
-    <category term="Privacy" scheme="http://example.com/tags/Privacy/"/>
-    
-    <category term="Software" scheme="http://example.com/tags/Software/"/>
     
   </entry>
   
