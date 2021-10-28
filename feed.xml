@@ -114,6 +114,31 @@
   </entry>
   
   <entry>
+    <title>Free Guy</title>
+    <link href="http://example.com/Guy/"/>
+    <id>http://example.com/Guy/</id>
+    <published>2021-10-09T16:00:00.000Z</published>
+    <updated>2021-10-28T13:19:09.154Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>设定bug不少，但电影院观影效果好，当无脑爽片也行。各种电影既视感和经典致敬，既视感目前想到的有黑客帝国，明日边缘，盗梦空间，楚门的世界，头号玩家。因此而引发的元宇宙讨论完全没必要，以现有的技术来看完全不可能达到电影中的沉浸程度，电影也适时的通过切回真实世界的电脑屏幕+BGM戛然而止来提醒观众这一点。未来最理想的技术不是AR也不是VR，而是MR ，Mixed  Reality。</p><span id="more"></span><p>女主特别脸熟，一开始以为是Queens Gambit女主，后来想起来，是Killing Eve里的！这俩人的眼睛都特别大！奇特的面部五官分布，看习惯之后感觉仙气十足。</p><p>最后回到缸中之脑这个哲学层面的思考上，影片升华的一个点是对真实的定义，Guy发现自己只是一个进化出强AI的NPC，试图告诉自己的Buddy Buddy，Buddy最后说道，就算自己不是真的，但是在此时此刻，时间是绝对存在并且向前流逝的，而此时此刻的他正在帮助自己的最好的朋友，这样饱含情感的瞬间让他觉得自己也是无比真实的存在。</p><p>当然这是一个很理想的场景，因为AI不可能被内置这么多情感和backstory，但由此引发的思考是，即时整个世界，整个宇宙从最开始大爆炸起就已经是一切既定的（predeterministic），时间只不过是我们三维生物无法看穿的另一个既定维度，free will只是虚无，我们的生命依然有意义吗？对于群体来说，也许没有，但是对于个体来说，就在我们个体的认知局限之内，是有意义的。因为认知的局限让我们能够感受到时间的流动，感受到此时此刻的状态。就算是缸中之脑又如何？对世间的一切认知都只能是相对的，带着perspective的，质疑一切只会陷入无尽的虚无主义中。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;设定bug不少，但电影院观影效果好，当无脑爽片也行。各种电影既视感和经典致敬，既视感目前想到的有黑客帝国，明日边缘，盗梦空间，楚门的世界，头号玩家。因此而引发的元宇宙讨论完全没必要，以现有的技术来看完全不可能达到电影中的沉浸程度，电影也适时的通过切回真实世界的电脑屏幕+BGM戛然而止来提醒观众这一点。未来最理想的技术不是AR也不是VR，而是MR ，Mixed  Reality。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Review" scheme="http://example.com/tags/Review/"/>
+    
+    <category term="Movie" scheme="http://example.com/tags/Movie/"/>
+    
+  </entry>
+  
+  <entry>
     <title>大麻</title>
     <link href="http://example.com/Weed/"/>
     <id>http://example.com/Weed/</id>
@@ -477,33 +502,6 @@
     <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
     
     <category term="琐事" scheme="http://example.com/tags/%E7%90%90%E4%BA%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PS4维修</title>
-    <link href="http://example.com/PS4/"/>
-    <id>http://example.com/PS4/</id>
-    <published>2021-05-30T16:00:00.000Z</published>
-    <updated>2021-09-28T03:34:00.630Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>今天修ps4的过程也很快乐，感受到了心流。</p><span id="more"></span><p>很早之前ps4光驱就无法正常吸光盘，只有开机时才能吸入。一直懒得修，平时也用的不多。直到最近准备挂闲鱼，于是又把机器打开，这次整个光驱都坏掉，光盘一放进去就开始疯狂怪叫。</p><p>搜了一些教程，首先就是把机器拆开，本来没啥难度，但是我的机器款式比较新，主板部分采用了五六个无纹黑塑螺丝，看了一圈只能强制破坏，一开始用裁纸刀锯，太费劲，然后发现虎头钳直接夹碎就好，相对来说更容易。把主板拆开露出光驱和风扇，能看见基本上没有积灰，光驱各个部件也都正常，上下对比了一圈终于发现了问题，把光驱组件拆下来之后反面竟然有一个弹簧吸付在反面，这绝对不是它应该出现的位置，原来是因为某种原因从最上方的卡口弹出来，好在中间有磁铁被吸住。一番折腾安装复位，接通电源插入光盘，OK一切恢复正常！彼时感觉特别好，成就感油然而生。</p><p>结果，一切复位之后有一颗螺丝死活安不回去，简直就是拆装机器的cliche了😂</p><p>以及warning，拆装过程中千万注意断电，我就是安到一般插电调试，紧接着直接拆部件手指伸到主板里面，大拇指被电的酥麻酥麻的。</p><p>最后修好之后反而有点舍不得卖了，当个家用netflix播放器也挺好…</p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/005390B6-B279-4AA6-A3AE-E8D748569854-12978-00000B250768878A.jpg" alt="005390B6-B279-4AA6-A3AE-E8D748569854-12978-00000B250768878A"><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/1106F3EC-EECC-4EDB-AD7E-E14A6E3DACC6-12978-00000B251E747A89.jpg" alt="1106F3EC-EECC-4EDB-AD7E-E14A6E3DACC6-12978-00000B251E747A89"><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/E8E3DBEF-A51A-4280-B84F-424B2BDD2FCC-12978-00000B2537A4B0D1.jpg" alt="E8E3DBEF-A51A-4280-B84F-424B2BDD2FCC-12978-00000B2537A4B0D1"><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/8A88EBA0-3C8D-45E5-877F-E536163336B1-12978-00000B24E577E36D.jpg" alt="8A88EBA0-3C8D-45E5-877F-E536163336B1-12978-00000B24E577E36D"><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/A147123A-EA7C-4834-9D5B-3091EAE07F03-12978-00000B24C6FE2CD5.jpg" alt="A147123A-EA7C-4834-9D5B-3091EAE07F03-12978-00000B24C6FE2CD5"><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FE8DE5AD-A07E-40C6-BC0F-40F0B393D42E-12978-00000B2466E116C2.jpg" alt="FE8DE5AD-A07E-40C6-BC0F-40F0B393D42E-12978-00000B2466E116C2"></p><div id="dplayer7" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer7"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FQiRj1C1VcM.mp4?alt=media&token=77e8cfa2-df04-44f9-acbb-829291a306b2","pic":"https://cdn.jsdelivr.net/gh/sprezzaa/image@main/27174B8F-ACFE-42CB-BDC1-64BAA1CC7FEB-12978-00000B24F4BCD4B2.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;今天修ps4的过程也很快乐，感受到了心流。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
-    
-    
-    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
-    
-    <category term="Technology" scheme="http://example.com/tags/Technology/"/>
-    
-    <category term="Games" scheme="http://example.com/tags/Games/"/>
-    
-    <category term="Hardware" scheme="http://example.com/tags/Hardware/"/>
     
   </entry>
   
