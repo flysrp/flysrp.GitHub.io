@@ -6,7 +6,7 @@
   <link href="http://example.com/feed.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-29T00:56:01.687Z</updated>
+  <updated>2021-10-29T00:56:32.916Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/NED/"/>
     <id>http://example.com/NED/</id>
     <published>2021-10-28T16:00:00.000Z</published>
-    <updated>2021-10-29T00:56:01.687Z</updated>
+    <updated>2021-10-29T00:56:32.916Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Antifragile里这一段：</p><blockquote><p>The “do you have evidence” fallacy, mistaking evidence of no harm for no evidence of harm, is similar to the one of misinterpreting NED (no evidence of disease) for evidence of no disease. This is the same error as mistaking absence of evidence for evidence of absence, the one that tends to affect smart and educated people, as if education made people more confirmatory in their responses and more liable to fall into simple logical errors.</p></blockquote><span id="more"></span><p>要细致区分evidence of no harm和no evidence of harm，前者是“没有找到有伤害的证明”，后者是“证明没有伤害”。为此回看了一下中文的翻译版本，中信出版社的简中翻译实在不能看，作者是不是自己都没看懂？而且这么关键的概念辨析，竟然连个冒号都不打，阅读起来稍不注意就可能略过了。</p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/eRX54w.png" alt="eRX54w"></p><p>再对比一下繁中（已经通过calibre做了横版简化处理）的翻译，格式清晰且容易理解。</p><p>![image-20211029075734172](/Users/song/Library/Application Support/typora-user-images/image-20211029075734172.png)</p><p>“absence of evidence” vs “evidence of absence”<br>没有证明 vs 证明没有<br>两个概念看上去类似，但却天壤之别，中间飞出无数黑天鹅。</p><p>Again，当代社科类，原版&gt;繁中版&gt;简中版</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Antifragile里这一段：</p><blockquote><p>The “do you have evidence” fallacy, mistaking evidence of no harm for no evidence of harm, is similar to the one of misinterpreting NED (no evidence of disease) for evidence of no disease. This is the same error as mistaking absence of evidence for evidence of absence, the one that tends to affect smart and educated people, as if education made people more confirmatory in their responses and more liable to fall into simple logical errors.</p></blockquote><span id="more"></span><p>要细致区分evidence of no harm和no evidence of harm，前者是“没有找到有伤害的证明”，后者是“证明没有伤害”。为此回看了一下中文的翻译版本，中信出版社的简中翻译实在不能看，作者是不是自己都没看懂？而且这么关键的概念辨析，竟然连个冒号都不打，阅读起来稍不注意就可能略过了。</p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/eRX54w.png" alt="eRX54w"></p><p>再对比一下繁中（已经通过calibre做了横版简化处理）的翻译，格式清晰且容易理解。</p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/mtYWTD.png" alt="mtYWTD"></p><p>“absence of evidence” vs “evidence of absence”<br>没有证明 vs 证明没有<br>两个概念看上去类似，但却天壤之别，中间飞出无数黑天鹅。</p><p>Again，当代社科类，原版&gt;繁中版&gt;简中版</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;Antifragile里这一段：&lt;/p&gt;
