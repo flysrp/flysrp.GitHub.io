@@ -6,7 +6,7 @@
   <link href="http://example.com/feed.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-03T10:40:29.972Z</updated>
+  <updated>2021-11-05T04:52:37.013Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Cyberpunk Collection</title>
+    <link href="http://example.com/Cyberpunk%20Project%20Note/"/>
+    <id>http://example.com/Cyberpunk%20Project%20Note/</id>
+    <published>2021-11-04T16:00:00.000Z</published>
+    <updated>2021-11-05T04:52:37.013Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>A video collection  for Cyberpunk Style world</p><span id="more"></span><h1 id="赛博朋克版山海经"><a href="#赛博朋克版山海经" class="headerlink" title="赛博朋克版山海经"></a>赛博朋克版山海经</h1><p>@LeiAlucard</p><iframe width="560" height="315" src="https://www.youtube.com/embed/s27z3V1c9Og" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h1 id="清QING-CCTV"><a href="#清QING-CCTV" class="headerlink" title="清QING CCTV"></a>清QING CCTV</h1><p>@Daidi319</p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FPd7EKQlE_B.mp4?alt=media&token=8372f961-8a80-48d2-b4e1-5893e1f7123d","pic":"https://cdn.jsdelivr.net/gh/sprezzaa/image/img/20210129205149.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><h1 id="未来之城"><a href="#未来之城" class="headerlink" title="未来之城"></a>未来之城</h1><p>@大川Pcyy</p><iframe width="560" height="315" src="https://www.youtube.com/embed/LhA93TmZCng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h1 id="俄罗斯Cyberpunk农场"><a href="#俄罗斯Cyberpunk农场" class="headerlink" title="俄罗斯Cyberpunk农场"></a>俄罗斯Cyberpunk农场</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/8HZ4DnVfWYQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h1 id="Cyberpunk-2077-Japantown-Parade"><a href="#Cyberpunk-2077-Japantown-Parade" class="headerlink" title="Cyberpunk 2077 Japantown Parade"></a>Cyberpunk 2077 Japantown Parade</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FAk91bE5oo2.mp4?alt=media&token=42fe2755-0dc4-4839-9783-5de654f5a85f","pic":"https://cdn.jsdelivr.net/gh/sprezzaa/image/img/EncwtEJW8AEqc5o.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><hr><h2 id="11-5-21-Update"><a href="#11-5-21-Update" class="headerlink" title="11.5.21 Update"></a>11.5.21 Update</h2><h1 id="A-series-of-animated-worlds-translating-dreams-into-motion"><a href="#A-series-of-animated-worlds-translating-dreams-into-motion" class="headerlink" title="A series of animated worlds translating dreams into motion"></a>A series of animated worlds translating dreams into motion</h1><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FHnUamXFYRO.mp4?alt=media&token=1e26a3ae-9eae-4f07-902f-7128b48b1509"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FdrAb2BATqe.mp4?alt=media&token=6435f4be-6cb7-4743-b0fe-61d39eb58f80"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FUedLVnTz-D.mp4?alt=media&token=25540563-6efb-4ab0-be4e-52fa8d965d8a"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p> <a href="https://www.behance.net/gallery/130312103/Animated-worlds">Source</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;A video collection  for Cyberpunk Style world&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="影像" scheme="http://example.com/categories/%E5%BD%B1%E5%83%8F/"/>
+    
+    
+    <category term="影像" scheme="http://example.com/tags/%E5%BD%B1%E5%83%8F/"/>
+    
+    <category term="Cyberpunk" scheme="http://example.com/tags/Cyberpunk/"/>
+    
+  </entry>
   
   <entry>
     <title>NFT</title>
@@ -483,29 +506,6 @@
     <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
     
     <category term="琐事" scheme="http://example.com/tags/%E7%90%90%E4%BA%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信用卡盗刷</title>
-    <link href="http://example.com/DataLeak2/"/>
-    <id>http://example.com/DataLeak2/</id>
-    <published>2021-07-26T16:00:00.000Z</published>
-    <updated>2021-07-30T00:35:41.039Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>早上跟客服打了一个小时电话，一开始以为是单纯的误扣款，最后才发现自19年以来一直有一个Amazon账号用我的信用卡信息买了十几个月的prime会员，每月重复扣款，其他什么都没买。瞬间脑补了一系列黑产链，万万没想到自己也成了肉鸡。prime会员能干嘛呢？首先是prime video和其他各种云服务，然后是twitch订阅，估计所有价值都被薅了一遍。</p><a id="more"></a><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/IMG_7745.jpeg" alt="IMG_7745"></p><p>盗用者细水长流，知道用户大多经常网购，偷偷摸一个订阅进去不仔细查账单还真不一定能看见。</p><p>盗用者获取了我的邮箱，信用卡完整信息，以及几年前的地址。用相同邮箱前缀注册了一个xxxx@ edu.com（哪有这种格式的邮箱啊…）Amazon账号，潜伏了几个月，然后开始固定购买会员。</p><p>客服见怪不怪了，帮我全部退款，并取消了订阅，但无法删除或终止该账号，只能我自己更新信用卡信息。</p><p>得去查一查这几年还有没有其他盗用了。</p><p>之前自诩近几年上网习惯好一些，没想到19年信息依然会泄露，而且这次泄露的更严重，直接是信用卡信息，邮箱和地址，直接造成了经济上的损失。汤君说还好是美国的卡，可以退，国内的根本退不了。</p><p>有点后怕，立刻挂失，更新了信用卡信息。</p><p>事后汤君分析其实信用卡盗刷的情况美国可能更常见，因为普及率高，随便一个店里的阿猫阿狗都能获取正反面信息，然后如果再结合信用卡上姓名搜索交叉对比其他资料，就很可能查到邮编，地址和邮箱。分分钟盗刷。好在银行方面的赔付措施也很到位。</p><p>进一步联想现在各种低价游戏货币，其实就是信用卡盗刷这个黑产的一个终端，起点是手工收集用户信用卡信息的服务业金融业人员，中间卖给供应商，筛选有效信用卡，App Store以及其他各种游戏商城盗刷，靠着平台时间差和低价诱惑潜在用户。最终被盗刷者报告银行，银行告知游戏开发商，游戏开发商开始封号。这样一个过程往往几周到几个月不等，最后玩家账号和钱两空，盗刷产业链赚的盆满钵满。</p><hr><p>7.30 Update</p><p>Amazon也很实诚，不仅退了盗刷的钱，还把此前我自己买的prime会员费都退了..</p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/IMG_7786.jpeg" alt="IMG_7786"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;早上跟客服打了一个小时电话，一开始以为是单纯的误扣款，最后才发现自19年以来一直有一个Amazon账号用我的信用卡信息买了十几个月的prime会员，每月重复扣款，其他什么都没买。瞬间脑补了一系列黑产链，万万没想到自己也成了肉鸡。prime会员能干嘛呢？首先是prime video和其他各种云服务，然后是twitch订阅，估计所有价值都被薅了一遍。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
-    
-    
-    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
-    
-    <category term="Privacy" scheme="http://example.com/tags/Privacy/"/>
     
   </entry>
   
