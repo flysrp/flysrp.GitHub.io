@@ -6,7 +6,7 @@
   <link href="http://example.com/feed.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-12-06T09:19:34.776Z</updated>
+  <updated>2021-12-19T12:47:45.145Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>川普弹劾引发的美国历回忆</title>
+    <link href="http://example.com/Impeachment/"/>
+    <id>http://example.com/Impeachment/</id>
+    <published>2021-12-18T16:00:00.000Z</published>
+    <updated>2021-12-19T12:47:45.145Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>内战后林肯遇刺，Andrew Johnson上台一通操作让Radical Republican掌控了参众两院三分之二以上席位，这暴脾气面对super majority依然硬怼，顶着新法案炒了战争部长。Radicals抓住机会发起史上第二次弹劾，这次天时地利，没想到最后参议院表决一名Radical临时反水，导致弹劾以一票之差未能通过。‬</p> <span id="more"></span><p>这位年轻议员明知这一选择会让自己前途尽失，自称是为了追求宪法的纯洁性，但也有不少关于他被收买的信息源。不论如何，Radicals虽然没弹劾成功，但极大震慑了Johnson，后者私下承诺不再阻挠新法案通过。Radical为此付出的代价是选民信任的大幅下降，收益是是短期内议会和总统双权的绝对支持。</p><p>Radicals借此机会巩固十四修正案保卫刚解放非裔的人权，并通过了第十五修正案赋予每一位成年男性投票权。同时借助议会立法和军队驻扎重建南方基础设施，普及公共教育以及关注少数群体权益。虽然后期乏力，总体看是一段佳话。两部新修正案加上林肯的第十三修正案为一百年后的真正平权垫下基石。</p><p>反观特朗普这次弹劾，一个月后参议院肯定通不过，但重要的不是结果，而是弹劾这个过程本身。多多少少能够起到震慑作用。川普最近都急了，变着花样骂。但有得必有失，能够预见的是中短期内更加分裂的参众两院。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;内战后林肯遇刺，Andrew Johnson上台一通操作让Radical Republican掌控了参众两院三分之二以上席位，这暴脾气面对super majority依然硬怼，顶着新法案炒了战争部长。Radicals抓住机会发起史上第二次弹劾，这次天时地利，没想到最后参议院表决一名Radical临时反水，导致弹劾以一票之差未能通过。‬&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
+    
+    
+    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
+    
+    <category term="Politics" scheme="http://example.com/tags/Politics/"/>
+    
+    <category term="History" scheme="http://example.com/tags/History/"/>
+    
+  </entry>
   
   <entry>
     <title>Project Hail Mary</title>
@@ -71,10 +96,10 @@
   
   <entry>
     <title>Cyberpunk Collection</title>
-    <link href="http://example.com/Cyberpunk%20Project%20Note/"/>
-    <id>http://example.com/Cyberpunk%20Project%20Note/</id>
+    <link href="http://example.com/Cyberpunk/"/>
+    <id>http://example.com/Cyberpunk/</id>
     <published>2021-11-04T16:00:00.000Z</published>
-    <updated>2021-11-05T04:52:37.013Z</updated>
+    <updated>2021-12-06T13:15:56.419Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>A video collection  for Cyberpunk Style world</p><span id="more"></span><h1 id="赛博朋克版山海经"><a href="#赛博朋克版山海经" class="headerlink" title="赛博朋克版山海经"></a>赛博朋克版山海经</h1><p>@LeiAlucard</p><iframe width="560" height="315" src="https://www.youtube.com/embed/s27z3V1c9Og" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h1 id="清QING-CCTV"><a href="#清QING-CCTV" class="headerlink" title="清QING CCTV"></a>清QING CCTV</h1><p>@Daidi319</p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FPd7EKQlE_B.mp4?alt=media&token=8372f961-8a80-48d2-b4e1-5893e1f7123d","pic":"https://cdn.jsdelivr.net/gh/sprezzaa/image/img/20210129205149.png"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><h1 id="未来之城"><a href="#未来之城" class="headerlink" title="未来之城"></a>未来之城</h1><p>@大川Pcyy</p><iframe width="560" height="315" src="https://www.youtube.com/embed/LhA93TmZCng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h1 id="俄罗斯Cyberpunk农场"><a href="#俄罗斯Cyberpunk农场" class="headerlink" title="俄罗斯Cyberpunk农场"></a>俄罗斯Cyberpunk农场</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/8HZ4DnVfWYQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h1 id="Cyberpunk-2077-Japantown-Parade"><a href="#Cyberpunk-2077-Japantown-Parade" class="headerlink" title="Cyberpunk 2077 Japantown Parade"></a>Cyberpunk 2077 Japantown Parade</h1><div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer1"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FAk91bE5oo2.mp4?alt=media&token=42fe2755-0dc4-4839-9783-5de654f5a85f","pic":"https://cdn.jsdelivr.net/gh/sprezzaa/image/img/EncwtEJW8AEqc5o.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><hr><h2 id="11-5-21-Update"><a href="#11-5-21-Update" class="headerlink" title="11.5.21 Update"></a>11.5.21 Update</h2><h1 id="A-series-of-animated-worlds-translating-dreams-into-motion"><a href="#A-series-of-animated-worlds-translating-dreams-into-motion" class="headerlink" title="A series of animated worlds translating dreams into motion"></a>A series of animated worlds translating dreams into motion</h1><div id="dplayer2" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer2"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FHnUamXFYRO.mp4?alt=media&token=1e26a3ae-9eae-4f07-902f-7128b48b1509"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FdrAb2BATqe.mp4?alt=media&token=6435f4be-6cb7-4743-b0fe-61d39eb58f80"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><div id="dplayer4" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer4"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FUedLVnTz-D.mp4?alt=media&token=25540563-6efb-4ab0-be4e-52fa8d965d8a"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script><p> <a href="https://www.behance.net/gallery/130312103/Animated-worlds">Source</a></p>]]></content>
     
@@ -120,9 +145,9 @@
     <link href="http://example.com/NED/"/>
     <id>http://example.com/NED/</id>
     <published>2021-10-28T16:00:00.000Z</published>
-    <updated>2021-10-29T00:56:32.916Z</updated>
+    <updated>2021-12-19T12:42:45.881Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Antifragile里这一段：</p><blockquote><p>The “do you have evidence” fallacy, mistaking evidence of no harm for no evidence of harm, is similar to the one of misinterpreting NED (no evidence of disease) for evidence of no disease. This is the same error as mistaking absence of evidence for evidence of absence, the one that tends to affect smart and educated people, as if education made people more confirmatory in their responses and more liable to fall into simple logical errors.</p></blockquote><span id="more"></span><p>要细致区分evidence of no harm和no evidence of harm，前者是“没有找到有伤害的证明”，后者是“证明没有伤害”。为此回看了一下中文的翻译版本，中信出版社的简中翻译实在不能看，作者是不是自己都没看懂？而且这么关键的概念辨析，竟然连个冒号都不打，阅读起来稍不注意就可能略过了。</p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/eRX54w.png" alt="eRX54w"></p><p>再对比一下繁中（已经通过calibre做了横版简化处理）的翻译，格式清晰且容易理解。</p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/mtYWTD.png" alt="mtYWTD"></p><p>“absence of evidence” vs “evidence of absence”<br>没有证明 vs 证明没有<br>两个概念看上去类似，但却天壤之别，中间飞出无数黑天鹅。</p><p>Again，当代社科类，原版&gt;繁中版&gt;简中版</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Antifragile里这一段：</p><blockquote><p>The “do you have evidence” fallacy, mistaking evidence of no harm for no evidence of harm, is similar to the one of misinterpreting NED (no evidence of disease) for evidence of no disease. This is the same error as mistaking absence of evidence for evidence of absence, the one that tends to affect smart and educated people, as if education made people more confirmatory in their responses and more liable to fall into simple logical errors.</p></blockquote><span id="more"></span><p>要细致区分evidence of no harm和no evidence of harm，前者是“没有找到有伤害的证明”，后者是“证明没有伤害”。为此回看了一下中文的翻译版本，中信出版社的简中翻译实在不能看，作者是不是自己都没看懂？而且这么关键的概念辨析，竟然连个冒号都不打，阅读起来稍不注意就可能略过了。</p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/eRX54w.png" alt="eRX54w"></p><p>再对比一下繁中（已经通过calibre做了横版简化处理）的翻译，格式清晰且容易理解。</p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/mtYWTD.png" alt="mtYWTD"></p><p>“absence of evidence” vs “evidence of absence”<br>没有证明 vs 证明没有<br>两个概念看上去类似，但却天壤之别，中间飞出无数黑天鹅。</p><p>Again，当代社科类，原版&gt;繁中版&gt;简中版</p><hr><p>12/19/21 Update</p><p>看见一篇相关的文章：</p><p><a href="https://astralcodexten.substack.com/p/the-phrase-no-evidence-is-a-red-flag">The Phrase “No Evidence” Is A Red Flag For Bad Science Communication</a></p>]]></content>
     
     
     <summary type="html">&lt;p&gt;Antifragile里这一段：&lt;/p&gt;
@@ -485,31 +510,6 @@
     <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
     
     <category term="转载" scheme="http://example.com/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>重回对马岛</title>
-    <link href="http://example.com/Tsushima/"/>
-    <id>http://example.com/Tsushima/</id>
-    <published>2021-09-01T16:00:00.000Z</published>
-    <updated>2021-09-28T05:17:54.523Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>重回对马岛，此前的存档丢失，从头开始。这次的PS5版本，非常不错。但其实画质和游戏加载速度，在PS4已经很不错。主要的提升还是来自截图和录像，变得更加清晰。手柄adaptive control在射箭的时候有更真实的反馈，但要是在真实战斗中连续射击时就有点拉胯，速射时震动单元无法跟上节奏，原因可能是硬件限制。</p><span id="more"></span><p>因为刚刚打完只狼，多多少少还处于魂系操作中，动不动就想完美弹反，一对比只狼的弹反竟然比对马岛还简单，但到了后期，装配了合适的护身符之后，对马岛弹反就变得无比轻松。</p><p>莫名其妙来到了新的扩展一歧岛上，不能说有多出彩，但是把主人公的过去重新梳理了一遍。然后就失去了动力，因为感觉漂亮的风景已经有点看腻。大概理解别人说的开放世界的重复与空洞。</p><p>但对马岛画面真的很美，游玩过程中疯狂截图，化身游戏摄影师。其中有两处场景，给我带来奇妙的共鸣。</p><p><strong>海边草地</strong></p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Ghost+of+Tsushima_20210824233342.jpg" alt="海边草地"></p><p>这一张让我思绪回到很久之前教授布置的一篇阅读上，里面主角的姐姐的初恋带着他们姐妹俩到郊区一处绿草旷野，翻过栅栏后是一个下坡，走进去之后往回看，发现整个小镇都已经消失，身边只剩下绿草地包围，姐姐男友感叹到：此刻我们是宇宙中唯一的存在。当时看到印象很深刻，还记得那个时候是早上五点钟起来开始赶作业看阅读，结果这一篇越看越入神，很喜欢那一段描述。刚翻旧资料，竟然还找到了原文：</p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/screenshot20210904224226.png"></p><p>在游戏来沿海地区看到这一处上坡的草地，就立刻回想起了当时阅读的场景。真是没想到，作者笔下的美国內布拉斯加州一小镇郊区的旷野，竟然被我在日本对马岛的海边给找到了。</p><p><strong>壹歧岛传说铠甲任务中的海边洞穴</strong></p><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Ghost+of+Tsushima_20210826121721.jpg" alt="海边洞穴"></p><p>来到这里后我立刻回想起之前看到的这段文字：</p><blockquote><p>你们看到了丛林与麦浪，燃烧的万花筒，麋鹿和麦芽糖，十万只火烈鸟在路易斯安那，旅人沿着bobo河顺流而下，经纬线swing，抵达廊坊火车站，甜橙色齿轮。你们在暗夜里划船，豢养发光的巨鲸与潮汐，然后单方面宣布看到了爱情。</p></blockquote><p>我宣布这里就是我想象中的bobo河。</p><p>附上此地的战斗：</p><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FVsbi0yIlOT.mp4?alt=media&token=3f9a61dc-44eb-402e-8bbc-b37b2667f164","pic":"https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Ghost+of+Tsushima_20210826121721.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;重回对马岛，此前的存档丢失，从头开始。这次的PS5版本，非常不错。但其实画质和游戏加载速度，在PS4已经很不错。主要的提升还是来自截图和录像，变得更加清晰。手柄adaptive control在射箭的时候有更真实的反馈，但要是在真实战斗中连续射击时就有点拉胯，速射时震动单元无法跟上节奏，原因可能是硬件限制。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="文字" scheme="http://example.com/categories/%E6%96%87%E5%AD%97/"/>
-    
-    
-    <category term="文字" scheme="http://example.com/tags/%E6%96%87%E5%AD%97/"/>
-    
-    <category term="Review" scheme="http://example.com/tags/Review/"/>
-    
-    <category term="Games" scheme="http://example.com/tags/Games/"/>
     
   </entry>
   
