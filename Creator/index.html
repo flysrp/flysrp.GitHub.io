@@ -1,179 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+extends partial/layout
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+block site_title
+    != page.title + " · " + config.title
 
-    <!--Description-->
-    
-        <meta name="description" content="après moi, le déluge">
-    
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    <!--Author-->
-    
-        <meta name="author" content="Orange">
-    
+block container
+    include mixins/post
+    +post(page)
 
-    <!-- Title -->
-    
-    <title>创造者经济 | 世界陆沉</title>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-    <!-- Back Home -->
-    <a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-        <!-- Page Header -->
-        <header class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>
-                                创造者经济
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-            <div class="container">
-                <div class="row">
-                    <!-- Post Main Content -->
-                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>TE这一期<a target="_blank" rel="noopener" href="https://www.economist.com/briefing/2021/05/08/the-new-rules-of-the-creator-economy">简报</a>关注创造者经济，随着越来越多社媒用户意识到自己创造内容的经济价值，各大社交平台也开始迎合需求推出各种付费会员服务，创造的形式包括写作，（视频）直播，图片等等。出现了类似substrack这样的专业写作订阅平台，FB和twitter也在积极探索付费内容（听说twitter这几天刚推出了打赏功能。）</p>
-<span id="more"></span>
-
-<p>平台收取10到15%的手续费，而头部用户往往拥有更大的议价空间。目前的情况是各大平台抢着争取头部用户，形成一个卖方市场。</p>
-<p>但创造者经济依然是赢者通吃，大部分创造者只能勉强维持生计，只有头部创造者才能年入百万。文章提到了KK那句经典名言：只要每年有1000个订阅者愿意为你的内容花100刀订阅，你就可以以此谋生。</p>
-<p>小编也很懂，开头举的例子是拥有一双美腿的女孩，疫情期间失业开始在instagram上吸粉，然后转入onlyfans，每月50人付费10刀获取会员内容，此外还出售unwashed socks原味丝袜，起价10刀每多穿一天加10刀。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/U4sg44.png" alt="U4sg44"></p>
-
-
-                            <!-- Meta -->
-                            <div class="post-meta">
-                                <hr>
-                                <br>
-                                <div class="post-tags">
-                                    
-                                        
-
-<a href="/tags/文字/">#文字</a> <a href="/tags/The-Economist/">#The Economist</a>
-
-
-                                            
-                                </div>
-                                <div class="post-date">
-                                    
-                                        2021-05-08
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Comments -->
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Disqus Comments -->
-
-
-                    </div>
-                </div>
-            </div>
-        </article>
-</section>
-
-<!-- Image viewer-->
-
-    <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
-    <script
-      src="/js/viewer.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    
-    <script type="text/javascript">
-      // set image viewer
-      Viewer.setDefaults({
-        zoomRatio: [0.5],
-        navbar: false,
-        toolbar: false,
-        button: false,
-        title: [2, (image, imageData) => `${image.alt}`],
-        show: function() {
-          this.viewer.zoomTo(0.5);
-        }
-      });
-      var imageList = document.getElementsByTagName("img");
-      Array.prototype.forEach.call(imageList, element => {
-        var viewer = new Viewer(element);
-      });
-    </script>
-
-    
-
-<!-- TOC -->
-
-    <!-- Scripts -->
-    <script type="text/javascript">
-    console.log("©Orange 2015-" + new Date().getFullYear());
-</script>
-  
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-C5HQ4PLDJC', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-    <!-- Service Worker -->
-    <!-- if using service worker -->
-
-    
-</body>
-
-</html>
+block copyright
+    include partial/copyright

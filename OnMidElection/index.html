@@ -1,199 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+extends partial/layout
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+block site_title
+    != page.title + " · " + config.title
 
-    <!--Description-->
-    
-        <meta name="description" content="après moi, le déluge">
-    
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    <!--Author-->
-    
-        <meta name="author" content="Orange">
-    
+block container
+    include mixins/post
+    +post(page)
 
-    <!-- Title -->
-    
-    <title>中期选举 | 世界陆沉</title>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-    <!-- Back Home -->
-    <a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-        <!-- Page Header -->
-        <header class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>
-                                中期选举
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-            <div class="container">
-                <div class="row">
-                    <!-- Post Main Content -->
-                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>美国2014中期选举，民主党败的灰头土脸，共和党从民主党手中抢下十个席位，Iowa作为Swing State又导向了共和党。</p>
-<p>尽管如此，共和党获胜的主要云因并非因为他们有多好的新政策，而是人们对执政党不满意（永远如此）。共和党抓住机会把宣传点侧重在抨击民主党政策上。简单并有效。</p>
-<p>奥巴马里外不是人。平心而论，美国经济已经开始复苏，出口和投资增加，GDP上升，失业率下降，这些参数在当前世界经济情势下算的上很不错了。但老百姓们并没感觉到，工资中位数并无显著变化。另一方面奥巴马虽有个人魅力但执政经验并不足。尤其是在国际方面，对中东，俄罗斯，中国的态度都不够强硬。民众是不乐意看见本国领导人以软炮形象出现在世界舞台上的。反观国内，不管是医疗改革，教育，还是枪支管控，奥巴马都未做出非常有效的决策。</p>
-<p>但想来做总统不易，非在其位而不得知。</p>
-<p>Here’s what you rejected by voting out the Democrats:</p>
-<ul>
-<li>68 straight months of economic growth</li>
-<li>A record 56 months of private sector job growth</li>
-<li>A current annual GDP growth rate of 5%</li>
-<li>Unemployment falling from 10.1% to 5.8%</li>
-<li>The Federal budget deficit reduced by two-thirds</li>
-<li>A record stock market</li>
-<li>Record corporate profits</li>
-<li>Fewer Americans in harm’s way in war zones</li>
-<li>Zero attacks by al Queda on US soil</li>
-<li>The death of Osama bin Laden  </li>
-</ul>
-<p>Here’s what the Republicans gave us last time they were in charge: </p>
-<ul>
-<li>Two economic recessions</li>
-<li>The worse financial collapse since 1920</li>
-<li>The two longest wars in U.S. history</li>
-<li>The worst record of job creation since Herbert Hoover</li>
-<li>A stock market collapse</li>
-<li>A budget surplus (inherited from the Clinton years) turned into a trillion dollar deficit  </li>
-</ul>
-<p>Well played America. Well played.</p>
-
-
-                            <!-- Meta -->
-                            <div class="post-meta">
-                                <hr>
-                                <br>
-                                <div class="post-tags">
-                                    
-                                        
-
-<a href="/tags/文字/">#文字</a> <a href="/tags/The-Economist/">#The Economist</a>
-
-
-                                            
-                                </div>
-                                <div class="post-date">
-                                    
-                                        2014-11-23
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Comments -->
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Disqus Comments -->
-
-
-                    </div>
-                </div>
-            </div>
-        </article>
-</section>
-
-<!-- Image viewer-->
-
-    <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
-    <script
-      src="/js/viewer.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    
-    <script type="text/javascript">
-      // set image viewer
-      Viewer.setDefaults({
-        zoomRatio: [0.5],
-        navbar: false,
-        toolbar: false,
-        button: false,
-        title: [2, (image, imageData) => `${image.alt}`],
-        show: function() {
-          this.viewer.zoomTo(0.5);
-        }
-      });
-      var imageList = document.getElementsByTagName("img");
-      Array.prototype.forEach.call(imageList, element => {
-        var viewer = new Viewer(element);
-      });
-    </script>
-
-    
-
-<!-- TOC -->
-
-    <!-- Scripts -->
-    <script type="text/javascript">
-    console.log("©Orange 2015-" + new Date().getFullYear());
-</script>
-  
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-C5HQ4PLDJC', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-    <!-- Service Worker -->
-    <!-- if using service worker -->
-
-    
-</body>
-
-</html>
+block copyright
+    include partial/copyright

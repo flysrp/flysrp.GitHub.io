@@ -1,178 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+extends partial/layout
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+block site_title
+    != page.title + " · " + config.title
 
-    <!--Description-->
-    
-        <meta name="description" content="après moi, le déluge">
-    
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    <!--Author-->
-    
-        <meta name="author" content="Orange">
-    
+block container
+    include mixins/post
+    +post(page)
 
-    <!-- Title -->
-    
-    <title>性教育和鱿鱼游戏 | 世界陆沉</title>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-    <!-- Back Home -->
-    <a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-        <!-- Page Header -->
-        <header class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>
-                                性教育和鱿鱼游戏
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-            <div class="container">
-                <div class="row">
-                    <!-- Post Main Content -->
-                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>Sex Education这个系列很神奇，明明觉得剧情也就那样，但是总是能让我产生一口气看完的冲动，除了技术层面上刻意安排的结尾悬念和极为便捷的下一集按钮之外，剧情本身还是很饱满，每一个角色，不分主次，都有各自的行为逻辑和成长轨迹。第三季也是如此，但看的时候还是快进了很多，可能是因为Ruby很漂亮，反而觉得他俩不如在一起算了。Adam最后尝试参加训狗大赛让人感动。女校长后期让学生挂牌子这种可以直接断送其职业发展的行为显得非常刻意，强行为后期的学生反叛做铺垫。最后这部剧也加入Non-Binary Gender，并且有一定深刻描写，上次看到还是在Billions中，不过只是作为Tylor的一个标签被简短带过。这样的影视角色出现在主流传媒中，最积极的意义还是让越来越多的人认知到，并且逐渐接受非二元性别的存在。这样的存在人口比例上还是小众中的小众，但依然有意义。</p>
-<span id="more"></span>
-
-<hr>
-<p>另外还花了十几分钟快进了鱿鱼游戏第一，二集，主要是带着玩过Fall Guys的好奇心。游戏外的人物悲惨背景一律略过，直接进入游戏，第一关卡就死伤大半，血腥残忍也直接忽略。注意到的点是游戏结束后主办者要求每个人投票选择是否继续游戏。其中100人选择继续，101人选择不继续。投票中途选择取消者崩溃闹场时工作人员举枪对准，警告将会射杀任何继续阻碍民主投票的人，切换英文翻译用的是democratic process。这里就涉及到民主这个概念的混用和变迁，democracy，字面义rule by people，最古典的含义是rule by majority，多数人执政这里字面义描述投票场景倒还是非常恰当，因为选择退出的101人数量上多于选择继续的100人，所以他们的利益得到尊重，而另外100个人的利益全部受损。如果剧情里是101个人选择继续，那么剩下100个人则都面临死亡的风险。这样的情况，囿于democracy最古典的定义，也就是典型的“Tyranny of Majority”多数者暴政：如果101个人投票要求杀死另外100个人，光是数量优势就能借democracy民主之名完成屠杀。多数者暴政会导致少数团体的利益受损。而民主democracy进化至今，其完整含义应是Democratic Republic民主共和，Republic字面义public interest公共利益，权力分配到人民投票选举的代表上，个体，就算是少数个体的利益依然需要被考虑，避免多数者暴政。进一步应用到当代党派，产生的是Super majority(投票率达到2/3甚至更高)和多党联合执政，没有绝对的多数党，只有两个甚至更多的少数党派合作起草通过法律，保障更多公民的利益。</p>
-<p>回到这部剧情节上，“阻碍民主的进行”想表达的是民主的现代含义，即尽可能保证每一位公民的权益，而实际上101vs100的投票则是民主democracy的古典含义应用，多数者暴政，无比残酷，不应再适用于现代社会（也许误打误撞反而成为对这个场景的理想复古式形容）。</p>
-
-
-                            <!-- Meta -->
-                            <div class="post-meta">
-                                <hr>
-                                <br>
-                                <div class="post-tags">
-                                    
-                                        
-
-<a href="/tags/文字/">#文字</a> <a href="/tags/Review/">#Review</a> <a href="/tags/Movie/">#Movie</a> <a href="/tags/Politics/">#Politics</a>
-
-
-                                            
-                                </div>
-                                <div class="post-date">
-                                    
-                                        2021-09-19
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Comments -->
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Disqus Comments -->
-
-
-                    </div>
-                </div>
-            </div>
-        </article>
-</section>
-
-<!-- Image viewer-->
-
-    <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
-    <script
-      src="/js/viewer.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    
-    <script type="text/javascript">
-      // set image viewer
-      Viewer.setDefaults({
-        zoomRatio: [0.5],
-        navbar: false,
-        toolbar: false,
-        button: false,
-        title: [2, (image, imageData) => `${image.alt}`],
-        show: function() {
-          this.viewer.zoomTo(0.5);
-        }
-      });
-      var imageList = document.getElementsByTagName("img");
-      Array.prototype.forEach.call(imageList, element => {
-        var viewer = new Viewer(element);
-      });
-    </script>
-
-    
-
-<!-- TOC -->
-
-    <!-- Scripts -->
-    <script type="text/javascript">
-    console.log("©Orange 2015-" + new Date().getFullYear());
-</script>
-  
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-C5HQ4PLDJC', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-    <!-- Service Worker -->
-    <!-- if using service worker -->
-
-    
-</body>
-
-</html>
+block copyright
+    include partial/copyright

@@ -1,194 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+extends partial/layout
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+block site_title
+    != page.title + " · " + config.title
 
-    <!--Description-->
-    
-        <meta name="description" content="après moi, le déluge">
-    
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    <!--Author-->
-    
-        <meta name="author" content="Orange">
-    
+block container
+    include mixins/post
+    +post(page)
 
-    <!-- Title -->
-    
-    <title>法兰西特派 | 世界陆沉</title>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-    <!-- Back Home -->
-    <a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-        <!-- Page Header -->
-        <header class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>
-                                法兰西特派
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-            <div class="container">
-                <div class="row">
-                    <!-- Post Main Content -->
-                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <blockquote>
-<p>stop bickering, go make love.</p>
-</blockquote>
-<span id="more"></span>
-
-<p>一贯延续了韦导的摄影风格，画面好看的帧帧都想截图，一开始在线观看，后来为了截图下了一个20g的高清版本。没有看演员表，但出场的都是那几位韦导的御用，诺顿叔的声音太有辨识度，一句话就知道是他。当Léa Seydoux出场后太惊喜了，但蕾姐其实风格很固定，在我印象中一直都是这样的冷艳炽热，但依然好美。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_01.png" alt="FrexnchExpress_01"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_14.png" alt="FrexnchExpress_14"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_16.png" alt="FrexnchExpress_16"></p>
-<p>我喜欢这种极度理想化的叙事风格，既然要拍电影，那么默认就是和真实世界的逻辑有差别。</p>
-<p>最喜欢的故事是狱警和画家，和美食家。都是极其理想主义的描述，Lea身着狱警制服，再加上腰间挂着的那一大串钥匙，都是权力的暗示。也是罪犯的欲望巅峰。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_17.png" alt="FrexnchExpress_17"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_21.png" alt="FrexnchExpress_21"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_19.png" alt="FrexnchExpress_19"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_02.png" alt="FrexnchExpress_02"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_03.png" alt="FrexnchExpress_03"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_04.png" alt="FrexnchExpress_04"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_06.png" alt="FrexnchExpress_06"></p>
-<p>幼稚革命的故事配色很美</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_07.png" alt="FrexnchExpress_07"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_08.png" alt="FrexnchExpress_08"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_09.png" alt="FrexnchExpress_09"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_10.png" alt="FrexnchExpress_10"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_11.png" alt="FrexnchExpress_11"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_12.png" alt="FrexnchExpress_12"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_13.png" alt="FrexnchExpress_13"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/FrexnchExpress_15.png" alt="FrexnchExpress_15"></p>
-<p>最后美食家的故事，上菜的那一段长镜头，光影流转，黑白彩色交织，让人沉醉其中。而厨师以身试菜，劫匪安心开吃，却没想依然是下了毒，厨师以身试毒，极度理想化的场景，震撼人心。而最后那一段话，侥幸生还后发现毒盐中的味道是他当了这么多年厨师第一次尝到的新味道，一种大师到达巅峰后独孤求败劫后余生后竟然惊喜的发现又精进了一步。就像是Gandalf从grey到white的转变过程。</p>
-<p>最后那一段追车戏，感觉是导演经费不够，或者觉得真是画面实在不够美观，和他的摄影风格无法保持一致。毕竟这样的大场面可能会有太多的不可控因素，最后才选择了以动画的形式呈现。</p>
-<p>很明显的纽约客风格，最后主编去世，像是预示着纸媒的凋零。就想起来之前长期订5美元一个季度的New  Yorker，从来不看文章，只收藏封面。</p>
-
-
-                            <!-- Meta -->
-                            <div class="post-meta">
-                                <hr>
-                                <br>
-                                <div class="post-tags">
-                                    
-                                        
-
-<a href="/tags/文字/">#文字</a> <a href="/tags/Review/">#Review</a> <a href="/tags/影像/">#影像</a> <a href="/tags/Movie/">#Movie</a>
-
-
-                                            
-                                </div>
-                                <div class="post-date">
-                                    
-                                        2022-01-13
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Comments -->
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Disqus Comments -->
-
-
-                    </div>
-                </div>
-            </div>
-        </article>
-</section>
-
-<!-- Image viewer-->
-
-    <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
-    <script
-      src="/js/viewer.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    
-    <script type="text/javascript">
-      // set image viewer
-      Viewer.setDefaults({
-        zoomRatio: [0.5],
-        navbar: false,
-        toolbar: false,
-        button: false,
-        title: [2, (image, imageData) => `${image.alt}`],
-        show: function() {
-          this.viewer.zoomTo(0.5);
-        }
-      });
-      var imageList = document.getElementsByTagName("img");
-      Array.prototype.forEach.call(imageList, element => {
-        var viewer = new Viewer(element);
-      });
-    </script>
-
-    
-
-<!-- TOC -->
-
-    <!-- Scripts -->
-    <script type="text/javascript">
-    console.log("©Orange 2015-" + new Date().getFullYear());
-</script>
-  
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-C5HQ4PLDJC', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-    <!-- Service Worker -->
-    <!-- if using service worker -->
-
-    
-</body>
-
-</html>
+block copyright
+    include partial/copyright

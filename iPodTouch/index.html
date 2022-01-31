@@ -1,182 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+extends partial/layout
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+block site_title
+    != page.title + " · " + config.title
 
-    <!--Description-->
-    
-        <meta name="description" content="après moi, le déluge">
-    
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    <!--Author-->
-    
-        <meta name="author" content="Orange">
-    
+block container
+    include mixins/post
+    +post(page)
 
-    <!-- Title -->
-    
-    <title>iPod Touch | 世界陆沉</title>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-    <!-- Back Home -->
-    <a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-        <!-- Page Header -->
-        <header class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>
-                                iPod Touch
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-            <div class="container">
-                <div class="row">
-                    <!-- Post Main Content -->
-                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>重装iPad，看见从App Store里下载的第一个app：cude，一个第一人称射击游戏，满满的年代感。系统支持止步于iOS2.0 </p>
- <span id="more"></span>
-
-
-
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/IMG_0003.jpeg" alt="IMG_0003"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/IMG_0002.jpeg" alt="IMG_0002"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/IMG_0004.jpeg" alt="IMG_0004"></p>
-<p>然后是第一个花钱买的app，朗文词典，好像是198。记得当时怂恿我妈：200块就能买一个文曲星，多划算！我妈一听觉得有道理啊，孩子都学会省钱了，就给我买了。我把itouch带到学校查单词，英语老师爱不释手😂 </p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/745A3C3B-05A9-48E8-AFC3-74A4973EE66F_1_105_c.jpeg" alt="745A3C3B-05A9-48E8-AFC3-74A4973EE66F_1_105_c"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/5FB0D302-18A3-4544-8968-E55BBF661BBF_1_105_c.jpeg" alt="5FB0D302-18A3-4544-8968-E55BBF661BBF_1_105_c"></p>
-<hr>
-<p>当年一个人去香港考sat，举目无亲，全靠着提前在touch里缓冲好的谷歌地图导航。当时谷歌地图还是iOS系统内置且并未被墙，itouch在未加入任何Wi-Fi的情况下也可以靠三角定位在地图中显示大致位置，当时的我直呼神器！ </p>
-
-
-                            <!-- Meta -->
-                            <div class="post-meta">
-                                <hr>
-                                <br>
-                                <div class="post-tags">
-                                    
-                                        
-
-<a href="/tags/文字/">#文字</a> <a href="/tags/Apple/">#Apple</a>
-
-
-                                            
-                                </div>
-                                <div class="post-date">
-                                    
-                                        2021-03-09
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Comments -->
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Disqus Comments -->
-
-
-                    </div>
-                </div>
-            </div>
-        </article>
-</section>
-
-<!-- Image viewer-->
-
-    <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
-    <script
-      src="/js/viewer.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    
-    <script type="text/javascript">
-      // set image viewer
-      Viewer.setDefaults({
-        zoomRatio: [0.5],
-        navbar: false,
-        toolbar: false,
-        button: false,
-        title: [2, (image, imageData) => `${image.alt}`],
-        show: function() {
-          this.viewer.zoomTo(0.5);
-        }
-      });
-      var imageList = document.getElementsByTagName("img");
-      Array.prototype.forEach.call(imageList, element => {
-        var viewer = new Viewer(element);
-      });
-    </script>
-
-    
-
-<!-- TOC -->
-
-    <!-- Scripts -->
-    <script type="text/javascript">
-    console.log("©Orange 2015-" + new Date().getFullYear());
-</script>
-  
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-C5HQ4PLDJC', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-    <!-- Service Worker -->
-    <!-- if using service worker -->
-
-    
-</body>
-
-</html>
+block copyright
+    include partial/copyright

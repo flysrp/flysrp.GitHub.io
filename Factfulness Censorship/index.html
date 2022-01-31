@@ -1,190 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+extends partial/layout
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+block site_title
+    != page.title + " · " + config.title
 
-    <!--Description-->
-    
-        <meta name="description" content="après moi, le déluge">
-    
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    <!--Author-->
-    
-        <meta name="author" content="Orange">
-    
+block container
+    include mixins/post
+    +post(page)
 
-    <!-- Title -->
-    
-    <title>Factfulness几处删节 | 世界陆沉</title>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-    <!-- Back Home -->
-    <a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-        <!-- Page Header -->
-        <header class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>
-                                Factfulness几处删节
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-            <div class="container">
-                <div class="row">
-                    <!-- Post Main Content -->
-                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p><a target="_blank" rel="noopener" href="https://orange42.cc/Factfulness/">这本书</a>文字很简单，能读英文就读英文吧。再不行就读繁体版。已经对审查有了敏感性，读到某些地方就预测到会被删掉了。一查果然是。</p>
-<span id="more"></span>
-<h1 id="三年困难时期"><a href="#三年困难时期" class="headerlink" title="三年困难时期"></a>三年困难时期</h1><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/x74424658.jpg"><br>原文基于上图描述：</p>
-<p>There’s a dip in the global life expectancy curve in 1960 because 15 to 40 million people—nobody knows the exact number—starved to death that year in China, in what was probably the world’s largest ever man-made famine.</p>
-<p>The Chinese harvest in 1960 was smaller than planned because of a bad season combined with poor governmental advice about how to grow crops more effectively. The local governments didn’t want to show bad results, so they took all the food and sent it to the central government. There was no food left. One year later the shocked inspectors were delivering eyewitness reports of cannibalism and dead bodies along roads. The government denied that its central planning had failed, and the catastrophe was kept secret by the Chinese government for 36 years. It wasn’t described in English to the outside world until 1996. (Think about it. Could any government keep the death of 15 million people a global secret today?)<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/x74424656.jpg"><br>繁体版翻译：<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/x74424662.jpg"></p>
-<p>简中直接删没，连逻辑都不理一下，您读读这句话：<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/x74424660.jpg"><br>我把上面这张图表给大家看的时候，人们经常问，最近发生的一次人口平均寿命的下降是什么时候？他们通常会指向1960年。如果你们不知道人类平均寿命的变化的话，我愿意利用这个机会来纠正“世界正在变坏”的错误观念。<br>指向1960年就没下文了。</p>
-<h1 id="中越战争"><a href="#中越战争" class="headerlink" title="中越战争"></a>中越战争</h1><p>原文：<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/x74424665.jpg"></p>
-<p>繁中：<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/x74424663.jpg"></p>
-<p>简中：<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/x74424669.jpg"></p>
-<p>被删的是这两段</p>
-<blockquote>
-<p>Then Niem asked me if I was ready to see the proper war monument. He drove a little way further, and pointed out of the window. Above the tree tops I couldsee a large pagoda, covered in gold. It seemed about 300 feet high. He said, “Here is where we commemorate our war heroes. Isn’t it beautiful?” This was themonument to Vietnam’s wars with China.<br>The wars with China had lasted, on and off, for 2,000 years. The French occupation had lasted 200 years. The”Resistance War Against America” took only 20 years. The sizes of the monuments put things in perfect proportion. It was only by comparing them that I could understand the relative insignificance of “the Vietnam War” to the people who now live in Vietnam.</p>
-</blockquote>
-<h1 id="毛和计划生育"><a href="#毛和计划生育" class="headerlink" title="毛和计划生育"></a>毛和计划生育</h1><p>表达的意思是计划生育并不是导致亚洲国家生育率降低的主要原因，避孕措施的普及和女性受教育程度提高才是。</p>
-<p>原文：<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/x74424667.jpg"></p>
-<p>繁体：<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/x74424673.jpg"></p>
-<p>简中也是直接删没：<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/x74424671.jpg"></p>
-<p>可能是因为用了infamous来形容计划生育吧。</p>
-
-
-                            <!-- Meta -->
-                            <div class="post-meta">
-                                <hr>
-                                <br>
-                                <div class="post-tags">
-                                    
-                                        
-
-<a href="/tags/文字/">#文字</a> <a href="/tags/翻译/">#翻译</a> <a href="/tags/Book/">#Book</a> <a href="/tags/Censorship/">#Censorship</a>
-
-
-                                            
-                                </div>
-                                <div class="post-date">
-                                    
-                                        2020-07-17
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Comments -->
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Disqus Comments -->
-
-
-                    </div>
-                </div>
-            </div>
-        </article>
-</section>
-
-<!-- Image viewer-->
-
-    <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
-    <script
-      src="/js/viewer.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    
-    <script type="text/javascript">
-      // set image viewer
-      Viewer.setDefaults({
-        zoomRatio: [0.5],
-        navbar: false,
-        toolbar: false,
-        button: false,
-        title: [2, (image, imageData) => `${image.alt}`],
-        show: function() {
-          this.viewer.zoomTo(0.5);
-        }
-      });
-      var imageList = document.getElementsByTagName("img");
-      Array.prototype.forEach.call(imageList, element => {
-        var viewer = new Viewer(element);
-      });
-    </script>
-
-    
-
-<!-- TOC -->
-
-    <!-- Scripts -->
-    <script type="text/javascript">
-    console.log("©Orange 2015-" + new Date().getFullYear());
-</script>
-  
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-C5HQ4PLDJC', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-    <!-- Service Worker -->
-    <!-- if using service worker -->
-
-    
-</body>
-
-</html>
+block copyright
+    include partial/copyright

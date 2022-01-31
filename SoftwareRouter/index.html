@@ -1,185 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+extends partial/layout
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+block site_title
+    != page.title + " · " + config.title
 
-    <!--Description-->
-    
-        <meta name="description" content="après moi, le déluge">
-    
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    <!--Author-->
-    
-        <meta name="author" content="Orange">
-    
+block container
+    include mixins/post
+    +post(page)
 
-    <!-- Title -->
-    
-    <title>网关路由搭建 | 世界陆沉</title>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-    <!-- Back Home -->
-    <a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-        <!-- Page Header -->
-        <header class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>
-                                网关路由搭建
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-            <div class="container">
-                <div class="row">
-                    <!-- Post Main Content -->
-                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>折腾了两小时终于设置好了家庭网关路由。</p>
-<span id="more"></span>
-
-<p>回国之前本来准备买一个性能强一点的路由器，通过在路由器中装第三方插件完成路由翻墙。后来查了一下发现这种方法最大的局限是路由器的性能，就算是几百刀的路由器芯片性能也极其有限，而且大部分路由器都不是为了翻墙而设计的，处理各类复杂规则起来都比较吃力。除此之外发烧友尝试魔改路由器，安装更高性能的模块。最后发现了目前最佳的家庭设备翻墙方案，是网关路由翻墙。</p>
-<p>就算是最普通的电脑，其芯片算力也远超路由器，处理起翻墙规则更加轻松。硬件层面需要一台Mac，一根网线，一个网线转接口，为此11年买的MBA重新上岗再就业。软件层面是Surge，专门买了Surge 4。</p>
-<p>参考的设置教程是<a target="_blank" rel="noopener" href="https://blog.qust.me/posts/macsurgerouter/">这一篇</a>，讲的非常详细。</p>
-<p>过程中出现了各种问题，主要是不了解DHCP，一直处于知其然不知其所以然的状态。查了一下才知道DHCP全称是Dynamic Host Configuration Protocol，动态IP分配协议。一般路由器都会默认开启DHCP，给新入网的设备分配一个新的IP地址。Mac插入从路由器接出的网线后关闭路由器的DHCP，并在网络设置里手动分配一个基于路由器IP的变形（比如路由器IP是192.168.0.1，那么就手动设置Mac IP为192.168.0.2）。然后再开启Surge的DHCP设置，按照提示就能够顺利让Surge接管局域网内设备的IP分配。</p>
-<p>重启路由器，之后进入Surge设备界面，就能看见各种新接入的设备，选择需要翻墙的设备，接着断开该设备网络再重连Surge就接管该设备的上网规则和代理了。</p>
-<p>设置了之后Switch和PS5以及客厅电视都能够无缝翻墙，不用再购买主机加速服务来下载NS游戏，以及可以直接在电视上收看Netflix 4K。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/IMG_6425.JPG" alt="1"></p>
-<p>发现PS5下载软件竟然是直连，速度飞快，反而是NS非要翻墙才行，国行之后也一点没有改善。最后连上了Kindle，之前直连Goodreads的谜团也解开了，原来所有的Goodreads信息都是走的亚马逊网站，没有走Goodreads自己的流量。 </p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/IMG_6428.JPG" alt="2"></p>
-<p>最后我发现但凡是搞独立博客的，再写一篇路由翻墙的技术文的可能性非常大，自己也没能免俗…</p>
-
-
-                            <!-- Meta -->
-                            <div class="post-meta">
-                                <hr>
-                                <br>
-                                <div class="post-tags">
-                                    
-                                        
-
-<a href="/tags/文字/">#文字</a> <a href="/tags/Technology/">#Technology</a> <a href="/tags/Censorship/">#Censorship</a> <a href="/tags/Hardware/">#Hardware</a>
-
-
-                                            
-                                </div>
-                                <div class="post-date">
-                                    
-                                        2021-05-07
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Comments -->
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Disqus Comments -->
-
-
-                    </div>
-                </div>
-            </div>
-        </article>
-</section>
-
-<!-- Image viewer-->
-
-    <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
-    <script
-      src="/js/viewer.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    
-    <script type="text/javascript">
-      // set image viewer
-      Viewer.setDefaults({
-        zoomRatio: [0.5],
-        navbar: false,
-        toolbar: false,
-        button: false,
-        title: [2, (image, imageData) => `${image.alt}`],
-        show: function() {
-          this.viewer.zoomTo(0.5);
-        }
-      });
-      var imageList = document.getElementsByTagName("img");
-      Array.prototype.forEach.call(imageList, element => {
-        var viewer = new Viewer(element);
-      });
-    </script>
-
-    
-
-<!-- TOC -->
-
-    <!-- Scripts -->
-    <script type="text/javascript">
-    console.log("©Orange 2015-" + new Date().getFullYear());
-</script>
-  
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-C5HQ4PLDJC', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-    <!-- Service Worker -->
-    <!-- if using service worker -->
-
-    
-</body>
-
-</html>
+block copyright
+    include partial/copyright

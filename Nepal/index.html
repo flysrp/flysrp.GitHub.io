@@ -1,176 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+extends partial/layout
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+block site_title
+    != page.title + " · " + config.title
 
-    <!--Description-->
-    
-        <meta name="description" content="après moi, le déluge">
-    
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    <!--Author-->
-    
-        <meta name="author" content="Orange">
-    
+block container
+    include mixins/post
+    +post(page)
 
-    <!-- Title -->
-    
-    <title>Nepal | 世界陆沉</title>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-    <!-- Back Home -->
-    <a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-        <!-- Page Header -->
-        <header class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>
-                                Nepal
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-            <div class="container">
-                <div class="row">
-                    <!-- Post Main Content -->
-                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>佛国，小印度</p>
-<a id="more"></a>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_16.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_02.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_04.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_09.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_17.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_07.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_05.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_01.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_18.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_15.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_08.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_06.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_03.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_10.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_12.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_20.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_27.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_40.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_21.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_41.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_29.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_26.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_38.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_34.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_43.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_28.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_35.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_37.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_30.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_42.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_33.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_31.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_36.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_24.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_25.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_39.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_32.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_44.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_19.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_11.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_13.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_14.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_22.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_23.jpg"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/Nepal_45.jpg"></p>
-
-
-                            <!-- Meta -->
-                            <div class="post-meta">
-                                <hr>
-                                <br>
-                                <div class="post-tags">
-                                    
-                                        
-
-<a href="/tags/影像/">#影像</a> <a href="/tags/城市/">#城市</a>
-
-
-                                            
-                                </div>
-                                <div class="post-date">
-                                    
-                                        2016-10-09
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Comments -->
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Disqus Comments -->
-
-
-                    </div>
-                </div>
-            </div>
-        </article>
-</section>
-
-<!-- Image viewer-->
-
-    <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
-    <script
-      src="/js/viewer.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    
-    <script type="text/javascript">
-      // set image viewer
-      Viewer.setDefaults({
-        zoomRatio: [0.5],
-        navbar: false,
-        toolbar: false,
-        button: false,
-        title: [2, (image, imageData) => `${image.alt}`],
-        show: function() {
-          this.viewer.zoomTo(0.5);
-        }
-      });
-      var imageList = document.getElementsByTagName("img");
-      Array.prototype.forEach.call(imageList, element => {
-        var viewer = new Viewer(element);
-      });
-    </script>
-
-    
-
-<!-- TOC -->
-
-    <!-- Scripts -->
-    <script type="text/javascript">
-    console.log("©Orange 2015-" + new Date().getFullYear());
-</script>
-  
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-C5HQ4PLDJC', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-    <!-- Service Worker -->
-    <!-- if using service worker -->
-
-    
-</body>
-
-</html>
+block copyright
+    include partial/copyright

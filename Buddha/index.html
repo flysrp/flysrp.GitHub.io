@@ -1,187 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+extends partial/layout
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+block site_title
+    != page.title + " · " + config.title
 
-    <!--Description-->
-    
-        <meta name="description" content="après moi, le déluge">
-    
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    <!--Author-->
-    
-        <meta name="author" content="Orange">
-    
+block container
+    include mixins/post
+    +post(page)
 
-    <!-- Title -->
-    
-    <title>大佛普拉斯 | 世界陆沉</title>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-    <!-- Back Home -->
-    <a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-        <!-- Page Header -->
-        <header class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>
-                                大佛普拉斯
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-            <div class="container">
-                <div class="row">
-                    <!-- Post Main Content -->
-                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>导演把第四面墙都砸烂了，又是一部全程黑白少量彩色的电影。</p>
-<p>Puta or Buddha? 真是绝妙的隐喻。 </p>
- <a id="more"></a>
-
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_01.png" alt="BuddhaPlus_01"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_03.png" alt="BuddhaPlus_03"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_04.png" alt="BuddhaPlus_04"></p>
-<blockquote>
-<p>我想雖然現在是太空時代， 人類早可以坐太空船去月球，但永遠無法探索別人內心的宇宙。</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_06.png" alt="BuddhaPlus_06"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_07.png" alt="BuddhaPlus_07"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_08.png" alt="BuddhaPlus_08"></p>
-<h2 id="唯一能找到的一张照片"><a href="#唯一能找到的一张照片" class="headerlink" title="唯一能找到的一张照片"></a>唯一能找到的一张照片</h2><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_09.png" alt="BuddhaPlus_09"></p>
-<h2 id="有钱人生活，果然是彩色的。"><a href="#有钱人生活，果然是彩色的。" class="headerlink" title="有钱人生活，果然是彩色的。"></a>有钱人生活，果然是彩色的。</h2><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_10.png" alt="BuddhaPlus_10"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_11.png" alt="BuddhaPlus_11"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_16.png" alt="BuddhaPlus_16"></p>
-<h2 id="夹娃娃很治愈啊"><a href="#夹娃娃很治愈啊" class="headerlink" title="夹娃娃很治愈啊"></a>夹娃娃很治愈啊</h2><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_12.png" alt="BuddhaPlus_12"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_05.png" alt="BuddhaPlus_05"></p>
-<h2 id="粉红机车"><a href="#粉红机车" class="headerlink" title="粉红机车"></a>粉红机车</h2><p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_13.png" alt="BuddhaPlus_13"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_14.png" alt="BuddhaPlus_14"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/BuddhaPlus_15.png" alt="BuddhaPlus_15"></p>
-
-
-                            <!-- Meta -->
-                            <div class="post-meta">
-                                <hr>
-                                <br>
-                                <div class="post-tags">
-                                    
-                                        
-
-<a href="/tags/影像/">#影像</a> <a href="/tags/Movie/">#Movie</a>
-
-
-                                            
-                                </div>
-                                <div class="post-date">
-                                    
-                                        2021-03-07
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Comments -->
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Disqus Comments -->
-
-
-                    </div>
-                </div>
-            </div>
-        </article>
-</section>
-
-<!-- Image viewer-->
-
-    <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
-    <script
-      src="/js/viewer.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    
-    <script type="text/javascript">
-      // set image viewer
-      Viewer.setDefaults({
-        zoomRatio: [0.5],
-        navbar: false,
-        toolbar: false,
-        button: false,
-        title: [2, (image, imageData) => `${image.alt}`],
-        show: function() {
-          this.viewer.zoomTo(0.5);
-        }
-      });
-      var imageList = document.getElementsByTagName("img");
-      Array.prototype.forEach.call(imageList, element => {
-        var viewer = new Viewer(element);
-      });
-    </script>
-
-    
-
-<!-- TOC -->
-
-    <!-- Scripts -->
-    <script type="text/javascript">
-    console.log("©Orange 2015-" + new Date().getFullYear());
-</script>
-  
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-C5HQ4PLDJC', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-    <!-- Service Worker -->
-    <!-- if using service worker -->
-
-    
-</body>
-
-</html>
+block copyright
+    include partial/copyright

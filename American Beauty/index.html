@@ -1,188 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+extends partial/layout
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+block site_title
+    != page.title + " · " + config.title
 
-    <!--Description-->
-    
-        <meta name="description" content="après moi, le déluge">
-    
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    <!--Author-->
-    
-        <meta name="author" content="Orange">
-    
+block container
+    include mixins/post
+    +post(page)
 
-    <!-- Title -->
-    
-    <title>美丽有罪 | 世界陆沉</title>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-    <!-- Back Home -->
-    <a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-        <!-- Page Header -->
-        <header class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>
-                                美丽有罪
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-            <div class="container">
-                <div class="row">
-                    <!-- Post Main Content -->
-                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>第二遍看完<a target="_blank" rel="noopener" href="https://www.imdb.com/title/tt0169547/">American Beauty</a>之后整个人都沉浸在一种悲伤的氛围之中。那个在空中随风漂浮的塑料袋似乎在我脑海中也不断的漂浮着。</p>
-<p>这部电影有着很强的时代性，折射出当代美国价值观之下存在的许多问题。想说几个点：</p>
-<ol>
-<li><p>当年看这部电影最大的震撼是意识到恐同即深柜这一个过度补偿的经典概念，虽然不一定完全适用，但现在来看依然引人深思。</p>
-</li>
-<li><p>入秋后时常刮大风，大风天走在路上时不时就会想起这部电影，期待也能在哪儿看到一个白色塑料袋。美丽真的是非常主观的存在，极度的秩序构成美，几何对称，色彩分明，都会使人心生愉悦。但其实混沌一样也能产生美感，此处特指随机被风吹动的白色塑料袋。但现在想来之所以觉得那段美，是放在电影特定场景之下的，尤其是还配着淡淡忧郁的背景音乐。</p>
-</li>
-<li><p>American Beauty中文被翻译成美国丽人真的是败笔，一眼看下去还以为是爱情片。这部电影在台湾被译为《美国心玫瑰情》，在香港是《美丽有罪》。不管是哪一个都比《美国丽人》好太多。Beauty在这里绝不是特指人，而是带着讽刺意味的指代一切带着美丽属性的存在。</p>
-</li>
-<li><p>从我们出生就开始的社会化过程势不可挡，多少人在这个过程中丧失了自我，一小部分幸运儿经过种种机遇重新寻回自我，开始构建内在的认知。更多的人永远的迷失了，将自己的行为完全建立在他人对自己的反馈之上。就像Spacey和他老婆一样慢慢丧失自我，重新找回人生和掌控感的方式都是通过打破norm dicatated by society. Fuck society, what’s wrong with getting stoned, waht’s wrong with cheating my husband?</p>
-</li>
-<li><p>须知并不是所有社会都是这样。中国孔孟之礼传承千年，堪称人类文明之”精华“。美国消费主义重商主义名粹主义精英主义社达主义并中国还严重。在我看来目前只有欧洲小国才能达到更高层次的境界。尺度非常重要，大了就意味着更多力量，也就随之有了更多欲望。偏安一隅，才是唯一出路。冰岛挪威瑞士都tm实现direct democracy直奔共产主义了，中美还在这边争锋斗气。人类内耗真的严重，急需外星势力介入，届时全人类才能将思想从“你国”升华到“你球”。</p>
-</li>
-<li><p>Kevin Spacey，叔真的是全方位的戏路精湛。Maybe we don’t like him as a real person, but he is really a good actor.</p>
-</li>
-</ol>
-
-
-                            <!-- Meta -->
-                            <div class="post-meta">
-                                <hr>
-                                <br>
-                                <div class="post-tags">
-                                    
-                                        
-
-<a href="/tags/文字/">#文字</a> <a href="/tags/Review/">#Review</a> <a href="/tags/电影/">#电影</a>
-
-
-                                            
-                                </div>
-                                <div class="post-date">
-                                    
-                                        2019-10-18
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Comments -->
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Disqus Comments -->
-
-
-                    </div>
-                </div>
-            </div>
-        </article>
-</section>
-
-<!-- Image viewer-->
-
-    <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
-    <script
-      src="/js/viewer.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    
-    <script type="text/javascript">
-      // set image viewer
-      Viewer.setDefaults({
-        zoomRatio: [0.5],
-        navbar: false,
-        toolbar: false,
-        button: false,
-        title: [2, (image, imageData) => `${image.alt}`],
-        show: function() {
-          this.viewer.zoomTo(0.5);
-        }
-      });
-      var imageList = document.getElementsByTagName("img");
-      Array.prototype.forEach.call(imageList, element => {
-        var viewer = new Viewer(element);
-      });
-    </script>
-
-    
-
-<!-- TOC -->
-
-    <!-- Scripts -->
-    <script type="text/javascript">
-    console.log("©Orange 2015-" + new Date().getFullYear());
-</script>
-  
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-C5HQ4PLDJC', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-    <!-- Service Worker -->
-    <!-- if using service worker -->
-
-    
-</body>
-
-</html>
+block copyright
+    include partial/copyright

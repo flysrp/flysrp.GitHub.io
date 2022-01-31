@@ -1,185 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+extends partial/layout
 
-<!-- Head tag -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+block site_title
+    != page.title + " · " + config.title
 
-    <!--Description-->
-    
-        <meta name="description" content="après moi, le déluge">
-    
+block description
+    - var desc = page.desc || page.title + ' - ' + config.author;
+    meta(name="description", content=desc)
 
-    <!--Author-->
-    
-        <meta name="author" content="Orange">
-    
+block container
+    include mixins/post
+    +post(page)
 
-    <!-- Title -->
-    
-    <title>On Bad Habit | 世界陆沉</title>
+block pagination
+    include mixins/paginator
+    +post()
+    include partial/comment
 
-    <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/style.css">
-
-
-    <!-- Custom Fonts -->
-    <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Noto+Serif:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
-</head>
-
-<body>
-
-    <!-- Content -->
-    <section class="article-container">
-    <!-- Back Home -->
-    <a class="nav-back" href="/">
-    <i class="fa fa-puzzle-piece"></i>
-</a>
-
-        <!-- Page Header -->
-        <header class="intro-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>
-                                On Bad Habit
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-            <div class="container">
-                <div class="row">
-                    <!-- Post Main Content -->
-                    <div class="post-content col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>What you said about good habits and culture is very inspiring. Anything that can be considered as culture must be beneficial to the society. It exists so that the society can grow. In contrast, bad habits are just bad habits.</p>
-<span id="more"></span>
-
-<p>Some habits like genital mutilation are naturally bad. Other habits, however, are tricky to decide. The one I am thinking is the habit of eating dogs. First of all, as the owner of a Golden Retriever for 7 years, I myself found it unacceptable to eat dogs. But in some distant region of China, the habit of eating dogs is still being kept even today. I tried to fit this habit into the thought process above to determine its “evil nature”. Then I realize that eating dogs does not really hold back that specific group of people. Economically speaking, treating dog meat as a commercial product that provide nutrition and energy to human body is no different than eating pork or beef. Socially speaking, eating dogs does not violate any human rights or the feelings of people inside the group because those people have already accepted this habit. From what I’ve read, those regions even developed dog-meat-related festivals that boosted local tourism.</p>
-<p>From the perspective of outsiders, it is horrible to even think about eating dogs because we see dogs as our loyal and trustworthy friends and as a result we choose not to conduct any business and condemn those dog eater communities as normalizing methods. But, I’m wondering, from the perspective of people inside the region, is dog eating really a bad habit or can it be considered as part of its culture?</p>
-<p><strong>Reply from MI</strong><br>If one eats meat, then as long as one grows the meaty animal, they are all the same. They have strong negative impact on the environment of a country, and therefore, meat eating in general is a bad habit. But so is smoking cigarets!!  </p>
-<p>So, if one does eat meat, then are all the same bad habit, with eating sheep or cow or fish or chicken, not being different from eating dogs or cats or whales.  If you feel bad that people eat dogs, then think about the evil of eating cows or fish. We can easily survive on vegetables, as a vast majority of the Chinese and Indians have done for thousands of years. In India it is a religious issue, so their environment is very healthy and all animals there are alive and live with people–monkeys, elephants, tigers, snakes, cows……   In China it was the abject poverty that made people eat just pant material. But they killed and ate all other animals they could get their hands on, until there were none let. Dogs are not any different. It harmed the natural environment of China and its animal diversity immensely. And now, meat eating is destroying the Chinese environment even faster. Grains have to be grown to feed to the animal before eating it. Very damaging and wasteful.</p>
-<p>I have had dogs and cats and many other animals. I cannot bear to eat the flesh of any animal. To me it feels like chewing on a person’s flesh. To you, only dog meat feels that way. All animals are as intelligent, caring and loving as each other. You only need to let them grow up with you to realize that. It is so bloody sad to torture, kill and eat their flesh….  **So, it is not eating dogs that is a bad habit, but eating meat now. **Long time ago when there were hunter-gatherers, it was just fine because there were too few humans around to harm their living environment. Not any more. </p>
-<p>Cheers, and kiss you doggie for me.</p>
-<p>MI</p>
-<p>—<br>只有好的社会习惯才能成为文化，culture的本意是grow。坏习惯就只是坏习惯，对社会的进步没有好处。总有人会用culture relativism作为说辞，要他国尊重自己的文化，但很多坏习惯是无法成为文化的。比如女性生殖器官切除，延续千年，部分地区80%受访者依然认为应该继续，难道这就可以被称作是文化吗，答案是不。因为它无法对社会进步带来任何益处。</p>
-<p>另一点就是语言的选择，我尽量会选择中性的语言，比如说中国，而不是你国，习近平，而不是包子，或者阿包。通过命名来预设立场（很多时候甚至是潜意识里的选择）会导致叙述的偏差。比如女性生殖器割除，genital mutilation，竟然被翻译为女性割礼。翻译的人有意识到他们描述的是什么吗。同样类似的防火墙GFW，竟然是全程是The Great Firewall，它不配用great形容。</p>
-<p>关于文化的尊重，美国在中东国家升LGBTQ彩虹旗找到强烈抗议。当地民众质问美国how dare在自己的国家推崇同性恋这些要入极刑的活动。我们国家想来推崇一夫多妻制，如果我们去你们国家推行一夫多妻制，你们会同意吗？这就涉及到自然权利的概念。对立和平等的概念是观察自然得到的最基本存在，光明与黑暗，高与低，等等。动物和婴儿都能体会到不平等的愤怒。自然权利的核心就是人人应该平等，这不是任何宪法所赋予我们的，这是我们生而有之的权利。虽然每每被侵犯，但这种权利永远不会被剥夺。人类20世纪的历史就是一部抗争自然权利的历史。LGBTQ同权是自然权利的延续，人人平等。而一夫多妻制度则完全相反，如果中东国家在崇尚一夫多妻之的同时也立法通过一妻多夫制，实现完全平等，那完全没问题。</p>
-
-
-                            <!-- Meta -->
-                            <div class="post-meta">
-                                <hr>
-                                <br>
-                                <div class="post-tags">
-                                    
-                                        
-
-<a href="/tags/文字/">#文字</a> <a href="/tags/Politics/">#Politics</a> <a href="/tags/Censorship/">#Censorship</a>
-
-
-                                            
-                                </div>
-                                <div class="post-date">
-                                    
-                                        2020-01-31
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <!-- Comments -->
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Disqus Comments -->
-
-
-                    </div>
-                </div>
-            </div>
-        </article>
-</section>
-
-<!-- Image viewer-->
-
-    <!-- Custom picture view-->
-    <link href="/css/viewer.min.css" rel="stylesheet" />
-    <script
-      src="/js/viewer.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    
-    <script type="text/javascript">
-      // set image viewer
-      Viewer.setDefaults({
-        zoomRatio: [0.5],
-        navbar: false,
-        toolbar: false,
-        button: false,
-        title: [2, (image, imageData) => `${image.alt}`],
-        show: function() {
-          this.viewer.zoomTo(0.5);
-        }
-      });
-      var imageList = document.getElementsByTagName("img");
-      Array.prototype.forEach.call(imageList, element => {
-        var viewer = new Viewer(element);
-      });
-    </script>
-
-    
-
-<!-- TOC -->
-
-    <!-- Scripts -->
-    <script type="text/javascript">
-    console.log("©Orange 2015-" + new Date().getFullYear());
-</script>
-  
-    <!-- Google Analytics -->
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'G-C5HQ4PLDJC', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-
-    <!-- Service Worker -->
-    <!-- if using service worker -->
-
-    
-</body>
-
-</html>
+block copyright
+    include partial/copyright
