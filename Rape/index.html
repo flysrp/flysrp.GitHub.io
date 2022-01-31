@@ -1,20 +1,409 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-block site_title
-    != page.title + " · " + config.title
+<link rel="stylesheet" href="/css/main.css">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL XiaoWei:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
-block container
-    include mixins/post
-    +post(page)
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+  <meta name="description" content="强奸包括任何未经同意的性行为。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于强奸">
+<meta property="og:url" content="http://example.com/Rape/index.html">
+<meta property="og:site_name" content="世界陆沉">
+<meta property="og:description" content="强奸包括任何未经同意的性行为。">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-10-13T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-10-20T01:11:48.940Z">
+<meta property="article:author" content="Orange">
+<meta property="article:tag" content="文字">
+<meta property="article:tag" content="Sociology">
+<meta name="twitter:card" content="summary">
 
-block copyright
-    include partial/copyright
+<link rel="canonical" href="http://example.com/Rape/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh'
+  };
+</script>
+
+  <title>关于强奸 | 世界陆沉</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">世界陆沉</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">夜色温柔</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-anchor fa-fw"></i>Home</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Rape/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          关于强奸
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-10-14 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-14T00:00:00+08:00">2021-10-14</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>强奸包括任何未经同意的性行为。</p>
+<span id="more"></span>
+
+<p>强奸是最能引发人类本能情绪的犯罪，因为不仅涉及生理侵犯，还对个人精神造成极大创伤。男女都是潜在受害者，大部分强奸犯是熟人，甚至是亲人。只有3%的指认是诬陷。</p>
+<p>大部分男性不会强奸，大部分强奸犯是惯犯。</p>
+<p>随着大众曝光和影视文化传播，儿童强奸和校园内强奸关注度不断提升，相应的立法监管和惩处措施也在不断完善。依然泛滥但鲜为人知的场景是监狱和军队内强奸。</p>
+<p>尽管强调男女皆可成为受害者，但记录在册的以及未被曝光的绝大部分受害者是女性。强奸犯和受害者之间也包含着力量的失衡。第一层是个体之间，一方体格强壮，另一方体格弱小的同时还有可能受到药物和酒精的影响。第二层是男权社会之下资本和利益对强奸者的层层包庇。现在当前西方国家各种新闻令人发指，甚至是韩国也是如此。须知这是被报道出来的，可以推动监管。。更绝望是印度，或伊斯兰文化中举国体制下都还处于受害者羞辱的层面。中国则是极度分裂，一二线城市针对强奸行为的打击靠着有限的媒体监督下在不断改善，执法部分和立法部门都在进步。只是君不见剩下的小县城，小山区里多少的血与泪。</p>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://weibo.com/duanmuyi?from=feed&loc=nickname&is_hot=1">@端木异</a></p>
+<blockquote>
+<p>由于中国的司法定义是生殖器插入才算强奸，在世界范围里都属于非常落后的司法定义，哪怕是肛门插入和被迫口jiao这种伤害性完全不亚于生殖器插入的强奸行为，都只能以猥亵罪结案，这让我对阿里这次受害女员工案件有一点悲观。去年我曾经在上海书展读书会作为嘉宾分享的《知晓我姓名》作者张小夏，当时遭遇的就是酒醉后被手指插入性侵，这在美国是会被认定强奸，但在中国很可能就只能算强制猥亵罪。法律界关于这种陈旧的生殖器插入说有无数的论文加以驳斥，举例说吧，有些非常残忍、暴力的性侵案件中受害人是被坚硬物件直接插入代替生殖器完成性侵，留下的后遗症包括受害人终生不能自主排便，而如果这都不算司法意义上的强奸，这实在是有些荒唐。也和几位朋友私下讨论了警方通告里留下的各种疑问和揣测的空间，阿里受害女员工第一时间报案，理论上来说，dna证据将非常清楚地呈现受害女性被摸了胸、被手指或其他工具插入私处等遭遇侵害的生物痕迹，至于性侵者是否中途不能勃起、性能力不足、没能射精，都不能影响强奸这个行为性质的判定（以我读到的资料来看，很多强奸犯实际上性能力真的不太行）。限于目前有限的信息我不敢发表看法，但想提醒一下，司法意义上的强奸判定，乃至对强奸未遂的划分，和实际发生的情况、公众和受害人认知中的强奸，其实是并不一致的。</p>
+</blockquote>
+<hr>
+<p>​    <a target="_blank" rel="noopener" href="https://m.weibo.cn/status/4562203950470099">@微路</a></p>
+<blockquote>
+<p>自称【性欲】再强的强奸犯，侵犯时也【理智可控】地挑选弱者。<br>必须明白：【强奸不是性欲的亚种、是暴力的分支】</p>
+<p>热转的那段「你们女的不知道男的性欲有多强，有多难以控制」，距离给强奸犯辩护只有半步之遥了。<br>女的何止知道这种借口，学界连反驳的研究都做完几十年了。<br>既然车轱辘借口年年当年新鲜事拿出来猎奇，那么车轱辘道理只能见一次说一次：<br>男性性欲绝对可以自控，事实上强奸犯作案挑选施害者，就是个理智自控的过程。</p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%96%87%E5%AD%97/" rel="tag"># 文字</a>
+              <a href="/tags/Sociology/" rel="tag"># Sociology</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Guy/" rel="prev" title="Free Guy">
+      <i class="fa fa-chevron-left"></i> Free Guy
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Finch/" rel="next" title="What Remains of Edith Finch">
+      What Remains of Edith Finch <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Orange</p>
+  <div class="site-description" itemprop="description">après moi, le déluge</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">205</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">71</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:hi@orange42.cc" title="E-Mail → mailto:hi@orange42.cc" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fas fa-moon"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Orange</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

@@ -1,12 +1,1607 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-block container
-    include mixins/post
-    +posts()
+<link rel="stylesheet" href="/css/main.css">
 
-block pagination
-    include mixins/paginator
-    +home()
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL XiaoWei:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
-block copyright
-    include partial/copyright
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="après moi, le déluge">
+<meta property="og:type" content="website">
+<meta property="og:title" content="世界陆沉">
+<meta property="og:url" content="http://example.com/page/6/index.html">
+<meta property="og:site_name" content="世界陆沉">
+<meta property="og:description" content="après moi, le déluge">
+<meta property="og:locale">
+<meta property="article:author" content="Orange">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/page/6/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh'
+  };
+</script>
+
+  <title>世界陆沉</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">世界陆沉</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">夜色温柔</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-anchor fa-fw"></i>Home</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Leviathan/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Leviathan/" class="post-title-link" itemprop="url">Leviathan</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-03-31 00:00:00" itemprop="dateCreated datePublished" datetime="2020-03-31T00:00:00+08:00">2020-03-31</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Hobbes suggests that the persistence of a vision after the eyes have been closed indicates that the ocular sensory apparatus is still in motion; this motion is no longer immediate sensation, but imagination.<br>Fear stems from ignorance of causes and that religions have been invented to posit causal forces in an effort to dispel fear.</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Leviathan/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Government/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Government/" class="post-title-link" itemprop="url">Two Treatises of Government</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-03-29 00:00:00" itemprop="dateCreated datePublished" datetime="2020-03-29T00:00:00+08:00">2020-03-29</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://www.goodreads.com/book/show/364550.Two_Treatises_of_Government?ac=1&from_search=true&qid=m9gFbY3k7n&rank=2">Two Treatises of Government</a><br>by John Locke</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Government/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/An%20Essay%20Concerning%20Human%20Understanding/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/An%20Essay%20Concerning%20Human%20Understanding/" class="post-title-link" itemprop="url">An Essay Concerning Human Understanding</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-03-28 00:00:00" itemprop="dateCreated datePublished" datetime="2020-03-28T00:00:00+08:00">2020-03-28</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://www.goodreads.com/book/show/90078.An_Essay_Concerning_Human_Understanding?ac=1&from_search=true&qid=cRHNLFnycH&rank=1">An Essay Concerning Human Understanding</a><br>by John Locke</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/An%20Essay%20Concerning%20Human%20Understanding/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Thinking%20Fast%20and%20Slow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Thinking%20Fast%20and%20Slow/" class="post-title-link" itemprop="url">Thinking Fast and Slow</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-03-08 11:25:41" itemprop="dateCreated datePublished" datetime="2020-03-08T11:25:41+08:00">2020-03-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><em>Thinking, Fast and Slow</em> concerns a few major questions: how do we make decisions? And in what ways do we make decisions poorly?</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Thinking%20Fast%20and%20Slow/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Democracy%20vs%20Republic/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Democracy%20vs%20Republic/" class="post-title-link" itemprop="url">Democracy vs Republic</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-02-19 00:00:00" itemprop="dateCreated datePublished" datetime="2020-02-19T00:00:00+08:00">2020-02-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>The idea of “rule by majority” is terrible. What if the election result yields 51% over 49% and the 51% wants the rest 49% to be hanged. Should that request be fulfilled under majority?<br>Therefore the modern meaning of democracy is deviant from its original sense “rule by majority”. But rather, modern democracy is more like to be defined as the classical idea of Republic, which is “rule by everyone”.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/On%20Habit/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/On%20Habit/" class="post-title-link" itemprop="url">On Bad Habit</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-31 00:00:00" itemprop="dateCreated datePublished" datetime="2020-01-31T00:00:00+08:00">2020-01-31</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>What you said about good habits and culture is very inspiring. Anything that can be considered as culture must be beneficial to the society. It exists so that the society can grow. In contrast, bad habits are just bad habits.</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/On%20Habit/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2019%20Books%20Review/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019%20Books%20Review/" class="post-title-link" itemprop="url">2019 Book Review</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-12-30 00:00:00" itemprop="dateCreated datePublished" datetime="2019-12-30T00:00:00+08:00">2019-12-30</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Glory</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019%20Books%20Review/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/American%20Beauty/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/American%20Beauty/" class="post-title-link" itemprop="url">美丽有罪</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-10-18 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-18T00:00:00+08:00">2019-10-18</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>第二遍看完<a target="_blank" rel="noopener" href="https://www.imdb.com/title/tt0169547/">American Beauty</a>之后整个人都沉浸在一种悲伤的氛围之中。那个在空中随风漂浮的塑料袋似乎在我脑海中也不断的漂浮着。</p>
+<p>这部电影有着很强的时代性，折射出当代美国价值观之下存在的许多问题。想说几个点：</p>
+<ol>
+<li><p>当年看这部电影最大的震撼是意识到恐同即深柜这一个过度补偿的经典概念，虽然不一定完全适用，但现在来看依然引人深思。</p>
+</li>
+<li><p>入秋后时常刮大风，大风天走在路上时不时就会想起这部电影，期待也能在哪儿看到一个白色塑料袋。美丽真的是非常主观的存在，极度的秩序构成美，几何对称，色彩分明，都会使人心生愉悦。但其实混沌一样也能产生美感，此处特指随机被风吹动的白色塑料袋。但现在想来之所以觉得那段美，是放在电影特定场景之下的，尤其是还配着淡淡忧郁的背景音乐。</p>
+</li>
+<li><p>American Beauty中文被翻译成美国丽人真的是败笔，一眼看下去还以为是爱情片。这部电影在台湾被译为《美国心玫瑰情》，在香港是《美丽有罪》。不管是哪一个都比《美国丽人》好太多。Beauty在这里绝不是特指人，而是带着讽刺意味的指代一切带着美丽属性的存在。</p>
+</li>
+<li><p>从我们出生就开始的社会化过程势不可挡，多少人在这个过程中丧失了自我，一小部分幸运儿经过种种机遇重新寻回自我，开始构建内在的认知。更多的人永远的迷失了，将自己的行为完全建立在他人对自己的反馈之上。就像Spacey和他老婆一样慢慢丧失自我，重新找回人生和掌控感的方式都是通过打破norm dicatated by society. Fuck society, what’s wrong with getting stoned, waht’s wrong with cheating my husband?</p>
+</li>
+<li><p>须知并不是所有社会都是这样。中国孔孟之礼传承千年，堪称人类文明之”精华“。美国消费主义重商主义名粹主义精英主义社达主义并中国还严重。在我看来目前只有欧洲小国才能达到更高层次的境界。尺度非常重要，大了就意味着更多力量，也就随之有了更多欲望。偏安一隅，才是唯一出路。冰岛挪威瑞士都tm实现direct democracy直奔共产主义了，中美还在这边争锋斗气。人类内耗真的严重，急需外星势力介入，届时全人类才能将思想从“你国”升华到“你球”。</p>
+</li>
+<li><p>Kevin Spacey，叔真的是全方位的戏路精湛。Maybe we don’t like him as a real person, but he is really a good actor.</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2001,%20A%20Space%20Odyssey/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2001,%20A%20Space%20Odyssey/" class="post-title-link" itemprop="url">Are We Tempered by Aliens?</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-10-17 00:00:00" itemprop="dateCreated datePublished" datetime="2019-10-17T00:00:00+08:00">2019-10-17</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Thoughts on whether human were genetically modified by Higher beings based on <a target="_blank" rel="noopener" href="https://www.goodreads.com/book/show/70535.2001?ac=1&from_search=true&qid=N0MW1AC5T2&rank=1">2001, A Space Odyssey</a> by Arthur C. Clarke</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2001,%20A%20Space%20Odyssey/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Do%20Androids%20Dream%20of%20Electric%20Sheep/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Do%20Androids%20Dream%20of%20Electric%20Sheep/" class="post-title-link" itemprop="url">Do Androids Dream of Electric Sheep？</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-09-29 00:00:00" itemprop="dateCreated datePublished" datetime="2019-09-29T00:00:00+08:00">2019-09-29</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://www.goodreads.com/book/show/36402034-do-androids-dream-of-electric-sheep?ac=1&from_search=true&qid=LDxPUlQYde&rank=1">Do Androids Dream of Electric Sheep?</a><br>(<a target="_blank" rel="noopener" href="https://www.imdb.com/title/tt0083658/">Blade Runner</a> #1)<br>by Philip K. Dick</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Do%20Androids%20Dream%20of%20Electric%20Sheep/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/317-318/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/317-318/" class="post-title-link" itemprop="url">317-318</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-08-30 00:00:00" itemprop="dateCreated datePublished" datetime="2019-08-30T00:00:00+08:00">2019-08-30</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <span id="more"></span>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Oyster/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Oyster/" class="post-title-link" itemprop="url">开生蚝总结</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-08-23 00:00:00" itemprop="dateCreated datePublished" datetime="2019-08-23T00:00:00+08:00">2019-08-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li>生蚝专用刀</li>
+<li>生蚝壳比较脆，用力控制</li>
+<li>理想生蚝应该壳闭紧，这样打开能闻到海水味，甚至带一股清香，开口的不一定坏，但是腥一些</li>
+<li>放一块抹布在旁边，把生蚝放上面，稍平坦的一面朝上</li>
+<li>从侧面用生蚝刀摸索不断转动照到缝隙，不要用过大劲，注意别伤手，一旦找到缝隙，伸进去不断转动，把刀横着向左边贴着上壳慢慢转动平移</li>
+<li>直到把上壳搬开，用左手辅助</li>
+<li>用刀把贴着下壳平移一刀，注意靠近内侧五点钟方向切一刀，基本上就可以把尽可能把全部肉都弄出来了。</li>
+<li>把肉放在清水里吐吐沙，再放回牙刷清洗过的壳里</li>
+<li>生蚝刀开到一千个积累出杀气，以后再开的时候拿着此刀放在生蚝旁边生蚝自动开壳，是为刀之霸。</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Gufeng/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Gufeng/" class="post-title-link" itemprop="url">关于古风音乐</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-07-08 00:00:00" itemprop="dateCreated datePublished" datetime="2019-07-08T00:00:00+08:00">2019-07-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>少年时期犯了错家法处置就是背诗词，初二暑假补习班逃课，惩处方案是背下一整本诗集，具体是谁编的我给忘了，反正从曹植开始一路背到了纳兰性德。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Gufeng/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Bohemian%20Rhapsody/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Bohemian%20Rhapsody/" class="post-title-link" itemprop="url">We Are Family</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-05-30 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-30T00:00:00+08:00">2019-05-30</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>前几天在网上找各种精彩的现场演出。没曾想在飞机上看完了<a target="_blank" rel="noopener" href="https://www.imdb.com/title/tt1727824/">波西米亚狂想曲</a>。Queen，虽然从小到达接触摇滚和现场都非常少，但这个乐队和很多歌曲真的都是耳熟能详。</p>
+<p>这部带着纪录片性质的电影，记录Fraddie Mecury和Queen的成长和辉煌。</p>
+<p>Mary之于Fraddie的意义远远超出了寻常的恋人。Mary听闻Fraddie承认自己是gay后很崩溃，并承认这甚至不是他的错，只能怪造化弄人。Fraddie把Mary当作是心灵最后一块净土，一块可以倾诉可以撒娇可以永远无限安全感的空间，他希望能孩子气一样的占有Mary，并不是充满欲望的爱，而是无尽的近乎母子的依恋。Mary一直也在帮助着Fraddie（每次都可以免费拿到内场票😂！）。</p>
+<p>Jim Horton最开始拒绝的场景很妙，可以看出Fraddie内心对于严肃男性角色的尊重出自于父亲的影响。</p>
+<p>整个乐队互相之间的化学反应，眼看着要打起架来也能生产出灵感。可惜的地方是我觉得该片没有能够特别描述出几首经典的曲子具体是怎么创作出来的，确实有很详细的制作过程，但一段旋律的灵感来源真的很难通过电影表述，电影采用的手法是让Fraddie若有所思，同时bgm极弱的开始流入波西米亚的主旋律。后期we will rock you也是能理解创作这样一个beat的意图，但是具体的旋律是如何创作出来真的很难拍摄出来。只能说是如有神助了，看着乡间旷野的群山，听着歌剧，灵感犹如天神附体。</p>
+<p>真正的朋友，是Mary，是Queen，是律师。小手指好惨的被坑了，Paul真的算是交友不慎了，滥交艾滋我都怀疑就是在解散的这个时期在Paul的花天酒地之下搞出来的。</p>
+<p>最后演唱会我还很担心会不会当场晕倒的桥段，但这部半纪录片式的电影基本上没有寻常电影特别强的逆境感。</p>
+<p>每一首都好好听，Fraddie出了嗓子好，创作能力极佳，在舞台上的表现能力也是极其出众。到了他这个境界就真的是老天爷赏饭啊。有生之年我也想听一场杜鹃啼血的Live。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/When%20Dust%20Settles/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/When%20Dust%20Settles/" class="post-title-link" itemprop="url">尘埃落定</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-05-25 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-25T00:00:00+08:00">2019-05-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://book.douban.com/subject/1080309/">尘埃落定</a><br>by 阿来 </p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/When%20Dust%20Settles/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/BaiduYun/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/BaiduYun/" class="post-title-link" itemprop="url">百度云分享账号下的奇异生态</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-05-23 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-23T00:00:00+08:00">2019-05-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>突然想起来一年前为了不限速下载百度云盘资源去淘宝买了个百度云账号，5000g的空间，已经被塞了个满满当当。各种考研资料，权游全集，大型游戏，和小黄片构建出异常魔幻的生态。</p>
+<p>其中最震惊的是你能看见里面有不少文件夹的命名结构是：<br>来自：(一个手机型号)。<br>诸如来自：Mix；来自：Meizu；来自：Mi6s；来自iPhone</p>
+<p>这样格式的文件夹代表着这个共享账号的使用者之一默认上传了自己手机上的照片，而一个网盘里竟然就有十几个这样的上传账户。出于对隐私的窥探欲望我都点开看了看，真的是一个神奇的世界。大部分相册是分为截图和日常拍摄照片，根据照片的内容你能基于社会工程学对对方的性别，年龄，身份，工作，住址推断个八九不离十。首先不少随机的景物照片下载下来后能直接查看拍摄地理位置，然后很大一部分截图是各种游戏截图，此外还有各种城市农村的场景拍摄，大部分地点是我从没听过名字的小城市，遍布全国各地。其中有两个是来自iPhone的，你能感受到明显的区别，首先照片成像质量好的多，其次是照片背后呈现的生活质量差距明显，iPhone用户一个是在澳大利亚拍摄，另一个是在北京，还能看见他拍摄的各种学习证书，心理学学位。其他小米vivo用户拍摄的内容囿于小城市以及乡下设定，画面模糊，有些是学生，能看见各种笔记。偶尔有自拍，一张张略单薄的面庞。游戏截图也非常多，以王者荣耀和吃鸡类为主。我甚至还在翻到了三组身份证正反面…</p>
+<p>不过也只是粗略的看看，以及…并没有找到任何私人自拍的存在…</p>
+<p>Anyway…当代不小一部分人对网路生活的隐私保护还是没有什么概念啊…</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/English%20Conversation%20Memories/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/English%20Conversation%20Memories/" class="post-title-link" itemprop="url">英语交流往事</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-05-22 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-22T00:00:00+08:00">2019-05-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ol>
+<li>host family带我去沃尔玛，我说我要去charge my phone，其实想表达的意思是给手机充值。彼时他们的眼神精彩，可能在思忖我有一个怎么样的手机需要在超市里才能充电。‬</li>
+<li>‪预约校内骑马活动，在fb上激动发帖：…gonna shake your world. 同行女孩回复：you mean “rock your world”?‬</li>
+<li>写literary analysis 把crush写成crash，把小伙伴给看呆了，说我寻思着你想表达的是少年时的爱恋对象吧.</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Snapchat/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Snapchat/" class="post-title-link" itemprop="url">Snapchat使用体验</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-05-06 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-06T00:00:00+08:00">2019-05-06</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>snapchat，美国当前市场占用率第二，市场估值$150亿，在teenager使用率极高。为了融入，我也开始使用。期间吐槽无数，大部分集中在老旧落后的交互界面，截图录屏对方皆有显示，开始打字对方就能收到信息提醒以及聊天信息自动删除等一系列看起来反人类的设计上。</p>
+<p>查了一下想明白了，snapchat设计的理念就是为了实现阅后即焚，让创作者无压力，不用精心修图，他人也不会知道你的状态有多少点赞和关注，反正两天后也都会自动消失，就算是聊天信息也是如此，想说什么都可以，反正说完就没。</p>
+<p>这是一个让青少年放飞自我的平台。也正是如此才会引入截图录屏对方会受到提示的功能，算是一种不鼓励用户截屏不鼓励信息保留的social deterrent。而我跟别人聊的都是不少都是学术相关，内容严肃，日后有再查看的必要。所以这就是完全是用错了平台…</p>
+<p>以及snapchat用户iPhone居多，听说安卓下很烂，主要是因为snapchat安卓拍照调用的是camera preview组件，没有后期成像加成。在iOS下则是完美优化。这是几个月前的状况，不知道现在是否改善。这样看还是iMessage为最佳选择。</p>
+<p>以及最后的最后，我明白了，这些都不重要。只要和喜欢的人聊天，什么平台都不重要。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Language%20Evolution%20Rate/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Language%20Evolution%20Rate/" class="post-title-link" itemprop="url">语言进化的不同速率</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-05-05 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-05T00:00:00+08:00">2019-05-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><a target="_blank" rel="noopener" href="https://www.goodreads.com/book/show/33514.The_Elements_of_Style">The Elements of Style</a><br>by William Strunk Jr.,  E.B. White</p>
+<p>1918年首次出版，到今天大部分准则依然适用。Amherst教授Ilan Stavans在《百年孤独》的讲座中提到不用的语言在相同的时间下进化的速率是不一样的，塞万提斯和莎士比亚同属15-16世纪作家，但在当代《堂吉诃德》西语版本比《暴风雨》英文版本更容易阅读。结论是英文的进化速率更快（个人猜测和英语国家吸收整个西方文明有关），然而过去一百年似乎相对停滞。<a target="_blank" rel="noopener" href="https://flysrp.github.io/2019/03/20/On%20Culture%20Virility/">语言永远在演变</a>，是时代文化的映射。但基础语法和习惯用法似乎已经没有太大演绎的空间。</p>
+<p>本书强调了Active verb在一句话中所起到的画龙点睛般的作用，在平日写作中少用there be，被动语态（被动语态有特定的使用场景，然而似乎被一部分人当做高大上的存在而被多鼓励使用）。尽可能多积累并使用精确的动词主动成句，这也是我当前的练习目标。</p>
+<blockquote>
+<p>“Many a tame sentence of description or exposition can be made lively and emphatic by substituting a verb in the active voice for some such perfunctory expression as there is, or could be heard.”</p>
+</blockquote>
+<ol>
+<li>There were a great number of dead leaves lying on the ground.<br>Dead leaves <strong>covered</strong> the ground.</li>
+</ol>
+<ol start="2">
+<li><p>The sound of a guitar somewhere in the house could be heard.<br>Somewhere in the house a guitar <strong>hummed</strong> sleepily.</p>
+</li>
+<li><p>The reason that he left college was that his health became impaired.<br>Failing health <strong>compelled</strong> him to leave college.</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Pecunia%20non%20olet/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/Pecunia%20non%20olet/" class="post-title-link" itemprop="url">金钱不臭 Pecunia non olet</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-05-04 00:00:00" itemprop="dateCreated datePublished" datetime="2019-05-04T00:00:00+08:00">2019-05-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>尿素是一种多功用的工业成分，常用于皮革硝制，羊毛制作和漂白衣物(氨)。古罗马时期尿素主要来自公共厕所的尿液，罗马皇帝因此向收集尿液的商人收税，皇帝儿子提出质疑，觉得尿税很恶心，皇帝听完拿了一堆硬币给儿子闻，问有没有臭味。儿子说没有。皇帝说，这些钱都源自尿，但是**金钱不臭(Pecunia non olet)**。</p>
+<p>Money does not stink.</p>
+<p>至此这句话被广泛用来表达金钱的价值不受其源头所影响。<br>—<br>另外一则路边社消息：九几年欧盟筹划建立欧元区，给统一货币起名字的时候英国代表觉得Euro不好听，说谐音像是urinate尿尿，不如叫moneta，money的拉丁词根，大气上档次。其他国家代表：你丫可闭嘴吧，你连欧元区都不加入。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Orange</p>
+  <div class="site-description" itemprop="description">après moi, le déluge</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">205</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">71</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:hi@orange42.cc" title="E-Mail → mailto:hi@orange42.cc" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fas fa-moon"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Orange</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

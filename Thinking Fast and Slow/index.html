@@ -1,20 +1,516 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-block site_title
-    != page.title + " · " + config.title
+<link rel="stylesheet" href="/css/main.css">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL XiaoWei:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
-block container
-    include mixins/post
-    +post(page)
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+  <meta name="description" content="Thinking, Fast and Slow concerns a few major questions: how do we make decisions? And in what ways do we make decisions poorly?">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Thinking Fast and Slow">
+<meta property="og:url" content="http://example.com/Thinking%20Fast%20and%20Slow/index.html">
+<meta property="og:site_name" content="世界陆沉">
+<meta property="og:description" content="Thinking, Fast and Slow concerns a few major questions: how do we make decisions? And in what ways do we make decisions poorly?">
+<meta property="og:locale">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/0069FIuOly1g3mfl12t7aj30xy0mgdl6.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/123wfevsd3.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/0069FIuOly1g3mfljd7exj30x40si449.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/0069FIuOly1g3mfljcjhdj30w80d641o.jpg">
+<meta property="article:published_time" content="2020-03-08T03:25:41.000Z">
+<meta property="article:modified_time" content="2021-09-28T03:47:15.833Z">
+<meta property="article:author" content="Orange">
+<meta property="article:tag" content="文字">
+<meta property="article:tag" content="Review">
+<meta property="article:tag" content="Book">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/0069FIuOly1g3mfl12t7aj30xy0mgdl6.jpg">
 
-block copyright
-    include partial/copyright
+<link rel="canonical" href="http://example.com/Thinking%20Fast%20and%20Slow/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh'
+  };
+</script>
+
+  <title>Thinking Fast and Slow | 世界陆沉</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">世界陆沉</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">夜色温柔</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-anchor fa-fw"></i>Home</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Thinking%20Fast%20and%20Slow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Thinking Fast and Slow
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-03-08 11:25:41" itemprop="dateCreated datePublished" datetime="2020-03-08T11:25:41+08:00">2020-03-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><em>Thinking, Fast and Slow</em> concerns a few major questions: how do we make decisions? And in what ways do we make decisions poorly?</p>
+<span id="more"></span>
+
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p><em>Thinking, Fast and Slow</em> concerns a few major questions: how do we make decisions? And in what ways do we make decisions poorly?</p>
+<p>The book covers three areas of Daniel Kahneman’s research: <strong>cognitive biases</strong>, <strong>prospect theory</strong>, and <strong>happiness</strong>.</p>
+<h3 id="System-1-and-2"><a href="#System-1-and-2" class="headerlink" title="System 1 and 2"></a>System 1 and 2</h3><p>Kahneman defines two systems of the mind.</p>
+<p><strong>System 1</strong>: operates automatically and quickly, with little or no effort, and no sense of voluntary control</p>
+<ul>
+<li>  Examples: Detect that one object is farther than another; detect sadness in a voice; read words on billboards; understand simple sentences; drive a car on an empty road.</li>
+</ul>
+<p><strong>System 2</strong>: allocates attention to the effortful mental activities that demand it, including complex computations. Often associated with the subjective experience of agency, choice and concentration</p>
+<ul>
+<li>  Examples: Focus attention on a particular person in a crowd; exercise faster than is normal for you; monitor your behavior in a social situation; park in a narrow space; multiple 17 x 24.</li>
+</ul>
+<p>System 1 automatically generates suggestions, feelings, and intuitions for System 2. If endorsed by System 2, intuitions turn into beliefs, and impulses turn into voluntary actions.</p>
+<p>System 1 can be completely involuntary. You can’t stop your brain from completing 2 + 2 = ?, or from considering a cheesecake as delicious. You can’t unsee optical illusions, even if you rationally know what’s going on.</p>
+<p>A lazy System 2 accepts what the faulty System 1 gives it, without questioning. This leads to cognitive biases. Even worse, cognitive strain taxes System 2, making it more willing to accept System 1. Therefore, we’re more vulnerable to cognitive biases when we’re stressed.</p>
+<p>Because System 1 operates automatically and can’t be turned off, biases are difficult to prevent. Yet it’s also not wise (or energetically possible) to constantly question System 1, and System 2 is too slow to substitute in routine decisions. <strong>We should aim for a compromise: recognize situations when we’re vulnerable to mistakes, and avoid large mistakes when the stakes are high.</strong></p>
+<h3 id="Cognitive-Biases-and-Heuristics"><a href="#Cognitive-Biases-and-Heuristics" class="headerlink" title="Cognitive Biases and Heuristics"></a>Cognitive Biases and Heuristics</h3><p>Despite all the complexities of life, notice that you’re rarely stumped. You rarely face situations as mentally taxing as having to solve 9382 x 7491 in your head.</p>
+<p>Isn’t it profound how we can make decisions without realizing it? You like or dislike people before you know much about them; you feel a company will succeed or fail without really analyzing it.</p>
+<p><strong>When faced with a difficult question, System 1 substitutes an easier question</strong>, or the <strong>heuristic question</strong>. The answer is often adequate, though imperfect.</p>
+<p><strong>Consider the following examples of heuristics:</strong></p>
+<ul>
+<li>Target question: Is this company’s stock worth buying? Will the price increase or decrease?<ul>
+<li>  Heuristic question: How much do I like this company?</li>
+</ul>
+</li>
+<li>Target question: How happy are you with your life?<ul>
+<li>  Heuristic question: What’s my current mood?</li>
+</ul>
+</li>
+<li>Target question: How far will this political candidate get in her party?<ul>
+<li>  Heuristic question: Does this person <em>look</em> like a political winner?</li>
+</ul>
+</li>
+</ul>
+<p>These are related, but imperfect questions. When System 1 produces an imperfect answer, System 2 has the opportunity to reject this answer, but <strong>a lazy System 2 often endorses the heuristic without much scrutiny</strong>.</p>
+<h4 id="Important-Biases-and-Heuristics"><a href="#Important-Biases-and-Heuristics" class="headerlink" title="Important Biases and Heuristics"></a>Important Biases and Heuristics</h4><p><strong>Confirmation bias:</strong> We tend to find and interpret information in a way that confirms our prior beliefs. We selectively pay attention to data that fit our prior beliefs and discard data that don’t.</p>
+<p><strong>“What you see is all there is”:</strong> We don’t consider the global set of alternatives or data. We don’t realize the data that are missing. Related:</p>
+<ul>
+<li>  Planning fallacy: we habitually underestimate the amount of time a project will take. This is because we ignore the many ways things could go wrong and visualize an ideal world where nothing goes wrong.</li>
+<li>  Sunk cost fallacy: we separate life into separate accounts, instead of considering the global account. For example, if you narrowly focus on a single failed project, you feel reluctant to cut your losses, but a broader view would show that you should cut your losses and put your resources elsewhere.</li>
+</ul>
+<p><strong>Ignoring reversion to the mean:</strong> If randomness is a major factor in outcomes, high performers today will suffer and low performers will improve, for no meaningful reason. Yet pundits will create superficial causal relationships to explain these random fluctuations in success and failure, observing that high performers buckled under the spotlight, or that low performers lit a fire of motivation.</p>
+<p><strong>Anchoring:</strong> When shown an initial piece of information, you bias toward that information, even if it’s irrelevant to the decision at hand. For instance, in one study, when a nonprofit requested $400, the average donation was $143; when it requested $5, the average donation was $20. The first piece of information (in this case, the suggested donation) influences our decision (in this case, how much to donate), even though the suggested amount shouldn’t be relevant to deciding how much to give.</p>
+<p><strong>Representativeness:</strong> You tend to use your stereotypes to make decisions, even when they contradict common sense statistics. For example, if you’re told about someone who is meek and keeps to himself, you’d guess the person is more likely to be a librarian than a construction worker, even though there are far more of the latter than the former in the country.</p>
+<p><strong>Availability bias:</strong> Vivid images and stronger emotions make items easier to recall and are overweighted. Meanwhile, important issues that do not evoke strong emotions and are not easily recalled are diminished in importance.</p>
+<p><strong>Narrative fallacy:</strong> We seek to explain events with coherent stories, even though the event may have occurred due to randomness. Because the stories sound plausible to us, it gives us unjustified confidence about predicting the future.</p>
+<h3 id="Prospect-Theory"><a href="#Prospect-Theory" class="headerlink" title="Prospect Theory"></a>Prospect Theory</h3><h4 id="Traditional-Expected-Utility-Theory"><a href="#Traditional-Expected-Utility-Theory" class="headerlink" title="Traditional Expected Utility Theory"></a>Traditional Expected Utility Theory</h4><p>Traditional “expected utility theory” asserts that people are rational agents that calculate the utility of each situation and make the optimum choice each time.</p>
+<p>If you preferred apples to bananas, would you rather have a 10% chance of winning an apple, or 10% chance of winning a banana? Clearly you’d prefer the former.</p>
+<p>The expected utility theory explained cases like these, but failed to explain the phenomenon of <strong>risk aversion</strong>, where in some situations a lower-expected-value choice was preferred.</p>
+<p>Consider: Would you rather have an 80% chance of gaining $100 and a 20% chance to win $10, or a certain gain of $80?</p>
+<p>The expected value of the former is greater (at $82) but most people choose the latter. <strong>This makes no sense in classic utility theory</strong>—you should be willing to take a positive expected value gamble every time.</p>
+<p>Furthermore, it ignores how differently we feel in the case of gains and losses. Say Anthony has $1 million and Beth has $4 million. Anthony gains $1 million and Beth loses $2 million, so they each now have $2 million. Are Anthony and Beth equally happy?</p>
+<p>Obviously not - Beth lost, while Anthony gained. Puzzling with this concept led Kahneman to develop prospect theory.</p>
+<h4 id="Prospect-Theory-1"><a href="#Prospect-Theory-1" class="headerlink" title="Prospect Theory"></a>Prospect Theory</h4><p>The key insight from the above example is that evaluations of utility are not purely dependent on the current state. <strong>Utility depends on <em>changes</em> from one’s reference point.</strong> Utility is attached to <em>changes</em> of wealth, not <em>states</em> of wealth. <strong>And losses hurt more than gains.</strong></p>
+<p>Prospect theory can be summarized in 3 points:</p>
+<p><strong>1. When you evaluate a situation, you compare it to a neutral reference point.</strong></p>
+<ul>
+<li>  Usually this refers to the status quo you currently experience. But it can also refer to an outcome you expect or feel entitled to, like an annual raise. When you don’t get something you expect, you feel crushed, even though your status quo hasn’t changed.</li>
+</ul>
+<p><strong>2. Diminishing marginal utility applies to changes in wealth</strong> (and to sensory inputs).</p>
+<ul>
+<li>  Going from $100 to $200 feels much better than going from $900 to $1,000. The more you have, the less significant the change feels.</li>
+</ul>
+<p><strong>3. Losses of a certain amount trigger stronger emotions than a gain of the same amount.</strong></p>
+<ul>
+<li>  Evolutionarily, the organisms that treated threats more urgently than opportunities tended to survive and reproduce better. We have evolved to react extremely quickly to bad news.</li>
+</ul>
+<p>There are a few practical implications of prospect theory.</p>
+<h4 id="Possibility-Effect"><a href="#Possibility-Effect" class="headerlink" title="Possibility Effect"></a>Possibility Effect</h4><p>Consider which is more meaningful to you:</p>
+<ul>
+<li>  Going from a 0% chance of winning $1 million to 5% chance</li>
+<li>  Going from a 5% chance of winning $1 million to 10% chance</li>
+</ul>
+<p>Most likely you felt better about the first than the second. <strong>The mere <em>possibility</em> of winning something (that may still be highly unlikely) is overweighted in its importance</strong>. We fantasize about small chances of big gains. We obsess about tiny chances of very bad outcomes.</p>
+<h4 id="Certainty-Effect"><a href="#Certainty-Effect" class="headerlink" title="Certainty Effect"></a>Certainty Effect</h4><p>Now consider how you feel about these options on <strong>the opposite end of probability:</strong></p>
+<ul>
+<li>  In a surgical procedure, going from a 90% success rate to 95% success rate.</li>
+<li>  In a surgical procedure, going from a 95% success rate to 100% success rate</li>
+</ul>
+<p>Most likely, you felt better about the second than the first. Outcomes that are <em>almost</em> certain are given less weight than their probability justifies. 95% success rate is actually fantastic! But it doesn’t feel this way, because it’s not 100%.</p>
+<h4 id="Status-Quo-Bias"><a href="#Status-Quo-Bias" class="headerlink" title="Status Quo Bias"></a>Status Quo Bias</h4><p>You like what you have and don’t want to lose it, even if your past self would have been indifferent about having it. For example, if your boss announces a raise, then ten minutes later said she made a mistake and takes it back, this is experienced as a dramatic loss. However, if you heard about this happening to someone else, you likely would see the change as negligible.</p>
+<h4 id="Framing-Effects"><a href="#Framing-Effects" class="headerlink" title="Framing Effects"></a>Framing Effects</h4><p>The context in which a decision is made makes a big difference in the emotions that are invoked and the ultimate decision. Even though a gain can be logically equivalently defined as a loss, because losses are so much more painful, different framings may feel very different.</p>
+<p>For example, a medical procedure with a 90% chance of survival sounds more appealing than one with a 10% chance of mortality, even though they’re identical.</p>
+<h3 id="Happiness-and-the-Two-Selves"><a href="#Happiness-and-the-Two-Selves" class="headerlink" title="Happiness and the Two Selves"></a>Happiness and the Two Selves</h3><p>The new focus of Kahneman’s recent research is happiness. Happiness is a tricky concept. There is in-the-moment happiness, and there is overall well being. There is happiness we experience, and happiness we remember.</p>
+<p>Kahneman presents two selves:</p>
+<ul>
+<li>  <strong>The experiencing self:</strong> the person who feels pleasure and pain, moment to moment. This experienced utility would best be assessed by measuring happiness over time, then summing the total happiness felt over time. (In calculus terms, this is integrating the area under the curve.)</li>
+<li>  <strong>The remembering self:</strong> the person who reflects on past experiences and evaluates it overall.</li>
+</ul>
+<p>The remembering self factors heavily in our thinking. <strong>After a moment has passed, only the remembering self exists when thinking about our past lives.</strong> The remembering self is often the one making future decisions.</p>
+<p>But <strong>the remembering self evaluates differently from the experiencing self in two critical ways:</strong></p>
+<ul>
+<li>  <strong>Peak-end rule:</strong> The overall rating is determined by the <strong>peak intensity</strong> of the experience and <strong>the end</strong> of the experience. It does not care much about the averages throughout the experience.</li>
+<li>  <strong>Duration neglect:</strong> The duration of the experience has little effect on the memory of the event.</li>
+</ul>
+<p>We tend to prioritize the remembering self (such as when we choose where we book vacations, or in our willingness to endure pain we will forget later) and don’t give enough to the experiencing self.</p>
+<p>For example, would you take a vacation that was very enjoyable, but required that at the end you take a pill that gives you total amnesia of the event? Most would decline, suggesting that memories are a key, perhaps dominant, part of the value of vacations. <strong>The remembering self, not the experiencing self, chooses vacations!</strong></p>
+<p>Kahneman’s push is to <strong>weight the experiencing self more.</strong> Spend more time on things that give you moment-to-moment pleasures, and diminish moment-to-moment pain. Try to reduce your commute, which is a common source of experienced misery. Spend more time in active pleasure activities, such as socializing and exercise.</p>
+<h4 id="Focusing-Illusion"><a href="#Focusing-Illusion" class="headerlink" title="Focusing Illusion"></a>Focusing Illusion</h4><p>Considering overall life satisfaction is a difficult System 2 question. When considering life satisfaction, it’s difficult to consider all the factors in your life, weigh those factors accurately, then score your factors.</p>
+<p>As is typical, System 1 substitutes the answer to an easier question, such as “what is my mood <em>right now</em>?”, focusing on significant events (both achievements and failures), or recurrent concerns (like illness).</p>
+<p>The key point: <strong>Nothing in life is as important as you think it is when you are thinking about it. Your mood is largely determined by what you attend to.</strong> You get pleasure/displeasure from something when you think about it.</p>
+<p>For example, even though Northerners despise their weather and Californians enjoy theirs, in research studies, climate makes no difference in life satisfaction. Why is this? When people are asked about life satisfaction, climate is just a small factor in the overall question—they’re much more worried about their career, their love life, and the bills they need to pay.</p>
+<p>When you forecast your own future happiness, <strong>you overestimate the effect a change will have on you</strong> (like getting a promotion), <strong>because you overestimate how salient the thought will be in future you’s mind</strong>. In reality, future you has gotten used to the new environment and now has other problems to worry about.</p>
+<h1 id="Other-Insights"><a href="#Other-Insights" class="headerlink" title="Other Insights"></a>Other Insights</h1><h2 id="HOW-TO-WRITE-A-PERSUASIVE-MESSAGE"><a href="#HOW-TO-WRITE-A-PERSUASIVE-MESSAGE" class="headerlink" title="HOW TO WRITE A PERSUASIVE MESSAGE:"></a>HOW TO WRITE A PERSUASIVE MESSAGE:</h2><ol>
+<li>Maximize legibility</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/0069FIuOly1g3mfl12t7aj30xy0mgdl6.jpg"></p>
+<ol>
+<li><p>Use simple language<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/123wfevsd3.jpg"></p>
+</li>
+<li><p>Rhyming<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/0069FIuOly1g3mfljd7exj30x40si449.jpg"></p>
+</li>
+<li><p>Easily pronounced source<br>The key is still about the idea itself, but said methods do help. ​​​​<br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image/img/0069FIuOly1g3mfljcjhdj30w80d641o.jpg"></p>
+</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%96%87%E5%AD%97/" rel="tag"># 文字</a>
+              <a href="/tags/Review/" rel="tag"># Review</a>
+              <a href="/tags/Book/" rel="tag"># Book</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Democracy%20vs%20Republic/" rel="prev" title="Democracy vs Republic">
+      <i class="fa fa-chevron-left"></i> Democracy vs Republic
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/An%20Essay%20Concerning%20Human%20Understanding/" rel="next" title="An Essay Concerning Human Understanding">
+      An Essay Concerning Human Understanding <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Summary"><span class="nav-number">1.</span> <span class="nav-text">Summary</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#System-1-and-2"><span class="nav-number">1.1.</span> <span class="nav-text">System 1 and 2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cognitive-Biases-and-Heuristics"><span class="nav-number">1.2.</span> <span class="nav-text">Cognitive Biases and Heuristics</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Important-Biases-and-Heuristics"><span class="nav-number">1.2.1.</span> <span class="nav-text">Important Biases and Heuristics</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Prospect-Theory"><span class="nav-number">1.3.</span> <span class="nav-text">Prospect Theory</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Traditional-Expected-Utility-Theory"><span class="nav-number">1.3.1.</span> <span class="nav-text">Traditional Expected Utility Theory</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Prospect-Theory-1"><span class="nav-number">1.3.2.</span> <span class="nav-text">Prospect Theory</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Possibility-Effect"><span class="nav-number">1.3.3.</span> <span class="nav-text">Possibility Effect</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Certainty-Effect"><span class="nav-number">1.3.4.</span> <span class="nav-text">Certainty Effect</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Status-Quo-Bias"><span class="nav-number">1.3.5.</span> <span class="nav-text">Status Quo Bias</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Framing-Effects"><span class="nav-number">1.3.6.</span> <span class="nav-text">Framing Effects</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Happiness-and-the-Two-Selves"><span class="nav-number">1.4.</span> <span class="nav-text">Happiness and the Two Selves</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Focusing-Illusion"><span class="nav-number">1.4.1.</span> <span class="nav-text">Focusing Illusion</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Other-Insights"><span class="nav-number"></span> <span class="nav-text">Other Insights</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#HOW-TO-WRITE-A-PERSUASIVE-MESSAGE"><span class="nav-number">1.</span> <span class="nav-text">HOW TO WRITE A PERSUASIVE MESSAGE:</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Orange</p>
+  <div class="site-description" itemprop="description">après moi, le déluge</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">205</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">71</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:hi@orange42.cc" title="E-Mail → mailto:hi@orange42.cc" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fas fa-moon"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Orange</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

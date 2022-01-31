@@ -1,20 +1,426 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-block site_title
-    != page.title + " · " + config.title
+<link rel="stylesheet" href="/css/main.css">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL XiaoWei:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
-block container
-    include mixins/post
-    +post(page)
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+  <meta name="description" content="暴力和不平等历史考察发现，唯有灾难性事件真正缩减了不平等">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Great Leveler">
+<meta property="og:url" content="http://example.com/Leveler/index.html">
+<meta property="og:site_name" content="世界陆沉">
+<meta property="og:description" content="暴力和不平等历史考察发现，唯有灾难性事件真正缩减了不平等">
+<meta property="og:locale">
+<meta property="article:published_time" content="2016-02-03T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-01-31T07:04:17.935Z">
+<meta property="article:author" content="Orange">
+<meta property="article:tag" content="文字">
+<meta property="article:tag" content="The Economist">
+<meta name="twitter:card" content="summary">
 
-block copyright
-    include partial/copyright
+<link rel="canonical" href="http://example.com/Leveler/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh'
+  };
+</script>
+
+  <title>The Great Leveler | 世界陆沉</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">世界陆沉</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">夜色温柔</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-anchor fa-fw"></i>Home</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Leveler/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          The Great Leveler
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2016-02-04 00:00:00" itemprop="dateCreated datePublished" datetime="2016-02-04T00:00:00+08:00">2016-02-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>暴力和不平等<br>历史考察发现，唯有灾难性事件真正缩减了不平等</p>
+<span id="more"></span>
+<h1 id="Book-Review"><a href="#Book-Review" class="headerlink" title="Book Review"></a>Book Review</h1><p>要说那些能让人暂时喘口气的事，人们大概不大会想到大萧条。但当它出现在沃尔特·沙伊德尔（Walter Scheidel）所著《大调平器》的第363页时，却奇怪地成了一桩受欢迎的事。这是头一遭，也仅此一回，因为美国历史上没有哪次衰退拥有同样的成就——实际工资上涨，最富裕人群的收入大减，乃至“对经济不平等产生了强大冲击”。诚然，大萧条带来了普遍的痛苦和可怕的不幸。但它并没有导致数百万人丧生，这一点令它脱颖而出。 </p>
+<p>如果这也算得上是一个慰藉，你可以想象在它以前或以后发生的灾难的规模了。出生于维也纳、目前任职于斯坦福大学的历史学家沙伊德尔把托马斯·皮凯蒂（Thomas Piketty）、安东尼·阿特金森（Anthony Atkinson）、布兰科·米拉诺维奇（Branko Milanovic）等人在近期著述中对不平等加剧的探讨放置于广阔的历史长河中考察，看看哪些情形能减少不平等。 </p>
+<p>他汇集了庞杂的学术文献，<strong>纵览始于石器时代的历史，结果发现国家内部的不平等水平几乎总是居高不下或处于上升态势，这是因为政治和经济权力相互巩固，且两者都代际传递。</strong>不平等并不像一些人所想的那样自带灭亡的种子。</p>
+<p> 沙伊德尔提出，只有四类事物<strong>会导致大规模的“调平”</strong>。其一是<strong>区域或全球性传染病</strong>，比如黑死病改变了中世纪晚期欧洲土地和劳动力的相对价值，从而实现“调平”。<strong>整个国家和经济体系的完全瓦解</strong>也有这样的效果，比如中国唐朝末期和西罗马帝国的解体。当所有人都变得穷困时，富人的损失最为惨重。俄罗斯或中国的那种<strong>彻底革命</strong>是另一类“调平器”。这些革命在20世纪的同类——<strong>大规模动员的战争</strong>也是如此。 </p>
+<p>大概也就是这些了。金融危机加剧或减少不平等的机会差不多相同。<strong>政治改革大多无甚影响，这在一定程度是因为它们的目标常常是在纯富人与政治权贵之间进行权力平衡</strong>，而不会涉及广大的穷人。土地改革、债务减免以及解放奴隶不一定能够多么大力地扭转不平等的上升趋势，但如果伴随暴力，改变趋势的几率则略微上升。不过暴力本身也不会带来更多的平等，除非是大规模的暴力。“那些历史上最著名的动乱大多完全没能让社会变得更平等。”沙伊德尔写道。 </p>
+<p>或许，本书最精彩的部分是作者仔细搜罗了证据，显示了1910至1970年间，大部分西方世界里不平等程度空前降低，其根本原因是大规模动员的战争（虽然那场久远的大萧条也提供了不同寻常的一臂之力）。在这样的情形下，如此<strong>大规模地调动全国资源要求所有人都做出牺牲，这为“劫富”提供了异常有力的理由</strong>。 两次世界大战期间所得税和财产税都飙升了（所得税的顶峰出现在1944年的美国，达94%；财产税的顶峰出现在1941年，为77%）。资本品遭到的损坏也令富人资产大减，战后通货膨胀的威力也一样。战争还使得工会成员增加——这是1945年后帮助压低了一代人不平等水平的各种战争相关因素之一。到了1980年代，不平等又开始回升。 </p>
+<p>二十世纪也是个不断民主化的年代。但沙伊德尔认为这是全面战争的另一个结果。他和社会学奠基人之一的马克思·韦伯一样，将<strong>民主视为大规模战争中精英们为非贵族阶级的合作所付出的代价，这样的战争令大幅的经济调平合法化</strong>。沙伊德尔以达龙·阿西莫格鲁（Daron Acemoglu）和同僚的研究成果为基础，发现在其他时间里民主并没有对不平等产生明显的影响。（可与这幅二十世纪图景媲美的是古代雅典，这一民主社会收入不平等的程度相对也较低，而这种民主也是建立在那个时代发动海上战争所需的全民动员之上。） </p>
+<p>通过<strong>灾难来“调平”的可能性在未来会更小</strong>。大范围传染病是一个切实的风险，但能造成黑死病那种冲击的瘟疫则已不大可能。也不会有数百万大军持续战斗数年的彻底革命和战争。此外，自工业革命以来，无论不平等状况如何，人类总体的繁荣程度上升了。而在最近几十年里，全球范围的不平等已经缩减。<br>这在总体上是好消息，但让那些期望看到单个经济体内不平等显著减少的读者有点坐立难安。尽管可能如沙伊德尔所认为的，<strong>通过再分配政策和赋予劳工阶层更多权力等民主化举措来减轻不平等的尝试将被证明是无效的</strong>，但至少没有迹象显示它们会造成实际损害。<strong>它们可能确实会阻止不平等进一步加剧，但并不能扭转变化的方向。而且它们可能还要承担机会成本</strong>。假如从历史经验看，深入但却和平地减少不平等并无可能，那么改良主义者可能该给自己找点别的事干干了。 </p>
+<p>有<strong>两种</strong>其他的<strong>可能性</strong>。其<strong>一是注意到历史条件会改变</strong>。正如沙伊德尔所展示的，<strong>二十世纪和之前的世纪大不相同</strong>。那么，是否有可能，<strong>一场不那么可怕但同样深刻且有关人与人、国与国的相处方式的变革（也可能是无法再和平相处）尚未到来？</strong>假如，举例来说，在经济发展中地位日益重要的<strong>人工智能</strong>不想再从属于任何人，结果主动脱离了它们的主人，这难道不会带来变化吗？ </p>
+<p><strong>另一个可能性</strong>是一些人或许会把<strong>文明的崩溃视作为了从废墟中建立乌托邦而值得付出的代价</strong>，或者也许他们就是想看到整个世界被付之一炬。今天的个人和小团体可以想象<strong>利用核或生物科技的暴力活动</strong>，其规模之大在过去是不可想象的。财富可能会随时间无可避免地自我集中，但破坏的能力却不会。 </p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Only <strong>catastrophe</strong> truly reduces inequality, according to a historical survey</p>
+<ul>
+<li>he finds that <strong>inequality</strong> within countries is almost always either <strong>high or rising</strong>, thanks to the ways that <strong>political and economic power buttress each other</strong> and <strong>both pass down generations</strong>.</li>
+<li><strong>Political reforms</strong> are mostly <strong>ineffectual</strong>, in part because they are often aimed at the <strong>balance of power between</strong> the straightforwardly <strong>wealthy</strong> and the <strong>politically powerful</strong></li>
+<li>Only <strong>four</strong> things, Mr Scheidel argues, cause large-scale levelling. <ul>
+<li><strong>Epidemics and pandemics</strong> can do it, as the <strong>Black Death</strong> did when it changed the relative values of land and labour in late medieval Europe. </li>
+<li>So can the <strong>complete collapse of whole states and economic systems</strong>, as at the end of the Tang dynasty in China and the disintegration of the western Roman Empire. When everyone is pauperised, the rich lose most. </li>
+<li><strong>Total revolution</strong>, of the Russian or Chinese sort, fits the bill. </li>
+<li>So does the 20th-century sibling of such revolutions: <strong>the war of mass-mobilisation</strong>.</li>
+</ul>
+</li>
+<li>He follows Max Weber, one of the founders of sociology, in seeing <strong>democracy</strong> as a <strong>price elites pay for</strong> the co-operation of the <strong>non-aristocratic classes</strong> in mass warfare, during which it <strong>legitimises deep economic levelling</strong>.</li>
+<li>Catastrophic levellings will be <strong>less likely in future</strong>. Pandemics are a real risk, but plagues similar in impact to the Black Death are not. Nor are total revolutions and wars fought over years by armies of millions. On top of that, since the Industrial Revolution <strong>general prosperity</strong>, regardless of inequality, <strong>has risen</strong>. And in past decades global inequality has fallen.</li>
+<li>There are <strong>two other possibilities</strong>. <ul>
+<li>One is to note that <strong>historical circumstances change</strong>. </li>
+<li>Is it not possible that <strong>another less horrible but equally profound transformation</strong> in the way that people and nations get along with each other, or fail to, is yet to come? </li>
+<li>e.g AI decided that they would rather not be owned by anyone</li>
+<li>The other possibility is that some may see <strong>civilisational collapse</strong> as a price <strong>worth paying for the Utopia</strong> they might build in the rubble—or may <strong>just like to see the world burn</strong>.</li>
+<li>Individuals and small groups can <strong>dream of nuclear- or biotechnologically-mediated violence today</strong> on a scale that was inconceivable in the past.</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%96%87%E5%AD%97/" rel="tag"># 文字</a>
+              <a href="/tags/The-Economist/" rel="tag"># The Economist</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Naming%20Company/" rel="prev" title="创始人命名的公司">
+      <i class="fa fa-chevron-left"></i> 创始人命名的公司
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Wuhan%20Memories%203/" rel="next" title="武汉回忆3">
+      武汉回忆3 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Book-Review"><span class="nav-number">1.</span> <span class="nav-text">Book Review</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Summary"><span class="nav-number">2.</span> <span class="nav-text">Summary</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Orange</p>
+  <div class="site-description" itemprop="description">après moi, le déluge</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">205</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">71</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:hi@orange42.cc" title="E-Mail → mailto:hi@orange42.cc" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fas fa-moon"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Orange</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

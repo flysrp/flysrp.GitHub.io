@@ -1,20 +1,422 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-block site_title
-    != page.title + " · " + config.title
+<link rel="stylesheet" href="/css/main.css">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL XiaoWei:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
-block container
-    include mixins/post
-    +post(page)
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+  <meta name="description" content="The Language Instinct: How the Mind Creates Languageby Steven Pinker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Language Instinct">
+<meta property="og:url" content="http://example.com/The%20Language%20Instinct/index.html">
+<meta property="og:site_name" content="世界陆沉">
+<meta property="og:description" content="The Language Instinct: How the Mind Creates Languageby Steven Pinker">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-06-30T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-09-28T03:47:15.833Z">
+<meta property="article:author" content="Orange">
+<meta property="article:tag" content="文字">
+<meta property="article:tag" content="Review">
+<meta property="article:tag" content="Book">
+<meta property="article:tag" content="English">
+<meta name="twitter:card" content="summary">
 
-block copyright
-    include partial/copyright
+<link rel="canonical" href="http://example.com/The%20Language%20Instinct/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh'
+  };
+</script>
+
+  <title>The Language Instinct | 世界陆沉</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">世界陆沉</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">夜色温柔</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-anchor fa-fw"></i>Home</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/The%20Language%20Instinct/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          The Language Instinct
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-07-01 00:00:00" itemprop="dateCreated datePublished" datetime="2020-07-01T00:00:00+08:00">2020-07-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><a target="_blank" rel="noopener" href="https://www.goodreads.com/book/show/5755.The_Language_Instinct">The Language Instinct</a>: How the Mind Creates Language<br>by Steven Pinker</p>
+<span id="more"></span>
+
+<h1 id="On-the-idea-of-mentalese"><a href="#On-the-idea-of-mentalese" class="headerlink" title="On the idea of mentalese."></a>On the idea of mentalese.</h1><p>Have you ever experienced the moment when you try to express certain feelings but fail to find the appropriate words in your language to describe it? Such moment must be a common experience among human beings because there are so many way to describe it such as “words are failing me”, “it is beyond my ability to describe it”, and “此时的语言是如此的苍白”, etc. </p>
+<p>All those examples pointed to the idea of mentalese, also known as the <strong>language of thought hypothesis</strong>. It posits that human mind think and process in a unique language other than their mother tongue. No matter one speaks English, Chinese or French, his/her mind speaks a different language. When we try to recount what other’s saying, what we do is not in a verbatim manner, instead, our mind first interpret other’s words in its own way of thinking(mentalese), then translate the interpretation into whatever real-world language we are speaking. That’s why we normally don’t just repeat other’s saying word by word; that’s why we sometimes cannot express what we are thinking.</p>
+<p>Notice that the verb I’m using is “translate”. The way   I understand it is that anytime we express ourselves, it is a process of translation from our mentalese to English(Or Chinese, or other real-world languages). The better we trained ourselves in this process of translation (by constant writing and generalizing), the more fluent we are at expressing our true feelings, the less moment there will be of saying “words are failing me”.</p>
+<p>To further widen this concept, let us think about the real world translation, such as translating Chinese from English. In the past I would’ve thought that it is simply reading the Chinese in mind and then translate Chinese into English. After equipped with the understanding of mentalese, I now see it as first translating Chinese into our mind language, then translating mind language into English. The whole process is changed from 2-way to 3-way translation.</p>
+<p>Most people are fluent translators between their mentalese and their mother tongues. The translating experience can be so smooth that we hardly feel its presence. It appears only when we find certain moment inexpressible. </p>
+<h1 id="On-Sapir–Whorf-hypothesis-and-Universal-Grammar"><a href="#On-Sapir–Whorf-hypothesis-and-Universal-Grammar" class="headerlink" title="On Sapir–Whorf hypothesis and Universal Grammar"></a>On Sapir–Whorf hypothesis and Universal Grammar</h1><p>The Sapir–Whorf hypothesis states that language has an effect on your worldview as well. Pinker shows that it’s scientifically unsound. First of all, it’s not even properly researched by the amateur scientists who postulated; and, secondly, it doesn’t take into account many things, such as creoles and pidgins, or even deaf and mute people.</p>
+<p>In Pinker’s opinion, it’s almost the other way around. For humans, language is something evolution naturally produced, since language-usage is inherent to the human nature.</p>
+<p>Or, to put it in a even simpler term, <strong>it’s an instinct</strong>.</p>
+<p>This means that we should stop considering language a skill – as we do, for example, writing. <strong>There are many societies which didn’t develop writing systems, but none which lacks a language</strong>.</p>
+<p>Even more, children sometimes spontaneously invent their own language, and deaf babies tend to syntactically use their bodies.</p>
+<p>In Pinker’s opinion, because, for some time during our development, language is an instinct much in the same way breathing is. After this critical childhood period, it seems that the language mechanism hardwired in our brain subsides. Possibly to make some space for other types of human endeavor.</p>
+<p>However, if this is true – namely, if humans are language-speakers by default – then, why are there so many different languages? After all, we breathe and have sex in a similar manner.</p>
+<p>This is because that there are many cultures and they have lasted for thousands and thousands of years. But even so, all languages share a basic structure.</p>
+<p>Noam Chomsky named it <strong>universal grammar</strong>.</p>
+<p>And in Steven Pinker’s opinion, it’s there inside your brain. And communication depends solely on it.</p>
+<h1 id="Key-Takeaways-from-“The-Language-Instinct”"><a href="#Key-Takeaways-from-“The-Language-Instinct”" class="headerlink" title="Key Takeaways from “The Language Instinct”"></a>Key Takeaways from “The Language Instinct”</h1><h2 id="Language-Is-a-Human-Instinct"><a href="#Language-Is-a-Human-Instinct" class="headerlink" title="Language Is a Human Instinct"></a>Language Is a Human Instinct</h2><p>Language is a mystery. For example, it’s so complex that when you try to learn another language, you need several years to acquire its grammar. Then, how is a child able to learn it in just a year or two?</p>
+<p>According to Steven Pinker, because his brain features a language-learning mechanism. And because language learning comes to it instinctually. Just like, say, breathing.</p>
+<h2 id="The-Language-Learning-Machinery-Is-Short-Timed"><a href="#The-Language-Learning-Machinery-Is-Short-Timed" class="headerlink" title="The Language-Learning Machinery Is Short-Timed"></a>The Language-Learning Machinery Is Short-Timed</h2><p>However, even though this instinct is universal – it’s not eternal.</p>
+<p>In other words, there’s only a short critical period during childhood when children are able to use the language-learning mechanism. Afterward, it subsides and makes room for other brain tools.</p>
+<p>This is the reason why sufficiently old feral children are unable to acquire human language, no matter how hard we try to teach them. The language-learning mechanism is not there.</p>
+<h2 id="Grammar-Rules-Are-Strictly-Speaking-Irrelevant"><a href="#Grammar-Rules-Are-Strictly-Speaking-Irrelevant" class="headerlink" title="Grammar Rules Are, Strictly Speaking, Irrelevant"></a>Grammar Rules Are, Strictly Speaking, Irrelevant</h2><p>This language-acquisition device inside your brain comes prepacked with universal grammar. Think of it as an empty puzzle, a framework – only for words. That’s why some sentences – such as “What did John meet a man who sold?” – are incomprehensible to you: the words just can’t seem to fit the puzzle in any way.</p>
+<p>However, some others are pretty intelligible, even though some people tell you they are grammatically incorrect. Steven Pinker says: when a rule must be explicitly stated to be learned, then it can be ignored.</p>
+<p>Because it’s irrelevant to actual communication. Which is what language is all about.</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%96%87%E5%AD%97/" rel="tag"># 文字</a>
+              <a href="/tags/Review/" rel="tag"># Review</a>
+              <a href="/tags/Book/" rel="tag"># Book</a>
+              <a href="/tags/English/" rel="tag"># English</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/History%20of%20sexual%20position/" rel="prev" title="关于交配姿势的fun facts">
+      <i class="fa fa-chevron-left"></i> 关于交配姿势的fun facts
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Factfulness/" rel="next" title="Factfulness 真确">
+      Factfulness 真确 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#On-the-idea-of-mentalese"><span class="nav-number">1.</span> <span class="nav-text">On the idea of mentalese.</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#On-Sapir%E2%80%93Whorf-hypothesis-and-Universal-Grammar"><span class="nav-number">2.</span> <span class="nav-text">On Sapir–Whorf hypothesis and Universal Grammar</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Key-Takeaways-from-%E2%80%9CThe-Language-Instinct%E2%80%9D"><span class="nav-number">3.</span> <span class="nav-text">Key Takeaways from “The Language Instinct”</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Language-Is-a-Human-Instinct"><span class="nav-number">3.1.</span> <span class="nav-text">Language Is a Human Instinct</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Language-Learning-Machinery-Is-Short-Timed"><span class="nav-number">3.2.</span> <span class="nav-text">The Language-Learning Machinery Is Short-Timed</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Grammar-Rules-Are-Strictly-Speaking-Irrelevant"><span class="nav-number">3.3.</span> <span class="nav-text">Grammar Rules Are, Strictly Speaking, Irrelevant</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Orange</p>
+  <div class="site-description" itemprop="description">après moi, le déluge</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">205</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">71</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:hi@orange42.cc" title="E-Mail → mailto:hi@orange42.cc" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fas fa-moon"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Orange</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

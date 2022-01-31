@@ -1,20 +1,414 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-block site_title
-    != page.title + " · " + config.title
+<link rel="stylesheet" href="/css/main.css">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL XiaoWei:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
-block container
-    include mixins/post
-    +post(page)
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+  <meta name="description" content="What Remains of Edith Finch，本质上是以游戏作为媒介讲了一个故事。遭受“神秘诅咒”的Finch一家人的故事。书籍是最原始的讲故事的途径，其精彩程度除了故事本身的描述之外，也取决于阅读者的想象力。视频媒介讲故事最大的优势，就是帮助那些想象力有限的观看者，塑造一个具像化的世界。而电影式的游戏，在此基础上增加了互动性，使整个过程更加充满沉浸感。但是一切的一切，最核心的还是故事本">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What Remains of Edith Finch">
+<meta property="og:url" content="http://example.com/Finch/index.html">
+<meta property="og:site_name" content="世界陆沉">
+<meta property="og:description" content="What Remains of Edith Finch，本质上是以游戏作为媒介讲了一个故事。遭受“神秘诅咒”的Finch一家人的故事。书籍是最原始的讲故事的途径，其精彩程度除了故事本身的描述之外，也取决于阅读者的想象力。视频媒介讲故事最大的优势，就是帮助那些想象力有限的观看者，塑造一个具像化的世界。而电影式的游戏，在此基础上增加了互动性，使整个过程更加充满沉浸感。但是一切的一切，最核心的还是故事本">
+<meta property="og:locale">
+<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FTueODWBqUC.jpg?alt=media&token=851e9d5d-376d-4026-a1bd-a70f34a4fb1b">
+<meta property="article:published_time" content="2021-10-21T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-10-22T14:10:37.313Z">
+<meta property="article:author" content="Orange">
+<meta property="article:tag" content="文字">
+<meta property="article:tag" content="Review">
+<meta property="article:tag" content="Games">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FTueODWBqUC.jpg?alt=media&token=851e9d5d-376d-4026-a1bd-a70f34a4fb1b">
 
-block copyright
-    include partial/copyright
+<link rel="canonical" href="http://example.com/Finch/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh'
+  };
+</script>
+
+  <title>What Remains of Edith Finch | 世界陆沉</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">世界陆沉</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">夜色温柔</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-anchor fa-fw"></i>Home</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/Finch/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          What Remains of Edith Finch
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-10-22 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-22T00:00:00+08:00">2021-10-22</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>What Remains of Edith Finch，本质上是以游戏作为媒介讲了一个故事。遭受“神秘诅咒”的Finch一家人的故事。书籍是最原始的讲故事的途径，其精彩程度除了故事本身的描述之外，也取决于阅读者的想象力。视频媒介讲故事最大的优势，就是帮助那些想象力有限的观看者，塑造一个具像化的世界。而电影式的游戏，在此基础上增加了互动性，使整个过程更加充满沉浸感。但是一切的一切，最核心的还是故事本身。What Remains of Edith Finch初看之下是一个好故事。</p>
+<span id="more"></span>
+
+<p>Finch一家人都因为各种原因非正常死亡，他们被祖辈告知这是诅咒。无论是通过移民海外还是搬家最终都无法逃脱。叙述者是Finch家最后一名家族成员，因为母亲的去世得到一把钥匙又回到了当初抛弃的主宅。在这里展开了一系列的回忆，通过看到曾经在这里生活的其他家族成员留下的笔记以第一人称视角回忆每个人非正常死亡之前发生的故事。游戏导向性很强，自己操作的空间有限，主角自述的字幕依靠空间中的事物排列成型尔后又消散这种演出效果非常新颖。主角通过暗道进入第一名死者房间阅读她死前的笔记并带入其视角，小女孩Molly被母亲关禁闭，在自己房间四处找吃的，走到窗前看见窗外树上的鸟，直到此时一切都还很正常。就在我以为她会失足掉下去的时候，Molly突然化身为一直猫窜出窗外追鸟，那一瞬间我就意识到整个游戏将会充满奇幻色彩。女孩接着变成一只猫头鹰，然后是鲨鱼，吃掉相应的猎物，最后竟然化身克系触手怪开始吃人。至此整个画风还是比较阴深，玩的时候生怕转身冒出来个怪物。接下来漫画视角的另一位早逝少女，恐怖感十足，配音瘆人。并不打算逐一叙述每一个人物。</p>
+<p>这里讲两个最惊艳的，第一个是一岁大的小婴儿，溺水而死，但临死前的配乐和表现形式确实无比的欢愉，让人感觉不到丝毫的痛苦。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZP3YwFDzcHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>另一个是Lewis的故事，也是全篇最精彩，甚至可以说是整个游戏史上将游戏性和叙事性结合的最出彩的一段故事之一。右手是枯燥的切割沙丁鱼头，左边是不断丰富不断充实的脑内冒险。这一段剧透性非常强，强烈建议感兴趣的朋友先去玩游戏，不要看视频。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-RiqVXAkf4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>除此之外父女两人猎鹿的那一段也非常离奇。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S9vHxm5v63Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>整个流程大概两个小时。这里想谈一谈所谓的诅咒。看上去每一个人都是离奇死亡，但其实可能是中了叙事的诡计，或者说呈现的方式被理想化，被浪漫化了。Finch一家如果说真要有什么诅咒，那就是这一家人莽撞，冲动，不负责任。</p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FOrange1%2FTueODWBqUC.jpg?alt=media&token=851e9d5d-376d-4026-a1bd-a70f34a4fb1b" alt="img"></p>
+<p>小女孩Molly的死因不是幻想中的克苏鲁触手怪，而是最开始的暴饮暴食，尤其是床边有毒植物的果实和厕所里的牙膏，而这一切又是因为母亲不负责任的管教。Barbara死因则很可能是和被男友杀害。Calvin荡秋千飞出去摔死，但秋千的搭建位置是在不稳固的树枝上，而且下面就是悬崖和尖锐的栅栏，而且Calvin的脚还帮着绷带。Sam带着女儿去打猎，明明鹿还没死，非要在悬崖边上摆pose。Gregory一岁的婴儿，结果母亲在他洗澡的时候做其他事导致溺水死亡。其他也都是类似在不负责任的长辈管教和从小就认定自己被诅咒的心态中进入一种self-fulfilling prophecy的悲剧循环中。甚至是主角，最后也揭露自己有了22个月的身孕，什么样的人会在22个月身孕的时候回来？？？</p>
+<p>总而言之这一家唯一善终的可能就是祖母Edie，但她也可能是这一切的被诅咒观念不断向后辈灌输的始作俑者。</p>
+<p>最后随着Edith儿子出生并读到了自己妈妈临死前写的笔记。全剧终，看结尾创作人员的时候竟然还跳出了成就，感谢看了这么久的结尾字幕。</p>
+<p>总结来说，极其出色的艺术表现手法，引人入胜，但是背后的真相不能细想。当做是一个魔幻故事就好。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%96%87%E5%AD%97/" rel="tag"># 文字</a>
+              <a href="/tags/Review/" rel="tag"># Review</a>
+              <a href="/tags/Games/" rel="tag"># Games</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Rape/" rel="prev" title="关于强奸">
+      <i class="fa fa-chevron-left"></i> 关于强奸
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Martian/" rel="next" title="The Martian">
+      The Martian <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Orange</p>
+  <div class="site-description" itemprop="description">après moi, le déluge</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">205</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">71</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:hi@orange42.cc" title="E-Mail → mailto:hi@orange42.cc" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fas fa-moon"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Orange</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

@@ -1,20 +1,428 @@
-extends partial/layout
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-block site_title
-    != page.title + " · " + config.title
+<link rel="stylesheet" href="/css/main.css">
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL XiaoWei:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
-block container
-    include mixins/post
-    +post(page)
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
 
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+  <meta name="description" content="整体观感非常好，路人超级英雄粉顺便也了解了一下当年院线版扑街的始末。很可惜，扎导这一部可以说是直接重启了DC大宇宙，大boss像是Darkseid，新成员如Cyborg，Flash和Martian Manhunter都被充实的有血有肉。甚至直接铺开了黑超的世界线，但是看情况短期不会再有第二部第三部了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ZR Justice League">
+<meta property="og:url" content="http://example.com/JusticeLeague/index.html">
+<meta property="og:site_name" content="世界陆沉">
+<meta property="og:description" content="整体观感非常好，路人超级英雄粉顺便也了解了一下当年院线版扑街的始末。很可惜，扎导这一部可以说是直接重启了DC大宇宙，大boss像是Darkseid，新成员如Cyborg，Flash和Martian Manhunter都被充实的有血有肉。甚至直接铺开了黑超的世界线，但是看情况短期不会再有第二部第三部了。">
+<meta property="og:locale">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_02.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_03.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_04.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_05.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_06.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_07.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_08.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_09.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/HM8QYi.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_10.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_11.png">
+<meta property="article:published_time" content="2021-03-18T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-09-28T03:26:02.574Z">
+<meta property="article:author" content="Orange">
+<meta property="article:tag" content="影像">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_02.png">
 
-block copyright
-    include partial/copyright
+<link rel="canonical" href="http://example.com/JusticeLeague/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh'
+  };
+</script>
+
+  <title>ZR Justice League | 世界陆沉</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/feed.xml" title="世界陆沉" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">世界陆沉</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">夜色温柔</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-anchor fa-fw"></i>Home</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/JusticeLeague/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Orange">
+      <meta itemprop="description" content="après moi, le déluge">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="世界陆沉">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ZR Justice League
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-03-19 00:00:00" itemprop="dateCreated datePublished" datetime="2021-03-19T00:00:00+08:00">2021-03-19</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>整体观感非常好，路人超级英雄粉顺便也了解了一下当年院线版扑街的始末。很可惜，扎导这一部可以说是直接重启了DC大宇宙，大boss像是Darkseid，新成员如Cyborg，Flash和Martian Manhunter都被充实的有血有肉。甚至直接铺开了黑超的世界线，但是看情况短期不会再有第二部第三部了。</p>
+<span id="more"></span>
+
+<p>即便如此，还是有很多吐槽的地方：</p>
+<ol>
+<li>蝙蝠侠露嘴的造型分分钟被打穿啊。但这一版本蝙蝠侠看起来精神了很多，大部分的打斗戏都不再羸弱，而且熟练运用最强钞能力，给整个小队成员提供技术支持。</li>
+<li>人类保存MotherBox是不是也太寒碜了，直接找个地埋进去。史前大战这一幕很有魔戒的既视感，甚至战后分别保存Mother Box都和魔戒一样。</li>
+<li>交通事故真的是万能cliche梗，即便如此只要运用得当也没问题。Cyborg的心路历程被交代的非常清晰，完全可以接着独立出电影了。</li>
+<li>电影版BGM比扎导版好，特别是开头那一首。扎导选择的BGM太刻意了。</li>
+</ol>
+<p>《我在卢浮宫修文物》</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_02.png" alt="Justice_02"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_03.png" alt="Justice_03"></p>
+<p>一种暴鲤龙出没的既视感</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_04.png" alt="Justice_04"></p>
+<p>设定上是没有超人和绿灯军团的守护，坏人都闻风而来。但是超人来地球才几十年，难道之前都是绿灯军团在一直默默守护吗。这个设定过于convenient了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_05.png" alt="Justice_05"><br><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_06.png" alt="Justice_06"></p>
+<p>德国真的惨，一战打神奇女侠，二战打美队。纳粹：一切邪恶科技的背锅源头。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_07.png" alt="Justice_07"></p>
+<p>Alternate Reality这个概念在DC宇宙中应用的很惊艳。Oh Diana.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_08.png" alt="Justice_08"></p>
+<p>复活超人的时候Flash就已经可以轻微逆转时间了。这一幕接触很有宗教色彩，让人联想到《Creation of Adam》。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_09.png" alt="Justice_09"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/HM8QYi.jpg" alt="HM8QYi"></p>
+<p>Aquaman本身选角非常出色，比原作里众人嘲笑的形象好很多。这一版本里少了尴尬的幽默，更加霸气耍酷。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_10.png" alt="Justice_10"></p>
+<p>世界名画</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sprezzaa/image@main/Justice_11.png" alt="Justice_11"></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%BD%B1%E5%83%8F/" rel="tag"># 影像</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Emperor/" rel="prev" title="末代皇帝">
+      <i class="fa fa-chevron-left"></i> 末代皇帝
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Fate/" rel="next" title="Fate Grand Order">
+      Fate Grand Order <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Orange</p>
+  <div class="site-description" itemprop="description">après moi, le déluge</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">205</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">71</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:hi@orange42.cc" title="E-Mail → mailto:hi@orange42.cc" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fas fa-moon"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Orange</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
